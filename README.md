@@ -159,16 +159,16 @@ V. Epic 5 - Documentation
 
 
 My sprints were planned out as follows:
-Sprint #1 - 23/10  - 29/10
-In the first milestone my main goal was to get the project's framework set up and running and do an early deployment. I also added Login/Registration functionality using django-allauth. Most of this sprint was about setting up the backend and the tasks were labeled as Dev Task (DT). The following tasks where a part of this sprint:
-DT Install of Django Environment
-DT Create Django Project
-DT Set Up Heroku
-DT Set Up Cloudinary
-DT Deployment
-DT Set Up Django allauth
-DT Create an admin panel
-DT Create Database models from ERD
+-   Sprint #1 - 23/10  - 29/10
+    - In the first milestone my main goal was to get the project's framework set up and running and do an early deployment. I also added Login/Registration functionality using django-allauth. Most of this sprint was about setting up the backend and the tasks were labeled as Dev Task (DT). The following tasks where a part of this sprint:
+        - DT Install of Django Environment
+        - DT Create Django Project
+        - DT Set Up Heroku
+        - DT Set Up Cloudinary
+        - DT Deployment
+        - DT Set Up Django allauth
+        - DT Create an admin panel
+        - DT Create Database models from ERD
 
 
 
