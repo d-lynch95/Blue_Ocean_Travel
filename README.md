@@ -172,51 +172,48 @@ My sprints were planned out as follows:
 
 
 
-Sprint #2 30/10 - 05/11
-Create models, general site structure and navigation elements (navbar and footer) based on the original wireframes. In this sprint I moved from the backend to setting up the basic frontend features of the app and to user stories (US).
-US Homepage Setup
-US Navigation
-US Contact Page
-US Footer
-US Sign Up
-US Log In
-US Log Out
-US Create User Profile
-DT Install Django Crispy Forms
+-  Sprint #2 30/10 - 05/11
+    - Create models, general site structure and navigation elements (navbar and footer) based on the original wireframes. In this sprint I moved from the backend to setting up the basic frontend features of the app and to user stories (US).
+        - US Homepage Setup
+        - US Navigation
+        - US Contact Page
+        - US Footer
+        - US Sign Up
+        - US Log In
+        - US Log Out
+        - US Create User Profile
+        - DT Install Django Crispy Forms
 
 
-Sprint #3 - 06/11 - 12/11 
-Upload different tours and their descriptions to the website. Allow users to see more detailed descriptions of the tours. Allow users to add products to their baskets.
-US View different products
-US Basic Search Functionality
-US Add products to basket
-DT Readme Forking/Cloning
+- Sprint #3 - 06/11 - 12/11 
+    - Upload different tours and their descriptions to the website. Allow users to see more detailed descriptions of the tours. Allow users to add products to their baskets.
+        - US View different products
+        - US Basic Search Functionality
+        - US Add products to basket
+        - DT Readme Forking/Cloning
 
 
-Sprint #4 - 13/11 -19/11
+- Sprint #4 - 13/11 -19/11
 
-US Add Carousel
-US Display messages upon user action
-DT Write up all the bugs until now
-DT set up inventory limits for tours
+        - US Add Carousel
+        - US Display messages upon user action
+        - DT Write up all the bugs until now
+        - DT set up inventory limits for tours
 
-Sprint #5 - 20/11 - 26/11
-Add stripe payment processing to webpage
-US Process Payment
-US Improve website's style
-US Email validation to confirm purchase
-US Allow users to leave reviews and ratings on different tours
+- Sprint #5 - 20/11 - 26/11
+    - Add stripe payment processing to webpage
+    - US Process Payment
+    - US Improve website's style
+    - US Email validation to confirm purchase
+    - US Allow users to leave reviews and ratings on different tours
 
-Sprint #6 - 27/11 - 03/12
-
-
-Final Sprint
-Perform manual testing of HTML, CSS, Python, JS, LightHouse, responsivness, browser compatibility, user story testing. Add custom error pages. Add input validation. Make minor improvements and fix bugs. Again, this milestone took two sprints to complete.
-DT Readme Deployment
-DT Add customized 403, 404 and 500 error pages
-US Add validators for user inputs
-DT Readme: Technologies and packages used, Testing, ERD, Credits, Error Pages sections
-DT Do thorough testing of all aspects of the application to make sure everything works seamlessly and write up the documentation
+-  Final Sprint
+    - Perform manual testing of HTML, CSS, Python, JS, LightHouse, responsivness, browser compatibility, user story testing. Add custom error pages. Add input validation. Make minor improvements and fix bugs. Again, this milestone took two sprints to complete.
+        - DT Readme Deployment
+        - DT Add customized 403, 404 and 500 error pages
+        - US Add validators for user inputs
+        - DT Readme: Technologies and packages used, Testing, ERD, Credits, Error Pages sections
+        - DT Do thorough testing of all aspects of the application to make sure everything works seamlessly and write up the documentation
 
 
 
