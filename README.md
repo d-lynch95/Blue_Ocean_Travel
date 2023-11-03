@@ -158,6 +158,69 @@ V. Epic 5 - Documentation
   - Complete readme documentation
 
 
+My sprints were planned out as follows:
+Sprint #1 - 23/10  - 29/10
+In the first milestone my main goal was to get the project's framework set up and running and do an early deployment. I also added Login/Registration functionality using django-allauth. Most of this sprint was about setting up the backend and the tasks were labeled as Dev Task (DT). The following tasks where a part of this sprint:
+DT Install of Django Environment
+DT Create Django Project
+DT Set Up Heroku
+DT Set Up Cloudinary
+DT Deployment
+DT Set Up Django allauth
+DT Create an admin panel
+DT Create Database models from ERD
+
+
+
+Sprint #2 30/10 - 05/11
+Create models, general site structure and navigation elements (navbar and footer) based on the original wireframes. In this sprint I moved from the backend to setting up the basic frontend features of the app and to user stories (US).
+US Homepage Setup
+US Navigation
+US Contact Page
+US Footer
+US Sign Up
+US Log In
+US Log Out
+US Create User Profile
+DT Install Django Crispy Forms
+
+
+Sprint #3 - 06/11 - 12/11 
+Upload different tours and their descriptions to the website. Allow users to see more detailed descriptions of the tours. Allow users to add products to their baskets.
+US View different products
+US Basic Search Functionality
+US Add products to basket
+DT Readme Forking/Cloning
+
+
+Sprint #4 - 13/11 -19/11
+
+US Add Carousel
+US Display messages upon user action
+DT Write up all the bugs until now
+DT set up inventory limits for tours
+
+Sprint #5 - 20/11 - 26/11
+Add stripe payment processing to webpage
+US Process Payment
+US Improve website's style
+US Email validation to confirm purchase
+US Allow users to leave reviews and ratings on different tours
+
+Sprint #6 - 27/11 - 03/12
+
+
+Final Sprint
+Perform manual testing of HTML, CSS, Python, JS, LightHouse, responsivness, browser compatibility, user story testing. Add custom error pages. Add input validation. Make minor improvements and fix bugs. Again, this milestone took two sprints to complete.
+DT Readme Deployment
+DT Add customized 403, 404 and 500 error pages
+US Add validators for user inputs
+DT Readme: Technologies and packages used, Testing, ERD, Credits, Error Pages sections
+DT Do thorough testing of all aspects of the application to make sure everything works seamlessly and write up the documentation
+
+
+
+
 ## Technologies used
 - Python
   - The main language used in this project was python
@@ -469,72 +532,3 @@ The live link can be found here - [Happy-Travels-Appt-Booking](https://happy-tra
 - I used the following tutorial for help with my requirements.txt file [LearnPython](https://learnpython.com/blog/python-requirements-file/)
 
  - I also received help from the following slack users for minor bugs or style changes inc21, Tatiana Ruffo, Dave T, Laura, Jo_ci and I received a lot of help and advice from my mentor Gareth McGirr and from Paul Thomas our cohort leader.
-
-
-
-
-
-
-My sprints were planned out as follows:
-Sprint #1 - 23/10  - 29/10
-In the first milestone my main goal was to get the project's framework set up and running and do an early deployment. I also added Login/Registration functionality using django-allauth. Most of this sprint was about setting up the backend and the tasks were labeled as Dev Task (DT). The following tasks where a part of this sprint:
-DT Install of Django Environment
-DT Create Django Project
-DT Set Up Heroku
-DT Set Up Cloudinary
-DT Deployment
-DT Set Up Django allauth
-DT Create an admin panel
-DT Create Database models from ERD
-
-
-
-Sprint #2 30/10 - 05/11
-Create models, general site structure and navigation elements (navbar and footer) based on the original wireframes. In this sprint I moved from the backend to setting up the basic frontend features of the app and to user stories (US).
-US Homepage Setup
-US Navigation
-US Contact Page
-US Footer
-US Sign Up
-US Log In
-US Log Out
-US Create User Profile
-DT Install Django Crispy Forms
-
-
-
-
-
-Sprint #3 - 06/11 - 12/11 
-Upload different tours and their descriptions to the website. Allow users to see more detailed descriptions of the tours. Allow users to add products to their baskets.
-US View different products
-US Basic Search Functionality
-US Add products to basket
-DT Readme Forking/Cloning
-
-
-Sprint #4 - 13/11 -19/11
-
-US Add Carousel
-US Display messages upon user action
-DT Write up all the bugs until now
-DT set up inventory limits for tours
-
-Sprint #5 - 20/11 - 26/11
-Add stripe payment processing to webpage
-US Process Payment
-US Improve website's style
-US Email validation to confirm purchase
-US Allow users to leave reviews and ratings on different tours
-
-Sprint #6 - 27/11 - 03/12
-
-
-Final Sprint
-Perform manual testing of HTML, CSS, Python, JS, LightHouse, responsivness, browser compatibility, user story testing. Add custom error pages. Add input validation. Make minor improvements and fix bugs. Again, this milestone took two sprints to complete.
-DT Readme Deployment
-DT Add customized 403, 404 and 500 error pages
-US Add validators for user inputs
-DT Readme: Technologies and packages used, Testing, ERD, Credits, Error Pages sections
-DT Do thorough testing of all aspects of the application to make sure everything works seamlessly and write up the documentation
-
