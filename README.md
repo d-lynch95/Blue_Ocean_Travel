@@ -53,8 +53,6 @@ Blue Ocean travel is an online e-commerce store that specialises in booking trip
   - As a user I want to contact the business to have them create an itinerary for me
 
 
-
-
 #### As a website business owner
   - As a site owner I want to excite users and peak their interest
   - As a site owner I want to allow for a good user experience
@@ -64,8 +62,6 @@ Blue Ocean travel is an online e-commerce store that specialises in booking trip
   - As a site owner I want to encourage users to contact us directly to create a personalised itinerary
   - As a site owner I want to convert as many users into customers as possible
   - As a site owner I want to ensure the payment process is as seemless as possible
-
-
 
 
 #### As a new user
@@ -84,7 +80,7 @@ Blue Ocean travel is an online e-commerce store that specialises in booking trip
 ### Font
 I used the Montserrat and Poppins fonts from GoogleFonts. I opted for these fonts as they are clean, easy to read and versatile which make them perfect for a youth adventure travel website. I opted to use Monterrat for the headings and Poppins for the body. I used the Caveat font for the h1 tags as this font is very easy on the eye, playful and suits the youth adventure market
 
-![ExampleFont](static/media/font.webp)
+![ExampleFont]()
 
 ### Colour
 
@@ -100,23 +96,23 @@ The logo is a
   <summary>See wireframes</summary>
 
   - Homepage
-  ![Homepage](static/media/wireframes/home.png)
+  ![Homepage]()
 
   - Contact Us
-  ![Contact Us](static/media/wireframes/contact%20us.png)
+  ![Contact Us]()
   
   - Make an appointment
-  ![Make an appointment](static/media/wireframes/Make%20appointments.png)
+  ![Make an appointment]()
 
   - Manage appointments
-  ![Manage appointments](static/media/wireframes/manage%20appointments.png)
+  ![Manage appointments]()
 </details>
 
 ### Entity relationship diagram
 
 This diagram shows how the users and staff users interact with the database.
 
-![Entity relationship Diagram](static/media/ERD.png)
+![Entity relationship Diagram]()
 
 ## Development
 
@@ -124,7 +120,7 @@ This diagram shows how the users and staff users interact with the database.
 
 This project was developed using the Agile methodology. All epics and user stories implementation progress was tracked through Github projects Kanban Board which can be found [here](https://github.com/users/d-lynch95/projects/3/views/1).
 
-![KanabanBoard](static/media/KanbanPP4.webp)
+![KanabanBoard]()
 
 
 This project had 5 main epics (Milestones)
@@ -142,14 +138,21 @@ II. Epic 2.  USER REGISTRATION/AUTENTHICATION
   - As a developer, I need to implement the Login page using django-allauth module
   - As a developer, I need to implement the  Logout modal using django-allauth module
   - As a site owner, I would like the allauth pages customized to that they fit in with the sites styling
+  - As a user, I would like to be able to log in using social media or a google account
     
 
-III. Epic 3 - Making appointments
-  - As a user, I would like to be able to create a new appointment when I want to visit the travel agnecy
-  - As a user, I would like to view my bookings when I need to check the information
+III. Epic 3 - Making bookings
+  - As a user, I would like to be able to view all available tours
+  - As a user, I would like to be able to view which tours are available for certain regions
+  - As a user, I would like to be able to create a new booking
+  - As a user, I would like to view my previous bookings when I need to check the information
   - As a user, I would like to be able to edit a booking so that I can make changes when needed
   - As a user I would like to delete a booking when I no longer require it
+  - As a user I would like to be able to contact the company to create a full itinerary for me
 
+IV. Epic 4 - Processing Payment
+  - As a user, I would like to view my bookings before completing payment
+  - As a user, I would like to process payment easily and efficiently
 
 IV. Epic 4 - Deployment Epic  
   - As a developer, I need to deploy the project to heroku so that it is live for users
@@ -160,11 +163,10 @@ V. Epic 5 - Documentation
 
 My sprints were planned out as follows:
 -   Sprint #1 - 23/10  - 29/10
-    - In the first milestone my main goal was to get the project's framework set up and running and do an early deployment. I also added Login/Registration functionality using django-allauth. Most of this sprint was about setting up the backend and the tasks were labeled as Dev Task (DT). The following tasks where a part of this sprint:
+    - In the first milestone my main goal was to get the project's framework set up and running and do an early deployment. I also added Login/Registration functionality using django-allauth. Most of this sprint was about setting up the backend and the tasks were labeled as Dev Task (DT). The following tasks were a part of this sprint:
         - DT Install of Django Environment
         - DT Create Django Project
         - DT Set Up Heroku
-        - DT Set Up Cloudinary
         - DT Deployment
         - DT Set Up Django allauth
         - DT Create an admin panel
@@ -188,13 +190,15 @@ My sprints were planned out as follows:
 - Sprint #3 - 06/11 - 12/11 
     - Upload different tours and their descriptions to the website. Allow users to see more detailed descriptions of the tours. Allow users to add products to their baskets.
         - US View different products
+        - US View region specific products
+        - US Contact company
         - US Basic Search Functionality
         - US Add products to basket
         - DT Readme Forking/Cloning
 
 
 - Sprint #4 - 13/11 -19/11
-
+  -  
         - US Add Carousel
         - US Display messages upon user action
         - DT Write up all the bugs until now
@@ -202,10 +206,10 @@ My sprints were planned out as follows:
 
 - Sprint #5 - 20/11 - 26/11
     - Add stripe payment processing to webpage
-    - US Process Payment
-    - US Improve website's style
-    - US Email validation to confirm purchase
-    - US Allow users to leave reviews and ratings on different tours
+      - US Process Payment
+      - US Improve website's style
+      - US Email validation to confirm purchase
+      - US Allow users to leave reviews and ratings on different tours
 
 -  Final Sprint
     - Perform manual testing of HTML, CSS, Python, JS, LightHouse, responsivness, browser compatibility, user story testing. Add custom error pages. Add input validation. Make minor improvements and fix bugs. Again, this milestone took two sprints to complete.
