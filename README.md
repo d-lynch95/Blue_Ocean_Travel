@@ -123,7 +123,7 @@ This project was developed using the Agile methodology. All epics and user stori
 ![KanabanBoard]()
 
 
-This project had 5 main epics (Milestones)
+This project had 6 main epics (Milestones)
 
 I. Epic 1. Initial Set up
   - As a developer, I need to create the base.html page and structure so that other pages can reuse the layout
@@ -153,11 +153,12 @@ III. Epic 3 - Making bookings
 IV. Epic 4 - Processing Payment
   - As a user, I would like to view my bookings before completing payment
   - As a user, I would like to process payment easily and efficiently
+  - As a user, I would like to receive an email confirming my purchase and payment confirmation
 
-IV. Epic 4 - Deployment Epic  
+V. Epic 5 - Deployment Epic  
   - As a developer, I need to deploy the project to heroku so that it is live for users
 	
-V. Epic 5 - Documentation
+VI. Epic 6 - Documentation
   - Complete readme documentation
 
 
