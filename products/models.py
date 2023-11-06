@@ -1,6 +1,6 @@
 from django.db import models
 
-class Regions(models.Model):
+class Region(models.Model):
     name = models.CharField(max_length=254)
     friendly_name = models.CharField(max_length=254, null=True, blank=True)
 
@@ -11,7 +11,7 @@ class Regions(models.Model):
         return self.friendly_name
 
 class Product(models.Model):
-    regions = models.ForeignKey('Regions', null=True, blank=True, on_delete=models.SET)
+    region = models.ForeignKey('Region', null=True, blank=True, on_delete=models.SET)
     name = models.CharField(max_length=254)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
