@@ -264,6 +264,8 @@ My sprints were planned out as follows:
   - for storing static data
 - LightHouse 
   - for testing performance
+- Pillow
+  - installed to use images in the product model
 
 
 
