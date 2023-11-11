@@ -361,6 +361,9 @@ I created an extra [Testing.md](https://github.com/d-lynch95/Portfolio-Project4/
 
 - I had an issue in that when I was connecting AWS and trying to deploy my project the backend django admin panel was wiped of it users and product data. This error was due to the ProcFile being located in the 'blue_ocean' folder and not being in the root directory.
 
+- I was having an issue loading the contact.html page when it was originally created. This was due to the file path set up as the template folder within the contact app did not have an additional 'contact' folder within it. Once I added this folder the issue was resolved.
+
+- When adding the elephantsql database all of my products and users disappeared from the database. In order to restore them I needed to disconnect from the database, download a json file from the original database, then reconnect to the database and upload the json file with the fixtures. This resolved the issue.
 
 
 ### User Testing
