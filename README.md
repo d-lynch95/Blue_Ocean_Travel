@@ -359,7 +359,7 @@ I created an extra [Testing.md](https://github.com/d-lynch95/Portfolio-Project4/
 
 - I had an issue with the AWS settings as I had been using AWS_S3_REGION_NAME = 'Europe (Ireland) eu-west-1' this was fixed by changing the settings to AWS_S3_REGION_NAME = 'eu-west-1'.
 
-- I had an issue in that when I was connecting AWS and trying to deploy my project the backend django admin panel was wiped of it users and product data.
+- I had an issue in that when I was connecting AWS and trying to deploy my project the backend django admin panel was wiped of it users and product data. This error was due to the ProcFile being located in the 'blue_ocean' folder and not being in the root directory.
 
 
 
