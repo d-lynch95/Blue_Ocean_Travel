@@ -96,16 +96,16 @@ The logo is a
   <summary>See wireframes</summary>
 
   - Homepage
-  ![Homepage]()
+  ![Homepage](docs/wireframes/homepage.png)
 
   - Contact Us
-  ![Contact Us]()
+  ![Contact Us](docs/wireframes/contactus.png)
   
-  - Make an appointment
-  ![Make an appointment]()
+  - Product page
+  ![Product page](docs/wireframes/%20product_page.png)
 
-  - Manage appointments
-  ![Manage appointments]()
+  - Product Booking Page
+  ![Product Booking Page](docs/wireframes/product_booking_page.png)
 </details>
 
 ### Entity relationship diagram
@@ -118,9 +118,9 @@ This diagram shows how the users and staff users interact with the database.
 
 ### Agile Methodology
 
-This project was developed using the Agile methodology. All epics and user stories implementation progress was tracked through Github projects Kanban Board which can be found [here](https://github.com/users/d-lynch95/projects/3/views/1).
+This project was developed using the Agile methodology. All epics and user stories implementation progress was tracked through Github projects Kanban Board which can be found [here](https://github.com/users/d-lynch95/projects/4/views/1).
 
-![KanabanBoard]()
+![KanabanBoard](docs/readme_images/PP5kanban_board.png)
 
 
 This project had 6 main epics (Milestones)
@@ -260,12 +260,15 @@ My sprints were planned out as follows:
   - for debugging the project
 - W.A.V.E
   - for testing accessibility
-- Cloudinary 
-  - for storing static data
 - LightHouse 
   - for testing performance
 - Pillow
   - installed to use images in the product model
+- AWS
+  - used to host images
+- ElephantSql
+  - used to host the database
+
 
 
 
@@ -281,39 +284,35 @@ My sprints were planned out as follows:
 
   - The footer section allows the user to view the company’s social media to understand better the company’s product offerings.
 
-![HomePage](static/media/homepage.webp)
+![HomePage]()
 
 - __Contact Us Page__
   - The contact us section allows the users to contact the company directly if they have any issues. This adds to the user experience as the user may have some questions that they need answered before they are prepared to make an booking. This also allows the user to contact the company if they wish to have a personalised itinerary created for them.
 
-  ![contactUs](static/media/contactus.webp)
+  ![contactUs]()
 
 
-- __Make an appointment page__
-  - The main purpose of the website  is for users  to make appointments in order to better plan their trip. This is easily done through the form on the “Make an appointment page”. 
+- __Tours & experiences page__
+  - The main purpose of the website  is for users to book tours. This is easily done through the list of products on the 'all tours' page. Users can view the tours on this page. These tours can also be filtered by region and users can use the search functionality to refine the products list.
+
   
-  - If the user is logged in then they can instantly fill out the form to create the appointment. 
+  - Users can click on a tour and this will take them to a more detailed view of the tour that outlines tour name, decription, duration, price, and available dates
+  ![Tours & Experiences]()
+
+
+- __ Product booking __
+  -  
   
-  - If the user is not logged in then they will be redirected to the log in or register account page. When the user has completed the form they are then redirected to the Manage appointments page
+  - 
 
-  ![makeAppointments](static/media/makeappt.webp)
-
-
-- __Manage appointments__
-  - This page is only viewable if the user has logged in. 
-  
-  - On this page the user can view the appointments that they have already made. Users will also have the option to edit or delete any appointments they have made. 
-  
-  - If the user wishes to edit their appointment then they will be redirected to the form where their information will be autofilled and they can edit it as they need to. If the user chooses to delete their appointment then it will be removed from the database.
-
-  ![ManageAppointments](static/media/manageappt.webp)
+  ![Product Booking]()
 
 
 - __Navigation Menu__
 
 The Navigation contains links for Home, Tours, Contact Us, Special Offers, My account, Shopping Bag.
 
-![NavigationMenu](static/media/NavBar.webp)
+![NavigationMenu]()
 
 - The following navigation items are available on all pages:
 
@@ -360,32 +359,7 @@ I created an extra [Testing.md](https://github.com/d-lynch95/Portfolio-Project4/
 
 - I had an issue with the AWS settings as I had been using AWS_S3_REGION_NAME = 'Europe (Ireland) eu-west-1' this was fixed by changing the settings to AWS_S3_REGION_NAME = 'eu-west-1'.
 
-
-
-- When creating the URLS I had both functions and class based views pointing to the same URL's. This was causing issues with loading the page. Once this was corrected the issue resolved itself.
-
-- I was having issues getting the database information to print to the desired webpage. This was due to using the incorrect naming convention on the for loop. Once I corrected the name to object_loop the page loaded correctly.
-
-- I struggled with making the EditApptView work as planned. I spent a lot of time changing the views.py file, the urls.py file and even tried to adjust the model. Using the help of [this](https://forum.djangoproject.com/t/why-do-i-keep-getting-this-error-all-the-time-noreversematch-at/12520/2) forum I finally realised that the issue was with my link and that it didn't include a slug reference.
-
-- I was having issues with my slug as I was using the self(slug.name) and this was causing issues as it was not a unique id and users could not make multiple appointments. I corrected this by adding a uuid to the django id and combining both the name and id fields in the slug
-
-- I was having an issue as the slug was showing  on the form and accepting user input instead of autopopulating. I fixed this using a hiddenwidget which i found from the [DjangoProjects](https://docs.djangoproject.com/en/4.2/ref/forms/widgets/) website.
-
-- I was having an issue with the user input field on the forms. This field was providing a drop down menu with all of the different registered users. I corrected this by removing the user input field from the form entirely. I then assigned the user in the form.is_valid section.
-
-- I was having an issue that any logged in user could see all of the appointments that had been made. I fixed this by adding a get query set filter to the PostList view.
-
-- I tried to change the time field in the model from a TimeField() to and integerFiled(). This was causing a lot of issues and I couldn't make any migrations to my models. I fixed this issue following the advice of tutor support and nuking my migrations. I deleted all of the migration files and pycache and then reset my database. This fixed the issue.
-
-- I was having an issue displaying the string value of time on the appointments page. I solved this by changing the {{ post.time }} code to {{ post.get_time_display }}. This then shows the string value that correlates with the time selected.
-
-- I was having issues with calling the time and date data to prevent double bookings. The code segment I was using was only calling the date data and not allowing any appointments to be made on the same days. I fixed this by adding the django Q to my code and combining time and date. This fixed the bug.
-
-- I was having issues with loading my images to the heroku deployment site. I altered some of the settings in the settings.py file and then added a {% load static %} tag on my index.html page and this fixed the issue.
-
-- I was also having an issue with loading a background-image file in the css file as cloudinary would not work with the css. I opted to use an inline style instead for the hero image on the contact us page and this fixed the issue"
-
+- I had an issue in that when I was connecting AWS and trying to deploy my project the backend django admin panel was wiped of it users and product data.
 
 
 
@@ -511,17 +485,14 @@ The live link can be found here - [Happy-Travels-Appt-Booking](https://happy-tra
 
 - The hero image code was taken from my [PP1](https://github.com/d-lynch95/Portfolio-1-GreatOceanRoadsters/blob/main/css/style.css)
 
-- I also took a lot of inspiration from the Code institute I think Therefore I blog Walk through [Code Institiute](https://www.codeinstitute.com)
+- I also took a lot of inspiration from the Code institute Boutique Ado Walk through [Code Institiute](https://www.codeinstitute.com)
 
 - A lot of the python coding was done with help from the tutorial pages at [w3schools](https://www.w3schools.com/)
 
 - The Django documentation was one of the main resources I used during development [Django Documentation](https://docs.djangoproject.com/en/4.2/)
 
-- The following YouTube videos were very useful in production [LearnDjangoin20minutes-TechWithTim](https://www.youtube.com/watch?v=nGIg40xs9e4&t=2s), [PythonDjangoDentistWebsite](https://www.youtube.com/@Codemycom), [BuildADoctorWebsiteWithDjango](https://www.youtube.com/watch?v=3_3q_dE4_qs), [HowToCreateABookingSystemForAHealthClinic](https://www.youtube.com/watch?v=s5xbtuo9pR0), I also used the follow along blog [HowToCreateABookingSystemForAHealthClinic](https://blog.devgenius.io/django-tutorial-on-how-to-create-a-booking-system-for-a-health-clinic-9b1920fc2b78)
+- 
 
-- The code for the form came from the following repository [DentistGitHub](https://github.com/flatplanet/dentistDjango/blob/master/website/templates/home.html). This was the repository [PythonDjangoDentistWebsite](https://www.youtube.com/watch?v=rHZwE1AK1h8&list=PLCC34OHNcOtrZnQI6ZLvGPUWfQ6oh-D6H&index=11)
-
-- I followed the guidance of [this](https://www.youtube.com/watch?v=RwWhQTSV44Q) youtube tutorial to help create the crud functionality for my website
 
 - The tutor support team from codeinstitute were extremely helpful in helping me to overcome bugs in my code.
 
@@ -529,6 +500,5 @@ The live link can be found here - [Happy-Travels-Appt-Booking](https://happy-tra
 
 - I used the following projects as inspiration for my project. [SizzleAndSteak](https://github.com/Gareth-McGirr/Portfolio-Project-4-SizzleAndSteak), [TennisBuddies](https://github.com/lucia2007/tennis_buddies), [BurgerBar](https://github.com/LADCode2021/pp4-burger-bar), [Itallianisimo](https://github.com/useriasminna/italianissimo-booking-website), [KiwiPiano](https://github.com/VeronicaLourens/kiwipiano)
 
-- I used the following tutorial for help with my requirements.txt file [LearnPython](https://learnpython.com/blog/python-requirements-file/)
 
  - I also received help from the following slack users for minor bugs or style changes inc21, Tatiana Ruffo, Dave T, Laura, Jo_ci and I received a lot of help and advice from my mentor Gareth McGirr and from Paul Thomas our cohort leader.
