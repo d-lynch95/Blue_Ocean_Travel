@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from .models import contact_form
 
-# Create your views here.
+def contact(request):
+    """ A view to return the Contact us page """
+    return render(request, 'contact/contact.html')
