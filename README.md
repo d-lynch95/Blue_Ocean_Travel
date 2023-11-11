@@ -358,13 +358,9 @@ I created an extra [Testing.md](https://github.com/d-lynch95/Portfolio-Project4/
 ### BUGS
  - I encountered several bugs while creating this project.
 
-- I faced bugs when creating the views and urls files when launching the project. This was resolved using advice from tutor support.
+- I had an issue with the AWS settings as I had been using AWS_S3_REGION_NAME = 'Europe (Ireland) eu-west-1' this was fixed by changing the settings to AWS_S3_REGION_NAME = 'eu-west-1'.
 
-- I also faced issues with the urls.py files in both the project folder and the app folder. This was fixed by adding the path('', include('booking.urls')), line of code to the project urls.py file. 
 
-- I faced issues when trying to include mixins to function based views. I fixed this by changing to class based views following the advice of a youtube tutorial.
-
-- I was having issues with the formatting of some of the database fields once they had been formatted using summertime as the html tags were still showing. I changed this using {x.name|safe}
 
 - When creating the URLS I had both functions and class based views pointing to the same URL's. This was causing issues with loading the page. Once this was corrected the issue resolved itself.
 
