@@ -5,4 +5,4 @@ class StaticStorage(S3Boto3Storage):
     location = settings.STATICFILES_LOCATION
 
 class StaticStorage(S3Boto3Storage):
-    location = settings.MDEIAFILES_LOCATION
+    location = settings.MEDIAFILES_LOCATION
