@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -106,14 +106,6 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'blue_ocean.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-#
-#    
-#}
-
 if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default' : dj_database_url.parse(os.environ.get('DATABASE_URL'))
@@ -170,10 +162,12 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if 'USE_AWS' in os.environ:
+    # Bucket Config
     AWS_STORAGE_BUCKET_NAME = 'd-lynch95-blue-ocean'
     AWS_S3_REGION_NAME = 'Europe (Ireland) eu-west-1'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_SECRET_ACCESS_KEY_ID')
+    AWS_S3_CUSTOM_DOMAN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
     
 
 # Default primary key field type
