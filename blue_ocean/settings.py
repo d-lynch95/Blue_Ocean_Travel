@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-dlynch95-blueoceantrave-v5j6nx6eqnx.ws-us105.gitpod.io','8000-dlynch95-blueoceantrave-v5j6nx6eqnx.ws-us106.gitpod.io']
+ALLOWED_HOSTS = ['8000-dlynch95-blueoceantrave-v5j6nx6eqnx.ws-us105.gitpod.io','8000-dlynch95-blueoceantrave-v5j6nx6eqnx.ws-us106.gitpod.io', 'https://blue-ocean-travel-feb523e57a47.herokuapp.com/',]
 
 
 # Application definition
