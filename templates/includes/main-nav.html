@@ -10,9 +10,9 @@
                 Destinations
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">K'gari (Fraser Island)</a>
-                <a href="" class="dropdown-item ">Whitsundays</a>
-                <a href="" class="dropdown-item ">Great Barrier Reef</a>
+                <a href="{% url 'products' %}?region=kgari_fraser_island" class="dropdown-item">K'gari (Fraser Island)</a>
+                <a href="{% url 'products' %}?region=whitsundays" class="dropdown-item ">Whitsundays</a>
+                <a href="{% url 'products' %}?region=great_barrier_reef" class="dropdown-item ">Great Barrier Reef</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Tours</a>
             </div>
         </li>

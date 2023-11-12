@@ -365,6 +365,8 @@ I created an extra [Testing.md](https://github.com/d-lynch95/Portfolio-Project4/
 
 - When adding the elephantsql database all of my products and users disappeared from the database. In order to restore them I needed to disconnect from the database, download a json file from the original database, then reconnect to the database and upload the json file with the fixtures. This resolved the issue.
 
+- I had an issue when trying to allow users to filter products by region. I made a lot of alterations to this code segment to try and fix the issue but ultimately this was caused by having a typo in the html code. When I changed 'regions' to 'region' this corrected the issue.
+
 
 ### User Testing
 

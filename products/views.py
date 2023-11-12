@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from .models import Product
+from .models import Product, Region
 from django.contrib import messages
 from django.db.models import Q
 
@@ -8,8 +8,14 @@ def view_products(request):
 
     products = Product.objects.all()
     query = None
+    location = None
 
     if request.GET:
+        if 'region' in request.GET:
+            location = request.GET['region'].split(',')
+            products = products.filter(region__name__in=location)
+            location = Region.objects.filter(name__in=location)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -22,6 +28,7 @@ def view_products(request):
     context = {
         'products': products,
         'search_term': query,
+        'current_region': location,
     }
 
     return render(request, 'products/products.html', context)
