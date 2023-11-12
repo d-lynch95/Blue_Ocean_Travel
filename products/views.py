@@ -9,8 +9,23 @@ def view_products(request):
     products = Product.objects.all()
     query = None
     location = None
+    sort = None
+    direction = None
 
     if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                products = products.annotate(lower_name=Lower('name'))
+
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            products = products.order_by(sortkey)
+
         if 'region' in request.GET:
             location = request.GET['region'].split(',')
             products = products.filter(region__name__in=location)
@@ -25,10 +40,13 @@ def view_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
+    current_sorting = f'{sort}_{direction}'
+    
     context = {
         'products': products,
         'search_term': query,
         'current_region': location,
+        'current_sorting': current_sorting,
     }
 
     return render(request, 'products/products.html', context)
