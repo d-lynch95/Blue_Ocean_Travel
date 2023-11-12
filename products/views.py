@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from .models import Product, Region
 from django.contrib import messages
 from django.db.models import Q
+from django.db.models.functions import Lower
 
 def view_products(request):
     """ A view to show individual product details """
