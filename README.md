@@ -367,6 +367,11 @@ I created an extra [Testing.md](https://github.com/d-lynch95/Portfolio-Project4/
 
 - I had an issue when trying to allow users to filter products by region. I made a lot of alterations to this code segment to try and fix the issue but ultimately this was caused by having a typo in the html code. When I changed 'regions' to 'region' this corrected the issue.
 
+- I had several issues with version control. One issue was with using Django 4.2 and csrf tokens. An error was being thrown when I tried to load my forms. This was fixed by addding the following code segment to the settings.py file "CSRF_TRUSTED_ORIGINS = ['https://8000-dlynch95-blueoceantrave-v5j6nx6eqnx.ws-us106.gitpod.io']".
+
+- I also had an issue with the AllAuth app and my version of django. This was causing issues however i changed to allauth version 0.51.0 and this fixed the issues
+
+
 
 ### User Testing
 
