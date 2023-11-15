@@ -70,6 +70,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'blue_ocean.urls'
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
+CSRF_TRUSTED_ORIGINS = ['https://8000-dlynch95-blueoceantrave-v5j6nx6eqnx.ws-us106.gitpod.io']
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
