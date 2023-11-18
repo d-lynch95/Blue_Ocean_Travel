@@ -1,6 +1,13 @@
-from django.shortcuts import render
-from .models import contact_us
+from django.shortcuts import render, redirect, reverse
+from django.contrib import messages
 
-def contact(request):
-    """ A view to return the Contact us page """
-    return render(request, 'contact/contact.html')
+from .forms import ContactForm
+
+def contact_us(request):
+    contact_form = ContactForm()
+    template = 'contact/contact.html'
+    context = {
+        'contact_form': contact_form,
+    }
+
+    return render(request, template, context)
