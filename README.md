@@ -371,6 +371,10 @@ I created an extra [Testing.md](https://github.com/d-lynch95/Portfolio-Project4/
 
 - I also had an issue with the AllAuth app and my version of django. This was causing issues however i changed to allauth version 0.51.0 and this fixed the issues
 
+- I had a bug when creating my contact us form. This was due to using the DESTINATIONS tuple in my model. Once I moved this outside the model it fixed the issue.
+
+- I had a bug with the type of crispy forms I had installed and the forms weren't working. Once I installed an older version of crispy forms this corrected the issue as it was now compatible with the django version I was using
+
 
 
 ### User Testing
