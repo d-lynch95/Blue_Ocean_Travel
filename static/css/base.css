@@ -3,11 +3,17 @@ html {
 }
 
 body {
-    background: url('/media/whitehaven.jpg') no-repeat center center fixed;
+    background: url() no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+    background-color: whitesmoke;
+}
+
+.container {
+    display: flex;
+    
 }
 
 /* from Bulma */
@@ -96,6 +102,41 @@ body {
 .update-link,
 .remove-item {
     cursor: pointer;
+}
+
+
+/* Code for Why us section borrowed from backpackerdeals.com  */
+
+.temp-content h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.section-row {
+    background-color: white;
+}
+
+    
+
+@media screen and (max-width: 900px) {
+
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .hide-desktop {
+        display: none;
+        padding: 10vh;
+    }
+
+    .col-4 {
+        width: 33%;
+        float: left;
+        padding: 1%;
+    }
+
 }
 
 /* ------------------------------- bootstrap toasts */

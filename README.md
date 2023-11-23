@@ -492,6 +492,10 @@ The live link can be found here - [Happy-Travels-Appt-Booking](https://happy-tra
 
 - The image conversions from jpg to webp were done with [Convertio](https://convertio.co)
 
+- The code for the carousel was borrowed from W3Schools Sample Project
+
+- The code for the 'Why us' section was borrowed from [BackPackerdeals](https:/backpackerdeals.com)
+
 
 ### Coding help
 
