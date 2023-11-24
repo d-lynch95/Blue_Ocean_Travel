@@ -199,7 +199,7 @@ My sprints were planned out as follows:
 
 
 - Sprint #4 - 13/11 -19/11
-  -  
+  -  Add carousel and messages
         - US Add Carousel
         - US Display messages upon user action
         - DT Write up all the bugs until now
