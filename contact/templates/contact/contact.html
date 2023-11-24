@@ -21,8 +21,8 @@
         </div>
         <div class="row d-flex justify-content-center">
             <div class="row">
-                <div class="col-12 col-lg-6">
-                    <p class="text-muted">Fill out the form below to Contact Us</p>
+                <div class="col-12 col-lg-12">
+                    <h3 class="">Fill out the form below to Contact Us</h3>
                     <form action="{% url 'success' %}" method="POST" id="payment-form" class="justify-content-center">
                         {% csrf_token %}
                         <fieldset class="rounded px-3 mb-5">
@@ -33,7 +33,7 @@
                             {{ contact_form.phone_number | as_crispy_field }}
                         </fieldset>
                         <fieldset class="rounded px-3 mb-5">
-                            <legend class="fieldset-label small text-black px-2 w-auto">How can we help?</legend>
+                            <legend class="fieldset-label text-black px-10 w-auto">How can we help?</legend>
                             {{ contact_form.input_text | as_crispy_field }}
                             {{ contact_form.selection | as_crispy_field }}
                             <div class="form-check form-check-inline float-right mr-0">

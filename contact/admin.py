@@ -1,9 +1,7 @@
 from django.contrib import admin
-from .models import contact_us
+from .models import contactForm
 
 class ContactUsAdmin(admin.ModelAdmin):
-
-    verbose_name_plural = 'Contact Forms'
 
     readonly_fields = ( 'full_name', 'email','phone_number',
                         'input_text','selection',)
@@ -14,5 +12,5 @@ class ContactUsAdmin(admin.ModelAdmin):
     list_display = ('full_name', 'email', 'phone_number',
                     'input_text','selection',)
 
-admin.site.register(contact_us, ContactUsAdmin)
 
+admin.site.register(contactForm, ContactUsAdmin)
