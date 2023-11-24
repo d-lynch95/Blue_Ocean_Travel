@@ -496,6 +496,8 @@ The live link can be found here - [Happy-Travels-Appt-Booking](https://happy-tra
 
 - The code for the 'Why us' section was borrowed from [BackPackerdeals](https:/backpackerdeals.com)
 
+- The code for the footer was taken from [MDBootstrap](https://mdbootstrap.com/how-to/bootstrap/footer-add/)
+
 
 ### Coding help
 

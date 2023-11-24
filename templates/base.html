@@ -135,6 +135,128 @@
     {% block content %}
     {% endblock %}
 
+    {% block footer %} 
+    <footer class="text-center text-lg-start text-white" style="background-color: #1c2331"> 
+        <div class="container-fluid"></div>
+            <section
+                    class="d-flex justify-content-between p-4"
+                    style="background-color: #6351ce"
+                    >
+               
+                <div class="me-5">
+                <span>Get connected with us on social networks:</span>
+                </div>
+                <div>
+                <a href="" class="text-white me-4 pr-4">
+                    <i class="fab fa-lg fa-facebook-f"></i>
+                </a>
+        
+                <a href="" class="text-white me-4 pr-4">
+                    <i class="fab fa-lg fa-google"></i>
+                </a>
+                <a href="" class="text-white me-4 pr-4">
+                    <i class="fab fa-lg fa-instagram"></i>
+                </a>
+                <a href="" class="text-white me-4 pr-4">
+                    <i class="fab fa-lg fa-linkedin"></i>
+                </a>
+                </div>
+            </section>
+
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+
+                <div class="row mt-3">
+
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+         
+                    <h6 class="text-uppercase fw-bold">Blue Ocean Travel</h6>
+                    <hr
+                        class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px"
+                        />
+                    <p>
+                        Blue Ocean Travel is Australia’s leading independent adventure travel specialist. We work with a wide range of tour 
+                        companies to bring you the best deals possible.
+                    </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              
+                        <h6 class="text-uppercase fw-bold">Destinations</h6>
+                        <hr
+                            class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px"
+                            />
+                        <p>
+                            <a href="{% url 'products' %}?region=whitsundays" class="text-white">Whitsundays</a>
+                        </p>
+                        <p>
+                            <a href="{% url 'products' %}?region=kgari_fraser_island" class="text-white">K'Gari (Fraser Island)</a>
+                        </p>
+                        <p>
+                            <a href="{% url 'products' %}?region=great_barrier_reef" class="text-white">Great Barrier Reef</a>
+                        </p>
+                        <p>
+                            <a href="{% url 'products' %}" class="text-white">All Experiences</a>
+                        </p>
+                    </div>
+  
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+ 
+                    <h6 class="text-uppercase fw-bold">Useful links</h6>
+                    <hr
+                        class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px"
+                        />
+                    <p>
+                        <!-- Add in account section here-->
+                        <a href="#!" class="text-white">Your Account</a>
+                    </p>
+                    <p>
+                        <a href="{% url 'contact' %}" class="text-white">Contact Us</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Help</a>
+                    </p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+         
+                    <h6 class="text-uppercase fw-bold">Contact</h6>
+                    <hr
+                        class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px"
+                        />
+                    <p><i class="fas fa-home mr-3"></i> Unit 2,
+                                                        <br> 148 Bangalow Road,
+                                                        <br> Byron Bay
+                    </p>
+                    <p><i class="fas fa-envelope mr-3"></i> info@blueocean.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> +61 422 686616</p>
+                  
+                    </div>
+            
+                </div>
+               
+                </div>
+            </section>
+        
+            <div
+                class="text-center p-3"
+                style="background-color: rgba(0, 0, 0, 0.2)"
+                >
+                © 2023 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/"
+                >Blueoceantravel.com</a
+                >
+        </div>
+    </footer> 
+  {% endblock %}
+
     {% block postloadjs %}
         <script type="text/javascript">
             $('.toast').toast('show');
