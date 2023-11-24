@@ -84,7 +84,7 @@ I used the Montserrat and Poppins fonts from GoogleFonts. I opted for these font
 
 ### Colour
 
-The colour scheme is a simple blue
+The colour scheme is a simple blue that reminds the user of the ocean and instills a desire to travel. The colour scheme fits well with the company name and the company ethos of inspiring it's users to travel. The blue colour scheme was inspired by (BareFootCampers)[https://www.barefootcampers.nz/] in New Zealand. 
 
 ### Logo
 
@@ -497,6 +497,8 @@ The live link can be found here - [Happy-Travels-Appt-Booking](https://happy-tra
 - The code for the 'Why us' section was borrowed from [BackPackerdeals](https:/backpackerdeals.com)
 
 - The code for the footer was taken from [MDBootstrap](https://mdbootstrap.com/how-to/bootstrap/footer-add/)
+
+- The styling and colour scheme was taken from [BarefootCampers](https://www.barefootcampers.nz/)
 
 
 ### Coding help
