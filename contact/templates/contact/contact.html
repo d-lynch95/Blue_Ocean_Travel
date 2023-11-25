@@ -23,19 +23,18 @@
             <div class="row">
                 <div class="col-12 col-lg-12">
                     <h3 class="">Fill out the form below to Contact Us</h3>
-                    <form action="{% url 'success' %}" method="POST" id="payment-form" class="justify-content-center">
+                    <form action="{% url 'submitform' %}" method="POST" id="payment-form" class="justify-content-center">
                         {% csrf_token %}
                         <fieldset class="rounded px-3 mb-5">
                             <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
-                            <!-- Need to re-add |crispy form tag -->
-                            {{ contact_form.full_name | as_crispy_field }}
-                            {{ contact_form.email | as_crispy_field }}
-                            {{ contact_form.phone_number | as_crispy_field }}
+                            {{ contactForm.full_name | as_crispy_field }}
+                            {{ contactForm.email | as_crispy_field }}
+                            {{ contactForm.phone_number | as_crispy_field }}
                         </fieldset>
                         <fieldset class="rounded px-3 mb-5">
                             <legend class="fieldset-label text-black px-10 w-auto">How can we help?</legend>
-                            {{ contact_form.input_text | as_crispy_field }}
-                            {{ contact_form.selection | as_crispy_field }}
+                            {{ contactForm.input_text | as_crispy_field }}
+                            {{ contactForm.selection | as_crispy_field }}
                             <div class="form-check form-check-inline float-right mr-0">
                                 <!-- Need to decide on what information will go here-->
                                 {% if user.is_authenticated %}
