@@ -273,7 +273,7 @@ My sprints were planned out as follows:
 
 ### Existing Features
 
-- __Home Page__
+__Home Page__
 	- This is the first page that the user will see when they arrive on the website. The primary goal of this page is to allow the user to understand the purpose of the website. This is achieved through eye catching imagery and brief descriptions of what the website purpose is.
 
 	- A  clear Navigation section also makes it intuitive for the user to navigate the website.
@@ -286,7 +286,7 @@ My sprints were planned out as follows:
 
 ![HomePage]()
 
-- __Navigation Menu__ 
+__Navigation Menu__ 
 
 
   - The Navigation contains links for Home, Tours, Contact Us, Special Offers, My account, Shopping Bag.
@@ -315,7 +315,7 @@ My sprints were planned out as follows:
 
   Register -> signup.html - Visible to logged out users
 
-- __Contact Us Page__
+__Contact Us Page__
 
   - The contact us section allows the users to contact the company directly if they have any issues. 
 
@@ -328,7 +328,7 @@ My sprints were planned out as follows:
   ![contactUs]()
 
 
-- __Product Page__ 
+__Product Page__ 
 
 
   - The main purpose of the website is for users to be able to view and organise   different experiences around Australia. The users has several different options to view the products. They can view all products or choose the view based on different regions in Australia.
@@ -350,7 +350,7 @@ __Product Detail Page__
 
 
 
-- __Profile page__
+__Profile page__
 
   - The profile page will allow users to view their profile information.
 
@@ -375,7 +375,7 @@ __Shopping Bag__
 ![Shopping Bag]()
 
 
-- __SecureCheckout__
+__SecureCheckout__
 
 	- This page will allow users to view their shopping bag one last time and process payment
 
@@ -385,7 +385,7 @@ __Shopping Bag__
 
 ![SecureCheckout]()
 
--__StaffSection__
+__StaffSection__
 
   - This section will allow staff members to view any contact forms that have been submitted by users.
 
@@ -393,7 +393,7 @@ __Shopping Bag__
 
 
 
-- __Favicon__
+__Favicon__
 
   - The favicon was created using the company logo. This favicon sits in the web browser tab and instantly allows the user to recognise the webpage. This adds to the customer experience.
 
