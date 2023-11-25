@@ -16,29 +16,30 @@
 {% block content %}
     <div class="container-fluid">
         <div class="row">
-            <hr>
-            <h2 class="logo-font mb-4">My Profile</h2>
-            <hr>
-            
-            <div class="col">
-                
+            <div>
+                <hr>
+                <h2 class="logo-font mb-4 pl-5">My Profile</h2>
+                <hr>
             </div>
-            <div class="row">
-                <div class="col-12 col-lg-6">
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row ml-5">
+                <div class="col-6">
                     <p class="text-muted">Profile information</p>
-                    <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
+                    <form class="mt-3 mb-5" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                         {% csrf_token %}
                         {{ form|crispy }}
-                        <button class="btn btn-black rounded-0 text-uppercase float-right">Update Information</button>
+                        <button class="btn btn-black rounded-0 text-uppercase float-right mb-5">Update Information</button>
                     </form>
                 </div>
-                <div class="col-12 col-lg-6">
+                <div class="col-6 ">
                     <p class="text-muted">Your trips</p>
                     {{ orders }}
                 
                 </div>
-            </div>
         </div>
+    </div>
 {% endblock %}
 
 {% block page_footer %}
