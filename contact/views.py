@@ -8,7 +8,9 @@ from .forms import ContactSubmit
 from .models import contactForm
 
 def contact(request):
-    return render(request, 'contact/contact.html')
+    template = "contact/contact.html"
+    context = {}
+    return render(request, template, context)
 
 class ContactList(generic.ListView):
     model = contactForm
