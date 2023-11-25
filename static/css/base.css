@@ -11,11 +11,6 @@ body {
     background-color: whitesmoke;
 }
 
-.container {
-    display: flex;
-    
-}
-
 .colour-scheme {
     color: #0ec2e6;
 }
@@ -119,10 +114,6 @@ body {
 .temp-content h1 {
     font-size: 30px;
     font-weight: bold;
-}
-
-.section-row {
-    background-color: white;
 }
 
     
