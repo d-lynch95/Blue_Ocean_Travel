@@ -269,52 +269,31 @@ My sprints were planned out as follows:
 - ElephantSql
   - used to host the database
 
-
-
-
-
 ## Features 
 
 ### Existing Features
 
 - __Home Page__
-  - This is the first page that the user will see when they arrive on the website. The primary goal of this page is to allow the user to understand the purpose of the website. This is achieved through eye catching imagery and concise tour descriptions to explain the different tours.
+	- This is the first page that the user will see when they arrive on the website. The primary goal of this page is to allow the user to understand the purpose of the website. This is achieved through eye catching imagery and brief descriptions of what the website purpose is.
 
-  - A  clear Navigation section also makes it intuitive for the user to navigate the website.
+	- A  clear Navigation section also makes it intuitive for the user to navigate the website.
 
-  - The footer section allows the user to view the company’s social media to understand better the company’s product offerings.
+	- The carousel imagery will inspire the users to explore the different product 	offerings as the photos will be extremely appealing and the user will want to learn more about these destinations.
+
+	- The Why us section will showcase the different Unique Selling Points for blue ocean travel and this will encourage users to book with the company and save themselves some money in the process.
+
+	- The footer section allows the user to view the company’s social media, internal website links and a brief company description to help users better understand the company’s product offerings.
 
 ![HomePage]()
 
-- __Contact Us Page__
-  - The contact us section allows the users to contact the company directly if they have any issues. This adds to the user experience as the user may have some questions that they need answered before they are prepared to make an booking. This also allows the user to contact the company if they wish to have a personalised itinerary created for them.
-
-  ![contactUs]()
+- __Navigation Menu__ 
 
 
-- __Tours & experiences page__
-  - The main purpose of the website  is for users to book tours. This is easily done through the list of products on the 'all tours' page. Users can view the tours on this page. These tours can also be filtered by region and users can use the search functionality to refine the products list.
-
-  
-  - Users can click on a tour and this will take them to a more detailed view of the tour that outlines tour name, decription, duration, price, and available dates
-  ![Tours & Experiences]()
-
-
-- __ Product booking __
-  -  
-  
-  - 
-
-  ![Product Booking]()
-
-
-- __Navigation Menu__
-
-The Navigation contains links for Home, Tours, Contact Us, Special Offers, My account, Shopping Bag.
+  - The Navigation contains links for Home, Tours, Contact Us, Special Offers, My account, Shopping Bag.
 
 ![NavigationMenu]()
 
-- The following navigation items are available on all pages:
+  - The following navigation items are available on all pages:
 
   Home -> index.html - Visible to all
 
@@ -336,12 +315,90 @@ The Navigation contains links for Home, Tours, Contact Us, Special Offers, My ac
 
   Register -> signup.html - Visible to logged out users
 
+- __Contact Us Page__
+
+  - The contact us section allows the users to contact the company directly if they have any issues. 
+
+  - The user can contact the company by filling out and submitting a form. This adds to the user experience as the user may have some questions that they need answered before they are prepared to make a booking.
+
+  - This also allows the user to contact the company if they wish to have a personalised itinerary created for them.
+
+  - Users will also have the ability to contact the company directly via the footer as both the email and telephone icon are clickable links. If the user clicks either of these options it will allow them to email or call the company directly.
+
+  ![contactUs]()
+
+
+- __Product Page__ 
+
+
+  - The main purpose of the website is for users to be able to view and organise   different experiences around Australia. The users has several different options to view the products. They can view all products or choose the view based on different regions in Australia.
+
+  - Users can also filter their view of the products based on different filters. They can view the products by changing the sort order from price either low to high or by rating. 
+  ![ProductPage]()
+
+
+
+__Product Detail Page__ 
+  - The product detail page will allow the user to view the tour in more detail. 
+
+	- This page will have a detailed description of the tour. It will also outline price, duration and ratings.
+
+	- Users will be able to use a date picker to select when the tour would be next available
+
+  ![ProductDetail]()
+
+
+
+
+- __Profile page__
+
+  - The profile page will allow users to view their profile information.
+
+	- Users will be able to edit their phone number and email address through this page
+	
+	- Users will also be able to see the tours they already have organised and purchased
+
+![Profile Page]()
+
+
+
+__Shopping Bag__
+
+  - Users will be able to view different tour and experiences that they have added to their cart through the shopping bag page.
+
+	- Users will also be able to increase or decrease the amount of guests going on the tours through the shopping bag page.
+	
+	- Users are also able to remove any tours they do not want from the shopping bag page
+
+	- If users are happy to proceed with their selected tour they can click the “Secure Check-out” button and this will take them to they payment page.
+
+![Shopping Bag]()
+
+
+- __SecureCheckout__
+
+	- This page will allow users to view their shopping bag one last time and process payment
+
+	- Users will be able to input their personal information in this section
+
+	- Users will also be able to use a built-in stripe payment element to input their card information and process payment.
+
+![SecureCheckout]()
+
+-__StaffSection__
+
+  - This section will allow staff members to view any contact forms that have been submitted by users.
+
+	- This section will also allow staff members to fill out a form which will in turn add new products to the website. This option makes it easy for staff to update the product offering without giving them full access to the admin panel.
+
+
 
 - __Favicon__
 
-The favicon was created using the company logo. This favicon sits in the web browser tab and instantly allows the user to recognise the webpage. This adds to the customer experience.
+  - The favicon was created using the company logo. This favicon sits in the web browser tab and instantly allows the user to recognise the webpage. This adds to the customer experience.
 
 ![Favicon](static/media/favicon.png)
+
 
 ### Features Left to Implement
 
