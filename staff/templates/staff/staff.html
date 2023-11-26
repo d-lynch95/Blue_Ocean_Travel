@@ -24,21 +24,31 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="card text-center">
-            <div class="card-header">
-              Featured
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-            <div class="card-footer text-muted">
-              2 days ago
-            </div>
-        </div>
+        {% for post in post_list %}
+            <div class="card text-center">
+                <div class="card-header">
+                    { contactForm.full_name }
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Contact Details:</h5>
+                    <p class="card-text">
+                        { contactForm.email }
+                        { contactForm.phone_number }
+
+                        { contactForm.input_text }
+                    </p>
+                    <a href="mailto:({ contactForm.full_name })" class="contact-link">Respond to { contactForm.full_name }</a>
+                </div>
+                <div class="card-footer text-muted">
+                    2 days ago
+                </div>
+        {% endfor %}
     </div>
 {% endblock %}
+
+
+    
+
 
 {% block page_footer %}
 
