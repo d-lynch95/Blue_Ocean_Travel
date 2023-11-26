@@ -27,14 +27,14 @@
                         {% csrf_token %}
                         <fieldset class="rounded px-3 mb-5">
                             <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
-                            {{ contactForm.full_name | as_crispy_field }}
-                            {{ contactForm.email | as_crispy_field }}
-                            {{ contactForm.phone_number | as_crispy_field }}
+                            {{ ContactSubmit.full_name|as_crispy_field }}
+                            {{ ContactSubmit.email | as_crispy_field }}
+                            {{ ContactSubmit.phone_number | as_crispy_field }}
                         </fieldset>
                         <fieldset class="rounded px-3 mb-5">
                             <legend class="fieldset-label text-black px-10 w-auto">How can we help?</legend>
-                            {{ contactForm.input_text | as_crispy_field }}
-                            {{ contactForm.selection | as_crispy_field }}
+                            {{ ContactSubmit.input_text | as_crispy_field }}
+                            {{ ContactSubmit.selection | as_crispy_field }}
                             <div class="form-check form-check-inline float-right mr-0">
                                 <!-- Need to decide on what information will go here-->
                                 {% if user.is_authenticated %}

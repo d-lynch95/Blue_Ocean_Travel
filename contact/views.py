@@ -9,21 +9,8 @@ from .models import contactForm
 
 def contact(request):
     template = "contact/contact.html"
-    context = {}
+    context = {"contactForm": contactForm}
     return render(request, template, context)
-
-class ContactList(generic.ListView):
-    model = contactForm
-    queryset = contactForm.objects.order_by('id')
-    template_name = 'contact_form_submissions.html'
-
-    # Only Staff can see the contact requests
-    def get_queryset(self):
-        user = self.request.user
-        if user.is_staff:
-            return contactForm.objects.order_by('date')
-        else:
-            return redirect('contact.html')
 
 class SubmitForm(LoginRequiredMixin, generic.CreateView):
     def get(self, request):
