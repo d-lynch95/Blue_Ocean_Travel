@@ -91,10 +91,56 @@
                 <p class="sm">Book with us and get up to 10% cashback for your next booking.</p>
             </div>
         </div>
+    </div>
+    <div class="container pt-5 mb-5">
+        <div class="row justify-content-center mt-5">
+            <h2> Our Destinations</h2>
+        </div>
+        <div class="section-row hide-mobile bg-white">
+            <div class="col-4 text-center">
+                <a href="{% url 'products' %}?region=great_barrier_reef">
+                    <img alt="10% cashback" src="media/GBR.webp" class="img-fluid">
+                </a>
+                <h2>Great Barrier Reef</h2>
+            </div>
+            <div class="col-4 text-center pt-5">
+                <a href="{% url 'products' %}?region=kgari_fraser_island">
+                    <img alt="real travel experts"  src="media/kgari.webp" class="img-fluid">
+                </a>
+                <h2>K'Gari (Fraser Island)</h2>
+            </div>
+            <div class="col-4 text-center">
+                <a href="{% url 'products' %}?region=whitsundays">
+                    <img alt="flexible booking" src="media/whitehaven.jpg" class="img-fluid">
+                </a>
+                <h2> Whitsundays </h2>
+            </div>
+        </div>
+        <div class="section-row hide-desktop">
+            <div class="cols-6 text-center">
+                <a href="{% url 'products' %}?region=kgari_fraser_island">
+                    <img alt="real travel experts"  src="media/kgari.webp" class="img-fluid">
+                </a>
+                <h2>K'Gari (Fraser Island)</h2>
+            </div>
+            <div class="cols-6  text-center">
+                <a href="{% url 'products' %}?region=whitsundays">
+                    <img alt="flexible booking" src="media/whitehaven.jpg" class="img-fluid">
+                </a>
+                <h2> Whitsundays </h2>
+            </div>
+            <div class="cols-6  text-center">
+                <a href="{% url 'products' %}?region=great_barrier_reef">
+                    <img alt="10% cashback" src="media/GBR.webp" class="img-fluid">
+                </a>
+                <h2>Great Barrier Reef</h2>
+            </div>
+        </div>
     </div>     
+
+
 {% endblock %}
 
 
 {% block page_footer %}
-
 {% endblock %}
