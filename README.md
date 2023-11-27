@@ -274,7 +274,7 @@ My sprints were planned out as follows:
 ### Existing Features
 
 __Home Page__
-	- This is the first page that the user will see when they arrive on the website. The primary goal of this page is to allow the user to understand the purpose of the website. This is achieved through eye catching imagery and brief descriptions of what the website purpose is.
+  - This is the first page that the user will see when they arrive on the website. The primary goal of this page is to allow the user to understand the purpose of the website. This is achieved through eye catching imagery and brief descriptions of what the website purpose is.
 
 	- A  clear Navigation section also makes it intuitive for the user to navigate the website.
 
@@ -432,6 +432,13 @@ I created an extra [Testing.md](https://github.com/d-lynch95/Portfolio-Project4/
 
 - I had a bug with the type of crispy forms I had installed and the forms weren't working. Once I installed an older version of crispy forms this corrected the issue as it was now compatible with the django version I was using
 
+- I was having an issue with using a carousel. The code I was using would not render the carousel correctly. Upon further research I realised that carousels are generally not compliant with accessibility standards. Instead I opted to use a hero image instead of a carousel.
+
+- I was having an issue with my webhooks. They were not sending the success emails.
+
+- I had a bug in the footer section. It was bleeding into the Div above it and distorting the content.
+
+- I had a bug with the main Nav as it was not allowing the user to get through to the clickable link locations. 
 
 
 ### User Testing
