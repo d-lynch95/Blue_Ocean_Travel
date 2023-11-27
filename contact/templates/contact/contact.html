@@ -27,7 +27,7 @@
                         {% csrf_token %}
                         <fieldset class="rounded px-3 mb-5">
                             <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
-                            {{ ContactSubmit.full_name|as_crispy_field }}
+                            {{ ContactSubmit.full_name | as_crispy_field }}
                             {{ ContactSubmit.email | as_crispy_field }}
                             {{ ContactSubmit.phone_number | as_crispy_field }}
                         </fieldset>
