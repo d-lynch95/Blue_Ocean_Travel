@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpR
 from django.views.generic import ListView, UpdateView, CreateView, DeleteView
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib import messages
 
 from contact.models import contactForm
 from .forms import ProductForm

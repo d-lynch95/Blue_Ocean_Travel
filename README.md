@@ -434,11 +434,13 @@ I created an extra [Testing.md](https://github.com/d-lynch95/Portfolio-Project4/
 
 - I was having an issue with using a carousel. The code I was using would not render the carousel correctly. Upon further research I realised that carousels are generally not compliant with accessibility standards. Instead I opted to use a hero image instead of a carousel.
 
+- I had a bug with the main Nav as it was not allowing the user to get through to the clickable link locations. This was because I had added the links to the mobile-top-header file but had not included them in the base.html file. Once I included them in base.html this solved the issue
+
 - I was having an issue with my webhooks. They were not sending the success emails.
 
 - I had a bug in the footer section. It was bleeding into the Div above it and distorting the content.
 
-- I had a bug with the main Nav as it was not allowing the user to get through to the clickable link locations. 
+
 
 
 ### User Testing
