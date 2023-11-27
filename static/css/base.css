@@ -9,6 +9,11 @@ body {
     background-color: white;
 }
 
+.colour-scheme {
+    color: #0ec2e6 !important;
+}
+
+/* Jumbotron for homepage */
 .jumbotron {
     background: url('/media/whitehaven.webp') no-repeat center center fixed;
     background-repeat: no-repeat, repeat;
@@ -21,10 +26,6 @@ body {
     height: 80vh;
 }
 
-.colour-scheme {
-    color: #0ec2e6 !important;
-}
-
 /* Destinations section of homepage */
 
 .destination-link,
@@ -35,6 +36,21 @@ body {
 a:hover {
     text-decoration: none;
 }
+
+/* Jumbotron for About Us page */
+
+.jumbotron-about {
+    background: url('/media/team.webp') no-repeat center center fixed;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 0;
+}
+
+.jumbotron-height-about {
+    height: 70vh;
+}
+
 
 /* from Bulma */
 .icon {
