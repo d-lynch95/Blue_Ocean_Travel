@@ -6,7 +6,7 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 .jumbotron {
@@ -23,6 +23,17 @@ body {
 
 .colour-scheme {
     color: #0ec2e6 !important;
+}
+
+/* Destinations section of homepage */
+
+.destination-link,
+.destination-link:hover,{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 /* from Bulma */
@@ -54,13 +65,13 @@ body {
 }
 
 .btn-black {
-    background: black;
+    background: #0ec2e6;
     color: white;
 }
 
 .btn-outline-black {
     background: white;
-    color: #000 !important; 
+    color: #0ec2e6 !important; 
     border: 1px solid black;
 }
 
@@ -90,9 +101,6 @@ body {
     border: 1px solid black !important;
 }
 
-.bg-black {
-    background: #0ec2e6 !important;
-}
 
 .overlay {
     height: 100%;
@@ -126,8 +134,6 @@ body {
     font-weight: bold;
 }
 
-    
-
 @media screen and (max-width: 900px) {
 
     .hide-mobile {
@@ -138,7 +144,7 @@ body {
 @media screen and (min-width: 900px) {
     .hide-desktop {
         display: none;
-        padding: 10vh;
+        
     }
 
     .col-4 {
