@@ -4,22 +4,22 @@ from django.http import HttpResponse
 from django.views import generic
 from django.views.generic import ListView, UpdateView, CreateView, DeleteView
 
-from .forms import ContactSubmit
+from .forms import contForm
 from .models import contactForm
 
 def contact(request):
     template = "contact/contact.html"
-    context = {"contactForm": contactForm}
+    context = {"contForm": contForm}
     return render(request, template, context)
 
 class SubmitForm(LoginRequiredMixin, generic.CreateView):
     def get(self, request):
-        form = ContactSubmit()
-        context = {"contactForm": contactForm}
-        return render(request, 'contact.html', context)
+        cont_form = contForm()
+        context = {"contForm": form}
+        return render(request, 'contact/contact.html', context)
 
     def post(self, request):
-        form = contactForm(request.POST)
+        form = contForm(request.POST)
         if form.is_valid():
             form = form.save(commit=False)
             form.user = request.user
@@ -27,8 +27,8 @@ class SubmitForm(LoginRequiredMixin, generic.CreateView):
             messages.success(
                 self.request,
                 f'Your contact form has been sent')
-            return redirect("/contact_success/")
+            return redirect("contact/contact_success.html")
 
         else:
-            context = {"contactForm": contactForm}
-            return render(request, 'contact.html', context)
+            context = {"contForm": contForm}
+            return render(request, 'contact/contact.html', context)
