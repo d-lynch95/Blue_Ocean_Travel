@@ -5,6 +5,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 from contact.models import contactForm
+from .forms import ProductForm
 
 def staff_view(request):
     """ A view for staff to access a page only they can see """
@@ -22,3 +23,13 @@ class ContactList(generic.ListView):
             return contactForm.objects.order_by('date')
         else:
             return redirect('index.html')
+
+def add_product(request):
+    """ Add a tour to the store """
+    form = ProductForm()
+    template = 'staff/add_tour.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)

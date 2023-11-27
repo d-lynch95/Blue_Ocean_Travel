@@ -12,7 +12,7 @@ body {
 }
 
 .colour-scheme {
-    color: #0ec2e6;
+    color: #0ec2e6 !important;
 }
 
 /* from Bulma */
