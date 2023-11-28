@@ -50,9 +50,11 @@
                         {% endif %}
 
                         {% for review in product.reviews.all %}
-                            <div class="px-4 py-6 gb-gray-100 rounded-xl mb-4">
-                                <strong>Rating:</strong> {{ review.rating }}
-                                <strong>Comment:</strong> {{review.content}}
+                            <div class="px-4 py-6 background-gray rounded-xl mb-4">
+                                <strong>Rating:</strong> {{ review.rating }} </br>
+                                <strong>Comment:</strong> {{review.content}} </br>
+                                <strong>Left by:</strong> {{ review.created_by }}  </br>
+                                <strong>Date:</strong> {{ review.created_at|date:"d-m-y" }} </br>
                             </div>
                         {% endfor %}
 
