@@ -29,8 +29,14 @@ class ContactList(generic.ListView):
 
 
 # Allow staff members to add new tours to the store
+@login_required
 def add_product(request):
     """ Add a tour to the store """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
@@ -49,8 +55,14 @@ def add_product(request):
     return render(request, template, context)
 
 # Allow staff members to edit existing tours
+@login_required
 def edit_product(request, product_id):
     """ Edit a tour in the store """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
@@ -72,8 +84,15 @@ def edit_product(request, product_id):
 
     return render(request, template, context)
 
+# Allows staff to delete tours from the site
+@login_required
 def delete_product(request, product_id):
     """ Delete a product from the store """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+        
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
