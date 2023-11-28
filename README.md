@@ -568,6 +568,8 @@ The live link can be found here - [Happy-Travels-Appt-Booking](https://happy-tra
 
 - The review code was inspired by [CodewithStein](https://www.youtube.com/watch?v=8iCqlFyFu2s)
 
+- The code for the accordion on the About Us page was taken from the [Bootstrap Documentation](https://getbootstrap.com/docs/4.6/components/collapse/#accordion-example)
+
 
 ### Coding help
 
