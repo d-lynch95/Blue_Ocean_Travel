@@ -564,7 +564,9 @@ The live link can be found here - [Happy-Travels-Appt-Booking](https://happy-tra
 
 - The code for the footer was taken from [MDBootstrap](https://mdbootstrap.com/how-to/bootstrap/footer-add/)
 
-- The styling and colour scheme was taken from [BarefootCampers](https://www.barefootcampers.nz/)
+- The styling and colour scheme inspiration was taken from [BarefootCampers](https://www.barefootcampers.nz/)
+
+- The review code was inspired by [CodewithStein](https://www.youtube.com/watch?v=8iCqlFyFu2s)
 
 
 ### Coding help
