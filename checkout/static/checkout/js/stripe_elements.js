@@ -65,6 +65,7 @@ form.addEventListener('submit', function(ev) {
                     phone: $.trim(form.phone_number.value),
                     email: $.trim(form.email.value),
                     }
+            }
             }).then(function(result) {
                 if (result.error) {
                     var errorDiv = document.getElementById('card-errors');

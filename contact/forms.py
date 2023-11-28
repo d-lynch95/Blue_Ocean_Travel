@@ -5,7 +5,7 @@ class contForm(forms.ModelForm):
     class Meta:
         model = contactForm
         fields = ('full_name', 'email', 'phone_number',
-                  'input_text', 'selection',
+                  'input_text', 
                   )
 
     def __init__(self, *args, **kwargs):
