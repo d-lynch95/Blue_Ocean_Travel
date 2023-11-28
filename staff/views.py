@@ -7,6 +7,7 @@ from django.contrib import messages
 
 from products.models import Product
 from contact.models import contactForm
+from contact.forms import contForm
 from .forms import ProductForm
 
 def staff_view(request):
@@ -26,6 +27,8 @@ class ContactList(generic.ListView):
         else:
             return redirect('index.html')
 
+
+# Allow staff members to add new tours to the store
 def add_product(request):
     """ Add a tour to the store """
     if request.method == 'POST':
@@ -45,6 +48,7 @@ def add_product(request):
 
     return render(request, template, context)
 
+# Allow staff members to edit existing tours
 def edit_product(request, product_id):
     """ Edit a tour in the store """
     product = get_object_or_404(Product, pk=product_id)
