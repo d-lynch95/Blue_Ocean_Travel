@@ -38,8 +38,9 @@
                             <div class="form-check form-check-inline float-right mr-0">
                                 <!-- Need to decide on what information will go here-->
                                 {% if user.is_authenticated %}
-                                    <label class="form-check-label" for="id-save-info">Submit this form with my user information</label>
+                                 <!---   <label class="form-check-label" for="id-save-info">Submit this form with my user information</label>
                                     <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
+                                 -->
                                 {% else %}
                                     <label class="form-check-label" for="id-save-info">
                                         <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
