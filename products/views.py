@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from .models import Product, Region
+from .models import Product, Region, Review
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
@@ -41,6 +41,7 @@ def view_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
+
     current_sorting = f'{sort}_{direction}'
     
     context = {
@@ -58,8 +59,30 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
 
+    if request.method == 'POST':
+        rating = request.POST.get('rating', 5)
+        content = request.POST.get('content','')
+
+        if content:
+            reviews = Review.objects.filter(created_by=request.user, product=product)
+            
+            if reviews.count() > 0:
+                review=reviews.first()
+                review.rating = rating
+                review.content = content
+                review.save()
+            else:
+                review = Review.objects.create(
+                    product=product,
+                    rating=rating,
+                    content=content,
+                    created_by=request.user
+                )
+            messages.success(request, f'Your review has been submitted')
+
     context = {
         'product': product,
     }
 
     return render(request, 'products/product_detail.html', context)
+
