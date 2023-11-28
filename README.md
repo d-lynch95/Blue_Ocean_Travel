@@ -438,7 +438,7 @@ I created an extra [Testing.md](https://github.com/d-lynch95/Portfolio-Project4/
 
 - I was having an issue with my webhooks. They were not sending the success emails. This was due to an extra "}" in the code which was causing an issue.
 
-- I had an issue with the contact us form. It was not feeding through to the admin panel. This was due to not including the form information in the admin.py file
+- I had an issue with the contact us form. It was not feeding through to the admin panel. This was due to not including the form information in the admin.py file and not creating a seperate view for the form submission success page.
 
 - I had a bug in the footer section. It was bleeding into the Div above it and distorting the content.
 
