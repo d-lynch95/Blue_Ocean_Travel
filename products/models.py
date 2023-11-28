@@ -26,6 +26,15 @@ class Product(models.Model):
     def __str__(self):
         return self.name
 
+    def get_rating(self):
+        reviews_total = 0
+
+        for review in self.reviews.all():
+            reviews_total += review.rating
+
+        if reviews_total > 0:
+            return reviews_total / self.reviews.count()
+
 
 # Model to allow users to leave reviews for products
 
