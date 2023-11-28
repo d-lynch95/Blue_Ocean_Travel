@@ -23,12 +23,11 @@
             </div>
         </div>
     </div>
-    { contact.models.contactForm.full_name }
     <div class="container-fluid">
-        {% for post in post_list %}
+            <!-- Create for loop to iterate through the contact-->
             <div class="card text-center">
                 <div class="card-header">
-                    { contactForm.full_name }
+                    { contForm.full_name }
                 </div>
                 <div class="card-body">
                     <h5 class="card-title">Contact Details:</h5>
@@ -42,7 +41,7 @@
                 <div class="card-footer text-muted">
                    Test
                 </div>
-        {% endfor %}
+        
     </div>
 {% endblock %}
 
