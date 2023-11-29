@@ -24,40 +24,48 @@
                             <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.webp" alt="{{ product.name }}">
                         </a>
                     {% endif %}
-                    <!-- Add option to leave a review here -->
                     <div class="w-full">
-                        <h3 class="colour-scheme">Reviews</h3>
-                        {% if request.user.is_authenticated %}
-                        <form method="POST" action="." class="mt-6 p-6 bg-grey-100 rounded-xl">
-                            {% csrf_token  %}
-                            <div>
-                                <label class="colour-scheme">Rating</label>
-                                <select name="rating">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
+                        <div class="card mt-3">
+                            <div class="card-header">
+                                <h3 class="colour-scheme">Reviews</h3>
                             </div>
+                            <div class="card-body">
+                                {% if request.user.is_authenticated %}
+                                <form method="POST" action="." class="mt-6 p-6 bg-grey-100 rounded-xl">
+                                    {% csrf_token  %}
+                                    <div>
+                                        <label class="colour-scheme">Rating</label>
+                                        <select name="rating">
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
 
-                            <div>
-                                <label>Comment</label>
-                                <textarea name="content"></textarea>
+                                    <div>
+                                        <label class="colour-scheme">Comment</label>
+                                        <textarea name="content" class="form-control mb-1"></textarea>
+                                    </div>
+                                    <button class="btn btn-black rounded-0 text-uppercase">Submit</button>
+                                </form>
+                                {% endif %}
                             </div>
-                            <button>Submit</button>
-                        </form>
-                        {% endif %}
-
-                        {% for review in product.reviews.all %}
-                            <div class="px-4 py-6 background-gray rounded-xl mb-4">
-                                <strong>Rating:</strong> {{ review.rating }} </br>
-                                <strong>Comment:</strong> {{review.content}} </br>
-                                <strong>Left by:</strong> {{ review.created_by }}  </br>
-                                <strong>Date:</strong> {{ review.created_at|date:"d-m-y" }} </br>
-                            </div>
-                        {% endfor %}
-
+                        </div>
+                        <div class="card mt-2">
+                            {% for review in product.reviews.all %}
+                                <div class="card-body">
+                                    <div class="px-4 py-6 rounded-xl mb-1">
+                                        <strong>Rating:</strong> {{ review.rating }} </br>
+                                        <strong>Comment:</strong> {{review.content}} </br>
+                                        <strong>Left by:</strong> {{ review.created_by }}  </br>
+                                        <strong>Date:</strong> {{ review.created_at|date:"d-m-y" }} </br>
+                                        <hr>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
             </div>
