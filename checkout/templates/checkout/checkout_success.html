@@ -63,9 +63,11 @@
                             <p class="small mb-0 text-black font-weight-bold">
                                 {{ item.product.name }}
                             </p>
+                            <p class="small mb-0 text-black">Departure date:</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
                             <p class="small mb-0">{{ item.quantity }} @ ${{ item.product.price }} each</p>
+                            <p class="small mb-0 text-black ">{{ item.product.date|date }}</p>
                         </div>
                     </div>
                     {% endfor %}
@@ -122,7 +124,7 @@
                     </a>
                 {% else %}
                 <!-- Add in link to discounts section here -->
-                    <a href="{% url 'home' %}" class="btn btn-black rounded-0 my-2 colour-scheme>
+                    <a href="{% url 'home' %}" class="btn border-black rounded-0 my-2 colour-scheme">
                         <span class="icon mr-2">
                             <i class="fas fa-angle-left"></i>
                         </span>

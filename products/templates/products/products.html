@@ -63,6 +63,7 @@
                                     <div class="row">
                                         <div class="col">
                                             <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                                            <p class="small mb-0 text-left ">Departure: {{ product.date|date }}</p>
                                             {% if product.region %}
                                             <p class="small mt-1 mb-0">
                                                 <a class="text-muted" href="{% url 'products' %}?region={{ product.region.name }}">

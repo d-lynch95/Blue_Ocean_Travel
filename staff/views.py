@@ -17,13 +17,13 @@ def staff_view(request):
 
 class ContactList(generic.ListView):
     model = contactForm
-    queryset = contactForm.objects.order_by('full_name')
+    queryset = contactForm.objects.all
     template_name = 'staff/staff.html'
 
     # Only Staff can see the contact requests
     def get_queryset(self):
         if self.request.user.is_staff:
-            return contactForm.objects.order_by('full_name')
+            return contactForm.objects.all
         else:
             return redirect('index.html')
 
