@@ -17,14 +17,13 @@ def staff_view(request):
 
 class ContactList(generic.ListView):
     model = contactForm
-    queryset = contactForm.objects.order_by('id')
+    queryset = contactForm.objects.order_by('full_name')
     template_name = 'staff/staff.html'
 
     # Only Staff can see the contact requests
     def get_queryset(self):
-        user = self.request.user
-        if user.is_staff:
-            return contactForm.objects.order_by('date')
+        if self.request.user.is_staff:
+            return contactForm.objects.order_by('full_name')
         else:
             return redirect('index.html')
 
@@ -98,3 +97,4 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
