@@ -13,21 +13,9 @@ from .forms import ProductForm
 
 def staff_view(request):
     """ A view for staff to access a page only they can see """
-    return render(request, 'staff/staff.html')
-
-class ContactList(generic.ListView):
-    model = contactForm
-    queryset = contactForm.objects.all
-    template_name = 'staff/staff.html'
-
-    # Only Staff can see the contact requests
-    def get_queryset(self):
-        if self.request.user.is_staff:
-            return contactForm.objects.all
-        else:
-            return redirect('index.html')
-
-
+    contact_forms = contactForm.objects.all()
+    return render(request, 'staff/staff.html', {'contact_forms': contact_forms})
+    
 # Allow staff members to add new tours to the store
 @login_required
 def add_product(request):
