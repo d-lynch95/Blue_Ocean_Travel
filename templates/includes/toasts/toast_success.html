@@ -7,12 +7,12 @@
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
-    <div class="toast-body bg-white">
+    <div class="toast-body bg-white pr-2">
         {{ message }}        
     </div>
     {% if total and not on_profile_page %}
-        <p class="logo-font bg-white text-black py-1">Your Bag ({{ product_count }})</p>
-        <div class="bag-notification-wrapper">
+        <p class="logo-font bg-white text-black py-1 pl-1 pr-1">Your Bag ({{ product_count }})</p>
+        <div class="bag-notification-wrapper pl-2 pr-1">
             {% for item in bag_items %}
                 <div class="row">
                     <div class="col-3 my-1">
