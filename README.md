@@ -440,7 +440,7 @@ I created an extra [Testing.md](https://github.com/d-lynch95/Portfolio-Project4/
 
 - I had an issue with the contact us form. It was not feeding through to the admin panel. This was due to not including the form information in the admin.py file and not creating a seperate view for the form submission success page.
 
-- I had a bug in the footer section. It was bleeding into the Div above it and distorting the content.
+- I had a bug in the footer section. It was bleeding into the Div above it and distorting the content.I fixed this by changing the class from "secrtion-row" to just "row" and this corrected the issue.
 
 
 
