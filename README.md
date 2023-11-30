@@ -4,7 +4,7 @@ Blue Ocean travel is an online e-commerce store that specialises in booking trip
 
 
 <!-- Add live link -->
-[Live Website](https://happy-travels-appt-booking-469f488c0638.herokuapp.com/)
+[Live Website](https://blue-ocean-travel-feb523e57a47.herokuapp.com/)
 
 <!-- Add responsive mockup -->
 ![AmiResponsive Mockup](static/media/responsive.png)
@@ -88,7 +88,7 @@ The colour scheme is a simple blue that reminds the user of the ocean and instil
 
 ### Logo
 
-The logo is a 
+The logo is an artificially generated logo from (Looka)[www.looka.com]
 
 ### Wireframes
 
@@ -268,6 +268,8 @@ My sprints were planned out as follows:
   - used to host images
 - ElephantSql
   - used to host the database
+- Looka
+  - used to create the logo
 
 ## Features 
 
@@ -409,7 +411,8 @@ __Favicon__
 
 ## Testing 
 
-I created an extra [Testing.md](https://github.com/d-lynch95/Portfolio-Project4/blob/main/Testing.md) page as the file was too large to fit in this README.
+<!-- Insert file here -->
+I created an extra [Testing.md]() page as the file was too large to fit in this README.
 
 ### BUGS
  - I encountered several bugs while creating this project.
@@ -501,7 +504,7 @@ I created a seperate [Testing.md](https://github.com/d-lynch95/Portfolio-Project
   - From the source section drop-down menu, select the Main Branch
   - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - [Happy-Travels-Appt-Booking](https://happy-travels-appt-booking-469f488c0638.herokuapp.com/)
+The live link can be found here - [Blue Ocean Travel](https://blue-ocean-travel-feb523e57a47.herokuapp.com/)
 
 - Clone the Repository Code Locally
   - Navigate to the GitHub Repository you want to clone to use locally:
