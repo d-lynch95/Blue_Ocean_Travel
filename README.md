@@ -436,7 +436,7 @@ I created an extra [Testing.md](https://github.com/d-lynch95/Portfolio-Project4/
 
 - I had a bug with the main Nav as it was not allowing the user to get through to the clickable link locations. This was because I had added the links to the mobile-top-header file but had not included them in the base.html file. Once I included them in base.html this solved the issue
 
-- I was having an issue with my webhooks. They were not sending the success emails. This was due to an extra "}" in the code which was causing an issue.
+- I was having an issue with my webhooks. They were not sending the success emails. This was due to an extra "}" in the code which was causing an issue. I was also using the intent.charges format from the boutique ado code. Once I changed this to the stripe_charge format the webhooks started to work and the payment intent was passed through to stripe
 
 - I had an issue with the contact us form. It was not feeding through to the admin panel. This was due to not including the form information in the admin.py file and not creating a seperate view for the form submission success page.
 
