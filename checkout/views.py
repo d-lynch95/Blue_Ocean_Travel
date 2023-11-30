@@ -1,4 +1,4 @@
-from django.shortcuts import (render, redirect, reverse, get_object_or_404, HttpResponse)
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -65,7 +65,7 @@ def checkout(request):
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
-            request.session['save_info'] = 'save-info' in request.POST       
+            request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
@@ -126,7 +126,7 @@ def checkout_success(request, order_number):
         order.user_profile = profile
         order.save()
 
-      if save_info:
+        if save_info:
             profile_data = {
                 'default_full_name': order.full_name,
                 'default_email': order.email,

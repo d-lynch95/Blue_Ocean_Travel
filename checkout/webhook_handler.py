@@ -9,6 +9,7 @@ from profiles.models import UserProfile
 
 import json
 import time
+import stripe
 
 
 class StripeWH_Handler:
@@ -26,13 +27,13 @@ class StripeWH_Handler:
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        
+
         send_mail(
             subject,
             body,
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
-        )        
+        )
 
 
     def handle_event(self, event):
@@ -51,9 +52,15 @@ class StripeWH_Handler:
         pid = intent.id
         bag = intent.metadata.bag
         save_info = intent.metadata.save_info
-        
-        billing_details = intent.charges.data[0].billing_details
-        total = round(intent.charges.data[0].amount / 100, 2)
+
+        # Get the Charge object
+        stripe_charge = stripe.Charge.retrieve(
+            intent.latest_charge
+        )
+
+        billing_details = stripe_charge.billing_details 
+        total = round(stripe_charge.amount / 100, 2) 
+
 
 
         order_exists = False
@@ -61,10 +68,9 @@ class StripeWH_Handler:
         while attempt <= 5:
             try:
                 order = Order.objects.get(
-                    full_name__iexact=shipping_details.name,
+                    full_name__iexact=billing_details.name,
                     email__iexact=billing_details.email,
-                    phone_number__iexact=shipping_details.phone,
-                    total=total,
+                    phone_number__iexact=billing_details.phone,
                     original_bag=bag,
                     stripe_pid=pid,
                 )
@@ -76,16 +82,17 @@ class StripeWH_Handler:
         if order_exists:
             self._send_confirmation_email(order)
             return HttpResponse(
-                content=f'Webhook received: {event["type"]} | SUCCESS: ' 'Verified order already in database',
+                content=f'Webhook received: {event["type"]} | SUCCESS: ' 
+                    'Verified order already in database',
                 status=200)
         else:
             order = None
             try:
                 order = Order.objects.create(
-                    full_name=shipping_details.name,
+                    full_name=billing_details.name,
                     user_profile=profile,
                     email=billing_details.email,
-                    phone_number=shipping_details.phone,
+                    phone_number=billing_details.phone,
                     total=total,
                     original_bag=bag,
                     stripe_pid=pid,
