@@ -61,8 +61,6 @@ class StripeWH_Handler:
         billing_details = stripe_charge.billing_details 
         total = round(stripe_charge.amount / 100, 2) 
 
-
-
         order_exists = False
         attempt = 1
         while attempt <= 5:
@@ -71,6 +69,7 @@ class StripeWH_Handler:
                     full_name__iexact=billing_details.name,
                     email__iexact=billing_details.email,
                     phone_number__iexact=billing_details.phone,
+                    order_total=total,
                     original_bag=bag,
                     stripe_pid=pid,
                 )
