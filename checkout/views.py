@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (render, redirect, reverse, get_object_or_404, HttpResponse)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -20,6 +20,7 @@ def cache_checkout_data(request):
         stripe.api_key = settings.STRIPE_SECRET_KEY
         stripe.PaymentIntent.modify(pid, metadata={
             'bag': json.dumps(request.session.get('bag', {})),
+            'save_info': request.POST.get('save_info'),
             'username': request.user,
         })
         return HttpResponse(status=200)
@@ -64,6 +65,7 @@ def checkout(request):
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
+            request.session['save_info'] = 'save-info' in request.POST       
             return redirect(reverse('checkout_success', args=[order.order_number]))
         else:
             messages.error(request, 'There was an error with your form. \
@@ -97,8 +99,6 @@ def checkout(request):
         else:
             order_form = OrderForm()
 
-        order_form = OrderForm()
-
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
             Did you forget to set it in your environment?')
@@ -116,6 +116,7 @@ def checkout_success(request, order_number):
     """
     Handle successful checkouts
     """
+    save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
 
 
@@ -124,6 +125,16 @@ def checkout_success(request, order_number):
         # Attach the user's profile to the order
         order.user_profile = profile
         order.save()
+
+      if save_info:
+            profile_data = {
+                'default_full_name': order.full_name,
+                'default_email': order.email,
+                'default_phone_number': order.phone_number,
+            }
+            user_profile_form = UserProfileForm(profile_data, instance=profile)
+            if user_profile_form.is_valid():
+                user_profile_form.save()
 
 
     messages.success(request, f'Order successfully processed! \
