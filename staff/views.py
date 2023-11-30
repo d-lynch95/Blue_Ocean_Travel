@@ -73,16 +73,14 @@ def edit_product(request, product_id):
     return render(request, template, context)
 
 # Allows staff to delete tours from the site
-@login_required
-def delete_product(request, product_id):
+def delete_view(request, product_id):
+    """ A view for staff to access a page to confirm deletion """
+    return render(request, 'staff/delete_tour.html')
+
+class delete_product(LoginRequiredMixin, DeleteView):
     """ Delete a product from the store """
-
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
-
-    product = get_object_or_404(Product, pk=product_id)
-    product.delete()
-    messages.success(request, 'Product deleted!')
-    return redirect(reverse('products'))
-
+    
+    model = Product
+    template_name = 'staff/delete_tour.html'
+    success_url = "/products/"
+    
