@@ -35,7 +35,6 @@
                             <legend class="fieldset-label text-black px-10 w-auto">How can we help?</legend>
                             {{ contForm.input_text | as_crispy_field }}
                             <div class="form-check form-check-inline float-right mr-0">
-                                <!-- Need to decide on what information will go here-->
                                 {% if user.is_authenticated %}
                                  <!---   <label class="form-check-label" for="id-save-info">Submit this form with my user information</label>
                                     <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
@@ -50,14 +49,43 @@
                         </fieldset>
                     
                         <div class="submit-button text-right mt-5 mb-2">                    
-                    
                             <button id="submit-button" class="btn btn-black rounded-0">
                                 <span class="font-weight-bold">Submit Form</span>
                                 <span class="icon">
                                     <i class="fas fa-lock"></i>
                                 </span>
                             </button>
-        
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-6 col-lg-6">
+                <!-- Mailchimp newsletter signup-->
+                <div height="" id="mc_embed_signup">
+                    <form action="https://herokuapp.us21.list-manage.com/subscribe/post?u=d5772d23470d73fb838ce03a9&amp;id=929605563f&amp;f_id=00e4f3e6f0"
+                    method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                        <div id="mc_embed_signup_scroll"><h2 class="colour-scheme">Join our mailing list</h2>
+                            <div class="mc-field-group">
+                                <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+                                <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+                                <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                            </div>
+                            <div id="mce-responses" class="clear foot">
+                                <div class="response" id="mce-error-response" style="display: none;"></div>
+                                <div class="response" id="mce-success-response" style="display: none;"></div>
+                            </div>
+                            <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                                <input type="text" name="b_d5772d23470d73fb838ce03a9_929605563f" tabindex="-1" value="">
+                            </div>
+                            <div class="optionalParent">
+                                <div class="clear foot">
+                                    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
+                                    <p style="margin: 0px auto;"><a href="http://eepurl.com/iFc_T2" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>
