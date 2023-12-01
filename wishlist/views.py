@@ -16,7 +16,15 @@ class WishList(LoginRequiredMixin,  ListView):
     template_name = "wishlist/wishlist.html"
     model = WishlistItem
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['wish_items'] = WishlistItem.objects.filter(user=self.request.user)
+        return context
+
 def add_to_wishlist(request, item_id):
+    """
+    A view to add items to the wishlist
+    """
     product = Product.objects.get(pk=item_id)
     wishlist, created = WishlistItem.objects.get_or_create(user=request.user, product=product)
 
@@ -25,4 +33,13 @@ def add_to_wishlist(request, item_id):
     else:
         messages.success(request, f'{product.name} is already on your wishlist')
 
+    return redirect('wishlist')
+
+def remove_from_wishlist(request, item_id):
+    """
+    A view to remove items from the wishlist
+    """
+    item = WishlistItem.objects.get(pk=item_id)
+    item.delete()
+    messages.success(request, 'Item removed from your wishlist')
     return redirect('wishlist')
