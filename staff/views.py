@@ -73,14 +73,10 @@ def edit_product(request, product_id):
     return render(request, template, context)
 
 # Allows staff to delete tours from the site
-def delete_view(request, product_id):
-    """ A view for staff to access a page to confirm deletion """
-    return render(request, 'staff/delete_tour.html')
-
-class delete_product(LoginRequiredMixin, DeleteView):
-    """ Delete a product from the store """
-    
-    model = Product
-    template_name = 'staff/delete_tour.html'
-    success_url = "/products/"
-    
+def delete_product(request, product_id):
+    product = get_object_or_404(Product, id=product_id)
+    if request.method == 'POST':
+        product.delete()
+        messages.success(request, 'Product has been deleted')
+        return redirect('/products/')
+    return render(request, 'staff/delete_tour.html', {'product': product})

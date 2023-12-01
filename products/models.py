@@ -33,7 +33,7 @@ class Product(models.Model):
             reviews_total += review.rating
 
         if reviews_total > 0:
-            return reviews_total / self.reviews.count()
+            return round(reviews_total / self.reviews.count())
 
 
 # Model to allow users to leave reviews for products
