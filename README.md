@@ -588,8 +588,7 @@ The live link can be found here - [Blue Ocean Travel](https://blue-ocean-travel-
 
 - The Django documentation was one of the main resources I used during development [Django Documentation](https://docs.djangoproject.com/en/4.2/)
 
-- 
-
+- The code for the wishlist add item came from [StackOverflow](https://stackoverflow.com/questions/56580696/how-to-implement-add-to-wishlist-for-a-product-in-django)
 
 - The tutor support team from codeinstitute were extremely helpful in helping me to overcome bugs in my code.
 
