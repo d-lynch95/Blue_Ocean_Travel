@@ -445,6 +445,10 @@ I created an extra [Testing.md]() page as the file was too large to fit in this 
 
 - I had a bug in the footer section. It was bleeding into the Div above it and distorting the content.I fixed this by changing the class from "secrtion-row" to just "row" and this corrected the issue.
 
+- I had a bug in that the ratings were showing up as long string decimal numbers. I fixed this by adding round() infront of my calculations in my ratings model
+
+- I was having an issue getting the product to delete when requested by a staff member, this was because I had two views pointing to the same location. Once I fixed this the issue was resolved
+
 
 
 
