@@ -16,17 +16,13 @@ class WishList(LoginRequiredMixin,  ListView):
     template_name = "wishlist/wishlist.html"
     model = WishlistItem
 
-
 def add_to_wishlist(request, item_id):
     product = Product.objects.get(pk=item_id)
-    redirect_url = request.POST.get('redirect_url')
-    list = request.session.get('list', {})
+    wishlist, created = WishlistItem.objects.get_or_create(user=request.user, product=product)
 
-    if item_id in list.keys():
-        messages.success(request, f'{product.name} is already on your wishlist')
-    else:
-        list[item_id] = product
+    if created:
         messages.success(request, f'Added {product.name} to your wishlist')
+    else:
+        messages.success(request, f'{product.name} is already on your wishlist')
 
-    request.session['list'] = list
-    return redirect(redirect_url)
+    return redirect('wishlist')
