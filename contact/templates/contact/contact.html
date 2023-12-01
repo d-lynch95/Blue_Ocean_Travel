@@ -34,20 +34,7 @@
                         <fieldset class="rounded px-3 mb-5">
                             <legend class="fieldset-label text-black px-10 w-auto">How can we help?</legend>
                             {{ contForm.input_text | as_crispy_field }}
-                            <div class="form-check form-check-inline float-right mr-0">
-                                {% if user.is_authenticated %}
-                                 <!---   <label class="form-check-label" for="id-save-info">Submit this form with my user information</label>
-                                    <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
-                                 -->
-                                {% else %}
-                                    <label class="form-check-label" for="id-save-info">
-                                        <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or 
-                                        <a class="text-info" href="{% url 'account_login' %}">login</a> to save this information
-                                    </label>
-                                {% endif %}
-                            </div>
                         </fieldset>
-                    
                         <div class="submit-button text-right mt-5 mb-2">                    
                             <button id="submit-button" class="btn btn-black rounded-0">
                                 <span class="font-weight-bold">Submit Form</span>
