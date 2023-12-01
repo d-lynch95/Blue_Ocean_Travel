@@ -84,11 +84,11 @@ I used the Montserrat and Poppins fonts from GoogleFonts. I opted for these font
 
 ### Colour
 
-The colour scheme is a simple blue that reminds the user of the ocean and instills a desire to travel. The colour scheme fits well with the company name and the company ethos of inspiring it's users to travel. The blue colour scheme was inspired by (BareFootCampers)[https://www.barefootcampers.nz/] in New Zealand. 
+The colour scheme is a simple blue that reminds the user of the ocean and instills a desire to travel. The colour scheme fits well with the company name and the company ethos of inspiring it's users to travel. The blue colour scheme was inspired by [BareFootCampers](https://www.barefootcampers.nz/) in New Zealand. 
 
 ### Logo
 
-The logo is an artificially generated logo from (Looka)[www.looka.com]
+The logo is an artificially generated logo from [Looka](www.looka.com)
 
 ### Wireframes
 
@@ -578,6 +578,8 @@ The live link can be found here - [Blue Ocean Travel](https://blue-ocean-travel-
 - The review code was inspired by [CodewithStein](https://www.youtube.com/watch?v=8iCqlFyFu2s)
 
 - The code for the accordion on the About Us page was taken from the [Bootstrap Documentation](https://getbootstrap.com/docs/4.6/components/collapse/#accordion-example)
+
+- I created the sitemap.xml file at [MySiteMapGenerator](https://www.mysitemapgenerator.com/)
 
 
 ### Coding help
