@@ -292,16 +292,11 @@ __Home Page__
 - This is the first page that the user will see when they arrive on the website. The primary goal of this page is to allow the user to understand the purpose of the website. This is achieved through eye catching imagery and brief descriptions of what the website purpose is.
 
 - A  clear Navigation section also makes it intuitive for the user to navigate the website.
-<details>
-  <summary>See Navigation</summary>
-  ![Navigation](docs/features/navigation.png)
-</details>
+  - ![Navigation](docs/features/navigation.png)
+
 
 	- The Hero image will inspire the users to explore the different product 	offerings as the photos will be extremely appealing and the user will want to learn more about these destinations. This section also contains a clickable link to bring users to the products page.
-  <details>
-    <summary>See Hero image</summary>
-      ![Hero](docs/features/hero.png)
-  </details>
+    ![Hero](docs/features/hero.png)
 
 	- The Why us section will showcase the different Unique Selling Points for blue ocean travel and this will encourage users to book with the company and save themselves some money in the process.
   <details>
@@ -310,6 +305,7 @@ __Home Page__
   </details>
 
   - The destination section will include clickable images that will bring the users to the different tours offered in each location
+
 ![Home](docs/features/hero.png)
 	- The footer section allows the user to view the company’s social media, internal website links and a brief company description to help users better understand the company’s product offerings.
 
