@@ -449,6 +449,8 @@ I created an extra [Testing.md]() page as the file was too large to fit in this 
 
 - I was having an issue getting the product to delete when requested by a staff member, this was because I had two views pointing to the same location. Once I fixed this the issue was resolved
 
+- I was having issues with the favicon as I was trying to link without using the {% static %} link in the head section.
+
 
 
 
