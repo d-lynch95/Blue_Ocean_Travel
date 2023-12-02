@@ -86,7 +86,6 @@ Blue Ocean travel is an online e-commerce store that specialises in booking trip
   - As a new user I want to easily book tours
   - As a new user I want to contact the company to create a personalised itinerary
   - As a new user I want to enjoy the experience and return to make another booking
-  - 
 
 ## Design
 
@@ -299,12 +298,14 @@ __Home Page__
   ![Hero](docs/features/hero.png)
 
 - The Why us section will showcase the different Unique Selling Points for blue ocean travel and this will encourage users to book with the company and save themselves some money in the process.
-  ![Navigation]('docs/features/navigation.png')
+  ![WhyUs]('docs/features/whyus.png')
 
 - The destination section will include clickable images that will bring the users to the different tours offered in each location
+  ![Destinations]()
 
 
 - The footer section allows the user to view the company’s social media, internal website links and a brief company description to help users better understand the company’s product offerings.
+  ![Footer](docs/features/footer.png)
 
 
 
