@@ -7,7 +7,7 @@ Blue Ocean travel is an online e-commerce store that specialises in booking trip
 [Live Website](https://blue-ocean-travel-feb523e57a47.herokuapp.com/)
 
 <!-- Add responsive mockup -->
-![AmiResponsive Mockup](static/media/responsive.png)
+![AmiResponsive Mockup](docs/readme_images/responsive.png)
 
 ## User Goals and Stories
 
@@ -289,21 +289,28 @@ My sprints were planned out as follows:
 ### Existing Features
 
 __Home Page__
-  - This is the first page that the user will see when they arrive on the website. The primary goal of this page is to allow the user to understand the purpose of the website. This is achieved through eye catching imagery and brief descriptions of what the website purpose is.
+- This is the first page that the user will see when they arrive on the website. The primary goal of this page is to allow the user to understand the purpose of the website. This is achieved through eye catching imagery and brief descriptions of what the website purpose is.
 
-	- A  clear Navigation section also makes it intuitive for the user to navigate the website.
+- A  clear Navigation section also makes it intuitive for the user to navigate the website.
+<details>
+  <summary>See Navigation</summary>
+  ![Navigation](docs/features/navigation.png)
+</details>
+
+	- The Hero image will inspire the users to explore the different product 	offerings as the photos will be extremely appealing and the user will want to learn more about these destinations. This section also contains a clickable link to bring users to the products page.
   <details>
-    <summary>See Navigation</summary>
-    ![Navigation](docs/features/navigation.png)
-
+    <summary>See Hero image</summary>
+      ![Hero](docs/features/hero.png)
   </details>
 
-	- The Hero image will inspire the users to explore the different product 	offerings as the photos will be extremely appealing and the user will want to learn more about these destinations.
-
 	- The Why us section will showcase the different Unique Selling Points for blue ocean travel and this will encourage users to book with the company and save themselves some money in the process.
+  <details>
+    <summary>See Navigation</summary>
+    ![Navigation]('docs/features/navigation.png')
+  </details>
 
   - The destination section will include clickable images that will bring the users to the different tours offered in each location
-
+![Home](docs/features/hero.png)
 	- The footer section allows the user to view the company’s social media, internal website links and a brief company description to help users better understand the company’s product offerings.
 
 ![HomePage]()
