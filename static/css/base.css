@@ -13,6 +13,13 @@ body {
     color: #0ec2e6 !important;
 }
 
+/* used to override row and prevent horizontal scroll */
+.row {
+    
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
 /* Jumbotron for homepage */
 .jumbotron {
     background: url('/media/whitehaven.webp') no-repeat center center fixed;
