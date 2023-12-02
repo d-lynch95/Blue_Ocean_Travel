@@ -451,6 +451,8 @@ I created an extra [Testing.md]() page as the file was too large to fit in this 
 
 - I was having issues with the favicon as I was trying to link without using the {% static %} link in the head section.
 
+- There was an issue with the profile page as the order total data was not showing. This was because the code was using order.total instead of order.order_total
+
 
 
 
