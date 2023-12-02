@@ -23,6 +23,10 @@ Blue Ocean travel is an online e-commerce store that specialises in booking trip
   - Process payment through the website
   - have my tickets emailed to me once I have completed the transaction
   - view my itinerary once I have completed the transaction	
+  - Contact the company directly
+  - Learn more about the company and see if they suit my needs
+  - sign up for a company mailing list
+  - leave reviews on the different tours I've done
 
 ### Business owner goals
 - As the website business owner I want to 
@@ -35,6 +39,7 @@ Blue Ocean travel is an online e-commerce store that specialises in booking trip
   - Collect user information
   - Provide contact information to users
   - have users contact the business to create a personalised itinerary
+  - collect users emails to add them to a mailing list
 
 
 ### User Stories
@@ -49,6 +54,9 @@ Blue Ocean travel is an online e-commerce store that specialises in booking trip
   - As a user I want the ability to view my itinerary
   - As a user I want the ability to create multiple tour bookings
   - As a user I want to have an enjoyable experience
+  - As a user I want to learn about the company I'm doing business with
+  - As a user I want to join a company mailing list
+  - As a user I want to leave reviews for different tours I've done
   - As a user I want to return to the site to create another booking
   - As a user I want to contact the business to have them create an itinerary for me
 
@@ -62,6 +70,10 @@ Blue Ocean travel is an online e-commerce store that specialises in booking trip
   - As a site owner I want to encourage users to contact us directly to create a personalised itinerary
   - As a site owner I want to convert as many users into customers as possible
   - As a site owner I want to ensure the payment process is as seemless as possible
+  - As a site owner I want to collect user information
+  - As a site owner I want to have users sign up for a mailing list
+  - As a site owner I want to have staff add new tours without accessing the backend
+  - As a site owner I want to have staff view contact us information without accessing the backend
 
 
 #### As a new user
@@ -74,6 +86,7 @@ Blue Ocean travel is an online e-commerce store that specialises in booking trip
   - As a new user I want to easily book tours
   - As a new user I want to contact the company to create a personalised itinerary
   - As a new user I want to enjoy the experience and return to make another booking
+  - 
 
 ## Design
 
@@ -84,7 +97,7 @@ I used the Montserrat and Poppins fonts from GoogleFonts. I opted for these font
 
 ### Colour
 
-The colour scheme is a simple blue that reminds the user of the ocean and instills a desire to travel. The colour scheme fits well with the company name and the company ethos of inspiring it's users to travel. The blue colour scheme was inspired by [BareFootCampers](https://www.barefootcampers.nz/) in New Zealand. 
+The colour scheme is a simple blue that reminds the user of the ocean and instills a desire to travel. The white background contrasts with the light blue font to create an easy yet eye catching colour palette. The colour scheme fits well with the company name and the company ethos of inspiring it's users to travel. The blue colour scheme was inspired by [BareFootCampers](https://www.barefootcampers.nz/) in New Zealand. 
 
 ### Logo
 
@@ -138,6 +151,7 @@ II. Epic 2.  USER REGISTRATION/AUTENTHICATION
   - As a developer, I need to implement the Login page using django-allauth module
   - As a developer, I need to implement the  Logout modal using django-allauth module
   - As a site owner, I would like the allauth pages customized to that they fit in with the sites styling
+  - As a site owner, I would like staff to be able to add tours without accessing the admin panel
   - As a user, I would like to be able to log in using social media or a google account
     
 
@@ -148,8 +162,9 @@ III. Epic 3 - Making bookings
   - As a user, I would like to view my previous bookings when I need to check the information
   - As a user, I would like to be able to edit a booking so that I can make changes when needed
   - As a user I would like to delete a booking when I no longer require it
-  - As a user I would like to be able to contact the company to create a full itinerary for me
-
+  - As a user I would like to be able to contact the company if I had any questions
+  - As a user I would like to be able to add items to my wishlist
+ 
 IV. Epic 4 - Processing Payment
   - As a user, I would like to view my bookings before completing payment
   - As a user, I would like to process payment easily and efficiently
@@ -199,29 +214,27 @@ My sprints were planned out as follows:
 
 
 - Sprint #4 - 13/11 -19/11
-  -  Add carousel and messages
-        - US Add Carousel
+  -  Add hero images and messages
+        - US Add hero image
         - US Display messages upon user action
         - DT Write up all the bugs until now
-        - DT set up inventory limits for tours
+        - US Allow users to leave reviews and ratings on different tours
+        
 
 - Sprint #5 - 20/11 - 26/11
     - Add stripe payment processing to webpage
       - US Process Payment
       - US Improve website's style
       - US Email validation to confirm purchase
-      - US Allow users to leave reviews and ratings on different tours
+      - 
 
 -  Final Sprint
-    - Perform manual testing of HTML, CSS, Python, JS, LightHouse, responsivness, browser compatibility, user story testing. Add custom error pages. Add input validation. Make minor improvements and fix bugs. Again, this milestone took two sprints to complete.
+    - Perform manual testing of HTML, CSS, Python, JS, LightHouse, responsivness, browser compatibility, user story testing. Add custom error pages. Add input validation. Make minor improvements and fix bugs. 
         - DT Readme Deployment
         - DT Add customized 403, 404 and 500 error pages
         - US Add validators for user inputs
         - DT Readme: Technologies and packages used, Testing, ERD, Credits, Error Pages sections
         - DT Do thorough testing of all aspects of the application to make sure everything works seamlessly and write up the documentation
-
-
-
 
 ## Technologies used
 - Python
@@ -237,7 +250,7 @@ My sprints were planned out as follows:
 - Git
   - used to commit and push code during development
 - Heroku
-  - The website  is hosted on heroku
+  - The website is hosted on heroku
 - Convertio.co
   - This site was used to convert jpg and png files to webp files
 - Favicon.io
@@ -246,7 +259,7 @@ My sprints were planned out as follows:
   - used for comparing the code
 - Font Awesome 
   - for creating attractive UX with icons
-- Bootstrap5 
+- Bootstrap4
   - for adding predefined styled elements and creating responsiveness
 - Google Fonts
   - for typography
@@ -279,10 +292,17 @@ __Home Page__
   - This is the first page that the user will see when they arrive on the website. The primary goal of this page is to allow the user to understand the purpose of the website. This is achieved through eye catching imagery and brief descriptions of what the website purpose is.
 
 	- A  clear Navigation section also makes it intuitive for the user to navigate the website.
+  <details>
+    <summary>See Navigation</summary>
+    ![Navigation](docs/features/navigation.png)
 
-	- The carousel imagery will inspire the users to explore the different product 	offerings as the photos will be extremely appealing and the user will want to learn more about these destinations.
+  </details>
+
+	- The Hero image will inspire the users to explore the different product 	offerings as the photos will be extremely appealing and the user will want to learn more about these destinations.
 
 	- The Why us section will showcase the different Unique Selling Points for blue ocean travel and this will encourage users to book with the company and save themselves some money in the process.
+
+  - The destination section will include clickable images that will bring the users to the different tours offered in each location
 
 	- The footer section allows the user to view the company’s social media, internal website links and a brief company description to help users better understand the company’s product offerings.
 
