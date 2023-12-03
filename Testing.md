@@ -126,8 +126,6 @@ The about us page also includes and FAQ accordion. Each of these accordion drop 
 
 ### Contact Us Page
 
-__Contact Us Page__
-
 The contact us section allows the users to contact the company directly if they have any issues. 
 
 The user can contact the company by filling out and submitting a form. This adds to the user experience as the user may have some questions that they need answered before they are prepared to make a booking.
@@ -167,6 +165,50 @@ Users also have an option to sign up for the company's mailing list
 If users input an invalid email address they will be met with the following error messages
     ![SurveyValidationerror](docs/testing/contact/smemailvalidation.png)
     ![SurveyMonkeyValidation](docs/testing/contact/surveyvalidation.png)
+
+### Add Product Page
+
+Super users and staff users can add products to the werbsite via the Product Management page. This allows staff to add products without having to access the backend.
+
+Users just need to fill in the required information sections and they have the option to upload an image aswell.
+
+
+![AddProduct1](docs/features/Productmanagement.png)
+![AddProduct](docs/features/ProdManagement.png)
+
+This product management form was created with validation requirements.
+
+|Field|ValidatoinWarning|Yes/No/Not Required|
+|Region|Please fill in this field|Not required|
+|Name|Please fill in this field|Yes|
+|Description|Please fill in this field|Yes|
+|Price|Please fill in this field|Yes|
+|Date|Please fill in this field|Yes|
+|Duration|Please fill in this field|Not required|
+|Image URL|Please fill in this field|Not required|
+
+Users will first be given an option to add in the Region in which the product is located
+![RegionValidation](docs/testing/add_product/RegionVal.png)
+
+Users will first be given an option to add a name field which is required
+![NameValidation](docs/testing/add_product/NameVal.png)
+
+Users will first be given an option to add a product decription which is required
+![NameValidation](docs/testing/add_product/DescVal.png)
+
+Users will first be given an option to add a price which is required
+![NameValidation](docs/testing/add_product/PriceVal.png)
+
+The product must be limited to two decimal places of there will be an error
+![PriceDecimalValidation](docs/testing/add_product/PriceVal2.png)
+
+Users will first be given an option to add a date which is required
+![DateValidation](docs/testing/add_product/DateVal.png)
+
+Users do not need to fill in the duration or image in order to add the product to the database
+
+
+
 
 ### Toasts
 
