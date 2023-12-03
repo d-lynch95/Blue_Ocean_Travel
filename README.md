@@ -303,7 +303,7 @@ __Home Page__
   ![Hero](docs/features/hero.png)
 
 - The Why us section will showcase the different Unique Selling Points for blue ocean travel and this will encourage users to book with the company and save themselves some money in the process.
-  ![WhyUs]('docs/features/whyus.png')
+  ![WhyUs](docs/features/whyus.png)
 
 - The destination section will include clickable images that will bring the users to the product page that outlines all of the different tours offered in each location
   ![Destinations](docs/features/destinations.png)
@@ -422,7 +422,10 @@ __Contact Us Page__
 
   - Users will also have the ability to contact the company directly via the footer as both the email and telephone icon are clickable links. If the user clicks either of these options it will allow them to email or call the company directly.
 
-  ![contactUs]()
+  - Users can also sign up for the company's mailing list throgh the Contact Us Page
+
+  ![ContactUS](docs/features/contact.png)
+  ![ContactUsSurvey](docs/features/contactSurvey.png)
 
 __About Us Page__
 
@@ -435,10 +438,10 @@ __About Us Page__
   ![Whoarewe](docs/readme_images/WhoAreWe.png)
 
 - What do we do?
-  ![WhatDoWeDo](docs/readme_images/Whatdowedo.png)
+  ![WhatDoWeDo](docs/readme_images/whatdo.png)
 
 - This page also has a responsive Frequently Asked Questions accordion section.
-  ![FrequentlyAskedQuestions](docs/readme_images/FAQs.png)
+  ![FrequentlyAskedQuestions](docs/readme_images/faq.png)
 
 
 
