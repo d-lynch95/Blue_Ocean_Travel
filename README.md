@@ -451,8 +451,18 @@ __About Us Page__
   ![FrequentlyAskedQuestions](docs/readme_images/faq.png)
 
 
+__Add Product Page__
 
+  -  Super users and staff users can add products to the werbsite via the Product Management page. This allows staff to add products without having to access the backend.
 
+  - Users just need to fill in the required information sections and they have the option to upload an image aswell.
+
+  - Users will have the options to select which region the product is based in.
+
+  - Once this has been completed the product will be added to the backend database and be visible in the all tours section.
+
+![AddProduct1](docs/features/Productmanagement.png)
+![AddProduct](docs/features/ProdManagement.png)
 
 __Product Page__ 
 
