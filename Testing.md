@@ -104,6 +104,7 @@ This page includes a large hero image with one link to return to the homepage
  ![HeroImage](docs/readme_images/AboutHero.png)
 
  |Link|Location  |Pass/Fail|
+ |--|--|--|
  |Plan your next adventure|products.html|Pass|
 
 The about us page also includes and FAQ accordion. Each of these accordion drop downs was tested individually
@@ -146,6 +147,7 @@ The contact us form comes with several validators that will not submit if fields
 The Name, Email and Phone fields must all be filled out however the text box can be submitted empty
 
 |Field|ValidatoinWarning|Yes/No|
+|--|--|--|
 |Name|Please fill in this field|Yes|
 |Email|Please fill in this field|Yes|
 |Phone|Please fill in this field|Yes|
@@ -179,6 +181,7 @@ Users just need to fill in the required information sections and they have the o
 This product management form was created with validation requirements.
 
 |Field|ValidatoinWarning|Yes/No/Not Required|
+|--|--|--|
 |Region|Please fill in this field|Not required|
 |Name|Please fill in this field|Yes|
 |Description|Please fill in this field|Yes|
