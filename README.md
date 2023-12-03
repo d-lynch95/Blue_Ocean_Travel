@@ -317,31 +317,30 @@ __Home Page__
 __Navigation Menu__ 
 
 
-  - The Navigation contains links for Home, Tours, Contact Us, Special Offers, My account, Shopping Bag.
+  - The Navigation contains links for Home, Destinations, Contact us and About Us.
+    The destinations link contains a drop down menu for all tours, Whitsundays, K'Gari (Fraser island) and the Great Barrier Reef.
 
-![NavigationMenu]()
+![NavigationMenu](docs/features/navigation.png)
 
   - The following navigation items are available on all pages:
 
-  Home -> index.html - Visible to all
+|Link|Location  |Pass/Fail|
+|--|--|--|
+|  Logo | index.html |Pass|
+|Home|index.html|Pass|
+|Destinations/All Tours|products.html|Pass|
+|Destinations/K'gari(Fraser Island)|products.html with filter for K'gari products|Pass|
+|Destinations/Whitsundays|products.html with filter for whitsundays products|Pass|
+Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef products|Pass|
+|Contact Us|contact.html|Pass|
+|About Us|about.html|Pass|
 
+  - When a user is not logged in they can still click the "My account" drop down menu. This will provide two seperate links: Register and Log in.
 
-  Contact us -> contact.html - Visible to all
-
-
-  Make an appointment -> form.html - Visible to logged in users
-
-
-  Manage appointments ->posts.html - Visible to logged in users
-
-
-  Logout -> logout.html - Visible to logged in users
-
-
-  Login -> login.html - Visible to logged out users
-
-
-  Register -> signup.html - Visible to logged out users
+  |Link|Location  |Pass/Fail|
+|--|--|--|
+|  Register|all auth registration page|Pass|
+|Log in | all auth log in page| Pass
 
 __Contact Us Page__
 
