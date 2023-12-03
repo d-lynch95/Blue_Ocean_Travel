@@ -43,9 +43,6 @@ def view_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
-        if 'review' in request.GET:
-            review = 
-
 
     current_sorting = f'{sort}_{direction}'
     reviews = Review.filter

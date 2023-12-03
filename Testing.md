@@ -271,6 +271,11 @@ Logged in users will have a different viewpoint as they will be able to leave re
 
 ### Add to Wishlist
 
+Users can add items to their wishlist from the product detail page
+
+![wishlist](docs/features/wishlist.png)
+
+
 
 
 ### Delete Product page
