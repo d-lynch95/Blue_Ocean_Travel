@@ -90,7 +90,7 @@ Blue Ocean travel is an online e-commerce store that specialises in booking trip
 ## Design
 
 ### Font
-I used the Montserrat and Poppins fonts from GoogleFonts. I opted for these fonts as they are clean, easy to read and versatile which make them perfect for a youth adventure travel website. I opted to use Monterrat for the headings and Poppins for the body. I used the Caveat font for the h1 tags as this font is very easy on the eye, playful and suits the youth adventure market
+I used the Lato and Poppins fonts from GoogleFonts. I opted for these fonts as they are clean, easy to read and versatile which make them perfect for a youth adventure travel website. I opted to use Poppins font for the headings and Lato for the body. The only exception to this was the homepage hero image where I opted to use the Lato text as I felt this looked betted
 
 ![ExampleFont]()
 
