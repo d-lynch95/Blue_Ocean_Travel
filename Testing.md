@@ -18,10 +18,10 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
 
 - When a user is not logged in they can still click the "My account" drop down menu. This will provide two seperate links: Register and Log in.
 
-  |Link|Location  |Pass/Fail|
+|Link|Location|Pass/Fail|
 |--|--|--|
-|  Register|all auth registration page|Pass|
-|Log in | all auth log in page| Pass
+|Register|all auth registration page|Pass|
+|Log in | all auth log in page| Pass|
 
 
 - The Register link will take them to the following page
@@ -30,7 +30,7 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
     ![LogIn](docs/testing/login.png)
 
 - When a user clicks the destinations images on the homepage they will be taken to a different location
-|Destinations Link|Location  |Pass/Fail|
+|Destinations Link|Location|Pass/Fail|
 |--|--|--|
 |Destinations/All Tours|products.html|Pass|
 |Destinations/K'gari(Fraser Island)|products.html with filter for K'gari products|Pass|
@@ -103,7 +103,7 @@ This page includes a large hero image with one link to return to the homepage
 
  ![HeroImage](docs/readme_images/AboutHero.png)
 
- |Link|Location  |Pass/Fail|
+ |Link|Location|Pass/Fail|
  |--|--|--|
  |Plan your next adventure|products.html|Pass|
 
@@ -210,7 +210,6 @@ Users will first be given an option to add a date which is required
 
 Users do not need to fill in the duration or image in order to add the product to the database
 
-
 ### Product Page 
 
 - Users can also filter their view of the products based on different filters. They can view the products by changing the sort order from price either low to high or by rating. 
@@ -252,6 +251,27 @@ This page contains a card with two buttons to either confirm deletion of the pro
 Users will be shown a toast message on the homepage to confirm product has been deleted.
 ![DeleteToast](docs/testing/toasts/ProductDeletedToast.png)
 
+
+### Edit Product Page
+
+Staff or superusers can select to edit the product and they will be taken to a form identical to the add product page.
+
+This form will be autofilled witht the product information from the database.
+
+![editproduct](docs/testing/Editproduct1.png)
+![editproduct2](docs/testing/Editproduct2.png)
+
+The form validation is the same as the add product page
+
+|Field|ValidatoinWarning|Yes/No/Not Required|
+|--|--|--|
+|Region|Please fill in this field|Not required|
+|Name|Please fill in this field|Yes|
+|Description|Please fill in this field|Yes|
+|Price|Please fill in this field|Yes|
+|Date|Please fill in this field|Yes|
+|Duration|Please fill in this field|Not required|
+|Image URL|Please fill in this field|Not required|
 
 ### Toasts
 
