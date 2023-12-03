@@ -498,5 +498,9 @@ From this page users will be given a button to return to the homepage
     ![EmailVerification](docs/testing/email/verifyemail.png)
 - Users will then be sent an email to the email address provided.
    ![EmailConfirm](docs/testing/email/emailconfirm.png)
+- Users will then confirm their email and be brought to the following page
+    ![ConfirmEmail](docs/testing/email/confirmemail.png)
 - If a user forgets their password they will get the following email
     ![ResetEmail](docs/testing/email/resetemail.png)
+- If a user completes a transaction they will be sent the following email  
+    ![OrderEmail](docs/testing/email/orderemail.png)

@@ -397,6 +397,9 @@ __Register Page__
 - Users can fill out their information here and are then brought to an email verification page.
 ![EmailVerification](docs/testing/email/verifyemail.png)
 
+- Users will be sent an email with a link to confirm their email address. This will take them to the following page
+  ![confirmemail](docs/testing/email/confirmemail.png)
+
 __Log In Page__
 - If users have an account they will be brought to a login page where they can sign into their account. 
 ![Login](docs/testing/login.png)
@@ -573,6 +576,10 @@ __Order Confirmation__
   - When the user has completed the transaction they will be brought to the checkout success webpage and shown their order details. The user will also be emailed with the details of their purchase.
 
   ![OrderComplete](docs/features/transaction.png)
+
+
+  Users will then be sent an email outlining their order and information
+  ![OrderEmail](docs/testing/email/orderemail.png)
 
 __StaffSection__
 
