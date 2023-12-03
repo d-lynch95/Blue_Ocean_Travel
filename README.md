@@ -92,15 +92,20 @@ Blue Ocean travel is an online e-commerce store that specialises in booking trip
 ### Font
 I used the Lato and Poppins fonts from GoogleFonts. I opted for these fonts as they are clean, easy to read and versatile which make them perfect for a youth adventure travel website. I opted to use Poppins font for the headings and Lato for the body. The only exception to this was the homepage hero image where I opted to use the Lato text as I felt this looked betted
 
-![ExampleFont]()
+![ExampleFont](docs/readme_images/font.png)
 
 ### Colour
 
-The colour scheme is a simple blue that reminds the user of the ocean and instills a desire to travel. The white background contrasts with the light blue font to create an easy yet eye catching colour palette. The colour scheme fits well with the company name and the company ethos of inspiring it's users to travel. The blue colour scheme was inspired by [BareFootCampers](https://www.barefootcampers.nz/) in New Zealand. 
+The colour scheme is a simple blue that reminds the user of the ocean and instills a desire to travel. The white background contrasts with the light blue font to create an easy yet eye catching colour palette. This colour scheme was inspired by Whitehaven beach which is renowned for it's crystal clear aquatic blue water and powdery white sands. The colour scheme fits well with the company name and the company ethos of inspiring it's users to travel. The blue colour scheme was also inspired by [BareFootCampers](https://www.barefootcampers.nz/) in New Zealand. 
+
+![ColourScheme](docs/readme_images/colours.png)
 
 ### Logo
 
 The logo is an artificially generated logo from [Looka](www.looka.com)
+The logo contains the company name and is designed to inspire users to travel and make the leap to travel the world. This is done to encourage users to visit Australia and book tours via the website.
+![CompanyLogo](media/logo.webp)
+
 
 ### Wireframes
 
@@ -300,8 +305,8 @@ __Home Page__
 - The Why us section will showcase the different Unique Selling Points for blue ocean travel and this will encourage users to book with the company and save themselves some money in the process.
   ![WhyUs]('docs/features/whyus.png')
 
-- The destination section will include clickable images that will bring the users to the different tours offered in each location
-  ![Destinations]()
+- The destination section will include clickable images that will bring the users to the product page that outlines all of the different tours offered in each location
+  ![Destinations](docs/features/destinations.png)
 
 
 - The footer section allows the user to view the company’s social media, internal website links and a brief company description to help users better understand the company’s product offerings.
