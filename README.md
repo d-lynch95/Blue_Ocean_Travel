@@ -526,7 +526,7 @@ __Favicon__
 ## Testing 
 
 <!-- Insert file here -->
-I created an extra [Testing.md](Testing.md) page as the file was too large to fit in this README.
+I created an extra [Testing](Testing.md) page as the file was too large to fit in this README.
 
 ### BUGS
  - I encountered several bugs while creating this project.
