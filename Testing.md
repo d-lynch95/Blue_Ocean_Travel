@@ -42,7 +42,7 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
 
 ![Footer](docs/features/footer.png)
 
- - The footer is comprised of three sections. The first section is a brief synopsis of the company. The second section is a list of links to different "Destinations" and the different products associated with those regions.
+ - The footer is comprised of four sections. The first section is a brief synopsis of the company. The second section is a list of links to different "Destinations" and the different products associated with those regions.
 
 
 |Destinations Link|Location  |Pass/Fail|
@@ -71,6 +71,16 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
 
 ![facetime](docs/testing/facetime.png)
 ![email](docs/testing/email.png)
+
+At the top of the footer is the social media icon links. Both of these links will take you to the company's social media presence.
+
+|Destinations Link||Pass/Fail|
+|--|--|
+|Instagram|Pass|
+|Facebook|Pass|
+
+![Facebook](docs/features/facebook.png)
+![Instagram](docs/features/insta.png)
 
 ### Log In Page
 |Action|Result|Pass/Fail|
