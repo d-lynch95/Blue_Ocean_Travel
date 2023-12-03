@@ -297,6 +297,8 @@ When a review has been submitted the user will receive a toast notification and 
 
 ![submittedreview](docs/testing/submittedreview.png)
 
+Users will not be able to submit multiple reviews. Instead when a user attempts to create a new review it will just edit the review they have previously submitted. This has been tested and confirmed to be the case
+
 ### Delete Product page
 
 If staff or superusers select to delete a product they will be taken to the delete_tour.html page.
@@ -335,6 +337,19 @@ The form validation is the same as the add product page
 |Duration|Please fill in this field|Not required|
 |Image URL|Please fill in this field|Not required|
 
+### My Profile
+
+Users can access the my profile page through the navbar drop down menu.
+
+![Profile Page](docs/features/myprofile.png)
+
+While on this page users will be able to update their personal information. There is no data validation in this section so if users wish to change their information or remove it completely they can do so.
+
+![removeinfo](docs/testing/removeinfo.png)
+
+Users can also click on their previous order numbers to see previous orders
+
+
 ### Toasts
 
 - Toasts have been introduced to keep users informed of different progress and activities on the site. Toasts have been included with a timer that they should only last for 5 seconds
@@ -343,9 +358,15 @@ The form validation is the same as the add product page
 |Toast|Action |Displayed|
 |--|--|--|
 |Sign In|Sign In success|Yes|
-|Sign Out|Sign Out success|Pass|
-|New Account|New Account Created Success|Pass|
-|Contact Form|Form Submitted|Pass|
+|Sign Out|Sign Out success|Yes|
+|New Account|New Account Created Success|Yes|
+|Contact Form|Form Submitted|Yes|
+|Invalid product|User tries to add invalid product|Yes|
+|Delete product|superuser deletes a product from database|Yes|
+|Update product|superuser updates product info|Yes|
+|Review Submitted|User submites a review|Yes|
+|Removed from wishlist|user removes an item from their wishlist|Yes|
+|Profile Updated|When a user updates profile information|Yes|
 
 
 - When a user signs in they will be sent the following Toast.
@@ -373,6 +394,9 @@ The form validation is the same as the add product page
 
 - When a user removes a product from their wishlist they will get the following toast
     ![wishlistremovaltoast](docs/features/wishlistremove.png)
+
+- When a user updates their profile information they will see the following toast
+    ![removeinfo](docs/testing/removeinfo.png)
 
 
 

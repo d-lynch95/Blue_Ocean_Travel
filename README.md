@@ -530,9 +530,9 @@ __Profile page__
 
 	- Users will be able to edit their phone number and email address through this page
 	
-	- Users will also be able to see the tours they already have organised and purchased
+	- Users will also be able to see the tours they already have organised and purchased through the orders section of the page
 
-![Profile Page]()
+![Profile Page](docs/features/myprofile.png)
 
 
 
