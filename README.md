@@ -367,7 +367,7 @@ __Footer__
 
 |Destinations Link|Location  |Pass/Fail|
 |--|--|--|
-|Destinations/All Tours|products.html|Pass|
+|Destinations/All Experiences|products.html|Pass|
 |Destinations/K'gari(Fraser Island)|products.html with filter for K'gari products|Pass|
 |Destinations/Whitsundays|products.html with filter for whitsundays products|Pass|
 |Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef products|Pass|
@@ -377,10 +377,22 @@ __Footer__
 
 |Destinations Link|Location  |Pass/Fail|
 |--|--|--|
+|Your Account|Profile.html|Pass|
 |Contact Us|contact.html|Pass|
 |About Us|about.html|Pass|
-|My Profile|Profile.html|Pass|
 |Privacy Policy|privacy.html|Pass|
+
+- There is also a Contact section in the footer that allows users to contact the company directly via phone or email.
+
+|Action|Application  |Pass/Fail|
+|--|--|--|
+|Send Email|Open Email Client|Pass|
+|Phone company|Open facetime on desktop|Pass|
+
+
+
+
+
 __Sign up Page__
 
 

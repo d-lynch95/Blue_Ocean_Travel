@@ -1,6 +1,6 @@
 
 
-#Testing home page
+# Testing home page
 
 ## Link tracking 
 
@@ -38,12 +38,45 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
 
 
 - When a user clicks the destinations images on the homepage they will be taken to a different location
-    |Destinations Link|Location  |Pass/Fail|
+|Destinations Link|Location  |Pass/Fail|
 |--|--|--|
 |Destinations/All Tours|products.html|Pass|
 |Destinations/K'gari(Fraser Island)|products.html with filter for K'gari products|Pass|
 |Destinations/Whitsundays|products.html with filter for whitsundays products|Pass|
 |Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef products|Pass|
+
+###  Footer
+
+![Footer](docs/features/footer.png)
+
+ - The footer is comprised of three sections. The first section is a brief synopsis of the company. The second section is a list of links to different "Destinations" and the different products associated with those regions.
+
+
+|Destinations Link|Location  |Pass/Fail|
+|--|--|--|
+|Destinations/All Tours|products.html|Pass|
+|Destinations/K'gari(Fraser Island)|products.html with filter for K'gari products|Pass|
+|Destinations/Whitsundays|products.html with filter for whitsundays products|Pass|
+|Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef products|Pass|
+
+
+- There is another section of links that will take you to "Your Account", "Contact Us", "About Us" and "Privacy Policy".
+
+|Destinations Link|Location  |Pass/Fail|
+|--|--|--|
+|Contact Us|contact.html|Pass|
+|About Us|about.html|Pass|
+|My Profile|Profile.html|Pass|
+|Privacy Policy|privacy.html|Pass|
+
+- There is also a Contact section in the footer that allows users to contact the company directly via phone or email.
+
+|Action|Application  |Pass/Fail|
+|--|--|--|
+|Send Email|Open Email Client|Pass|
+|Phone company|Open facetime on desktop|Pass|
+
+
 
 
 
@@ -53,11 +86,11 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
 
 
 - When a user signs in they will be sent the following Toast.
-   ![SigninToast](docs/testing/signinToast.png)
+   ![SigninToast](docs/testing//toasts/signinToast.png)
 
 - When a user creates a new account they should be greeted with this Toast
 
 ### Email confirmation
 
 - When a user creates an account they will be brought to an email confirmation page. Users will then be sent an email to the email address provided.
-    ![LoginEmail](docs/testing/NewAccEmail%20.png)
+    ![LoginEmail](docs/testing/emails/NewAccEmail.png)
