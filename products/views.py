@@ -13,6 +13,7 @@ def view_products(request):
     location = None
     sort = None
     direction = None
+    review = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -42,11 +43,16 @@ def view_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
+        if 'review' in request.GET:
+            review = 
+
 
     current_sorting = f'{sort}_{direction}'
+    reviews = Review.filter
     
     context = {
         'products': products,
+        'reviews': 
         'search_term': query,
         'current_region': location,
         'current_sorting': current_sorting,

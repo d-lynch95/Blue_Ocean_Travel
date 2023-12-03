@@ -470,7 +470,9 @@ __Product Page__
   - The main purpose of the website is for users to be able to view and organise   different experiences around Australia. The users has several different options to view the products. They can view all products or choose the view based on different regions in Australia.
 
   - Users can also filter their view of the products based on different filters. They can view the products by changing the sort order from price either low to high or by rating. 
-  ![ProductPage]()
+
+  - Users can view individual tour information through this page ranging from price, region, departure date and product rating
+  ![ProductPage](docs/features/Products.png)
 
 
 
@@ -484,7 +486,14 @@ __Product Detail Page__
   ![ProductDetail]()
 
 
+__Product Delete__
 
+Staff users can click the icon which will take them to a delete product page
+
+Users will have the option to return to the products page or delete the product. If the user opts to delete the product
+they will be taken to the products page and the product is removed from the database.
+
+![DeleteProduct](docs/features/DeleteConfirm.png)
 
 __Profile page__
 

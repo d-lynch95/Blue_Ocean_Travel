@@ -211,6 +211,46 @@ Users will first be given an option to add a date which is required
 Users do not need to fill in the duration or image in order to add the product to the database
 
 
+### Product Page 
+
+- Users can also filter their view of the products based on different filters. They can view the products by changing the sort order from price either low to high or by rating. 
+
+- Users can view individual tour information through this page ranging from price, region, departure date and product rating
+![ProductPage](docs/features/Products.png)
+
+
+|Link Clicked|Result|Pass/Fail|
+|--|--|--|
+|Product image|product_detail.html|Pass|
+|Edit|edit_tour.html|Pass
+|Delete|delete_tour.html|Pass|
+|retun to top arrow|Top of product page|Pass|
+
+Users can also use the sort box in order to change the sorting of the products
+
+Users can sort by pricing either low to high or high to low
+![PriceLowtoHigh](docs/testing/sortproduct/pricel2h.png)
+![PriceLowtoHigh](docs/testing/sortproduct/priceh2l.png)
+
+Users can sort by Name either from A-Z or reverse alphabetical from Z-A
+![Alphabeticala-z](docs/testing/sortproduct/Namea-z.png)
+![Alphabeticala-z](docs/testing/sortproduct/Namez-a.png)
+
+### Delete Product page
+
+If staff or superusers select to delete a product they will be taken to the delete_tour.html page.
+
+This page contains a card with two buttons to either confirm deletion of the product or return to the products page
+
+|Link Clicked|Result|Pass/Fail|
+|--|--|--|
+|Confirm|Product removed from database and return to products page|Pass|
+|Return to products|return to products page|Pass|
+
+![DeleteProduct](docs/features/DeleteConfirm.png)
+
+Users will be shown a toast message on the homepage to confirm product has been deleted.
+![DeleteToast](docs/testing/toasts/ProductDeletedToast.png)
 
 
 ### Toasts
@@ -237,7 +277,11 @@ Users do not need to fill in the duration or image in order to add the product t
 - When a user submits a form will see the following toast
     ![SignoutToast](docs/testing/toasts/contacttoast.png)
 
+- When users try to add a product but it's not valid they will see this toast
+    ![AddProductInvalid](docs/testing/toasts/AddProdFromToast.png)
 
+- When users delete a product they will see this toast
+    ![DeleteProduct](docs/testing/toasts/ProductDeletedToast.png)
 
 ### Email confirmation
 
