@@ -277,6 +277,11 @@ Users can add items to their wishlist from the product detail page
 
 Users can also remove items from their wishlist by clicking the remove button on the wishlist page
 
+### Remove from wishlist 
+
+Users can remove items from the wishlist. They will then be sent a toast to confirm that the item has been removed from their wishlist. Users will remain on the wishlist page as it is possible they may have multiple items on their list.
+
+![wishlistremove](docs/features/wishlistremove.png)
 
 
 
@@ -351,8 +356,11 @@ The form validation is the same as the add product page
 - When users update a product they will see the following toast
     ![UpdateProductToast](docs/testing/toasts/Updateproducttoast.png)
 
-- When a user submits a review they will see the followin toast
+- When a user submits a review they will see the following toast
     ![ReviewToast](docs/testing/toasts/reviewToast.png)
+
+- When a user removes a product from their wishlist they will get the following toast
+    ![wishlistremovaltoast](docs/features/wishlistremove.png)
 
 ### Email confirmation
 
