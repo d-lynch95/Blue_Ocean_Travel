@@ -71,20 +71,55 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
 ![facetime](docs/testing/facetime.png)
 ![email](docs/testing/email.png)
 
+### Log In Page
+|Action|Result|Pass/Fail|
+|--|--|--|
+|Log in|Redirected to homepage|Pass|
+|Log in with incorrect information|Error Message|Pass
 
+- If users have an account they will be brought to a login page where they can sign into their account. 
+![Login](docs/testing/login.png)
+
+- If users log in succesfully they will be redirected to the homepage.
+
+- If users input the incorrect information they will be given the following error
+![LogInError](docs/testing/signinerror.png)
+
+
+
+### Sign out page
+|Action|Result|Pass/Fail|
+|--|--|--|
+|Sign out|Redirected to homepage|Pass|
+
+- If a user wants to leave the site they can click the Log Out button and this will take them to the sign out page.
+    ![LogOut](docs/testing/signout.png)
+
+- Users will then be redirected to the homepage
 
 ### Toasts
 
 - Toasts have been introduced to keep users informed of different progress and activities on the site. Toasts have been included with a timer that they should only last for 5 seconds
 
 
+|Toast|Action |Displayed|
+|--|--|--|
+|Sign In|Sign In success|Yes|
+|Sign Out|Sign Out success|Pass|
+|New Account|New Account Created Success|Pass|
+
+
 - When a user signs in they will be sent the following Toast.
    ![SigninToast](docs/testing//toasts/signinToast.png)
 
-- When a user creates a new account they should be greeted with this Toast
+- When a user creates a new account they are greeted with this Toast
+
+- When a user sign out they will see the following toast
+    ![SignoutToast](docs/testing/toasts/signouttoast.png)
+
+
 
 ### Email confirmation
-
 
 
 - When a user creates an account they will be brought to an email confirmation page.

@@ -403,6 +403,14 @@ __Log In Page__
 
 - If users log in succesfully they will be redirected to the homepage.
 
+- If users input the incorrect information they will be given the following error
+![LogInError](docs/testing/signinerror.png)
+
+__Sign out page__
+- If a user wants to leave the site they can click the Log Out button and this will take them to the sign out page.
+    ![LogOut](docs/testing/signout.png)
+
+- Users will then be redirected to the homepage
 
 __Contact Us Page__
 
