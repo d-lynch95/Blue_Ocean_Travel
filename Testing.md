@@ -86,6 +86,12 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
 - If users input the incorrect information they will be given the following error
 ![LogInError](docs/testing/signinerror.png)
 
+- If the user has forgotten their password they can go to the following page
+    ![ForgotPassword](docs/features/forgotpass.png)
+
+- Once the user enters their email they will be sent a link to set up a new password and redirected
+    ![PasswordReset](docs/features/passwordreset.png)
+
 
 
 ### Sign out page
@@ -440,6 +446,7 @@ From this page users will be given a button to return to the homepage
 |Previous order|Inform user they are looking at a previous order|Yes|
 |Update quantity|User updates product quantity in their bag|Yes|
 |Remove item|User removes product from their bag|Yes|
+|Order success|User completes a transaction| Yes|
 
 
 - When a user signs in they will be sent the following Toast.
@@ -480,6 +487,8 @@ From this page users will be given a button to return to the homepage
 - When a user removes an item from the bag they will see the following toast
     ![RemoveItem](docs/testing/productremove.png)
 
+- When a user completes a transaction they will see the following toast
+    ![OrderComplete](docs/features/transaction.png)
 
 
 ### Email confirmation
@@ -488,4 +497,6 @@ From this page users will be given a button to return to the homepage
 - When a user creates an account they will be brought to an email confirmation page.
     ![EmailVerification](docs/testing/email/verifyemail.png)
 - Users will then be sent an email to the email address provided.
-    ![LoginEmail](docs/testing/emails/NewAccEmail.png)
+   ![EmailConfirm](docs/testing/email/emailconfirm.png)
+- If a user forgets their password they will get the following email
+    ![ResetEmail](docs/testing/email/resetemail.png)
