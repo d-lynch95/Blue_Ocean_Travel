@@ -424,6 +424,13 @@ __Contact Us Page__
 
   ![contactUs]()
 
+__About Us Page__
+
+ - The about us section includes information such as Who are we, what do we do and also includes an FAQ section. This is a page for users to learn more about the company.
+
+- The hero image includes a large photo of our team and also gives the user a link back to the homescreen
+
+
 
 __Product Page__ 
 
