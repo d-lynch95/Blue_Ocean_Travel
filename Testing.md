@@ -97,6 +97,35 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
 
 - Users will then be redirected to the homepage
 
+### About Us Page
+
+This page includes a large hero image with one link to return to the homepage
+
+ ![HeroImage](docs/readme_images/AboutHero.png)
+
+ |Link|Location  |Pass/Fail|
+ |Plan your next adventure|products.html|Pass|
+
+The about us page also includes and FAQ accordion. Each of these accordion drop downs was tested individually
+
+![FAQS](docs/readme_images/FAQs.png)
+
+|Title|Text Displayed|
+|--|--|
+|What is the best trip in Australia|Yes|
+|What is the best way to travel in Australia|Yes|
+|Where should I start my australia trip|Yes|
+|When is the best time of year to travel in Australa|Yes|
+|How do I get the best deals on trips in Australia|Yes|
+|Should I solo travel in Australia|Yes|
+|How do I plan an Australia trip|Yes|
+|Should I stay in hostel|Yes|
+|What are the main attractions in Australia|Yes|
+|How do I know which trip is best for me|Yes|
+
+
+
+
 ### Toasts
 
 - Toasts have been introduced to keep users informed of different progress and activities on the site. Toasts have been included with a timer that they should only last for 5 seconds
