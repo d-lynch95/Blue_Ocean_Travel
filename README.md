@@ -521,9 +521,9 @@ __StaffSection__
 
 __Favicon__
 
-  - The favicon was created using the company logo. This favicon sits in the web browser tab and instantly allows the user to recognise the webpage. This adds to the customer experience.
+  - The favicon was created using the company logo. This favicon sits in the web browser tab and instantly allows the user to recognise the webpage. This adds to the customer experience. The favicon is the globe and plane image that features prominently in the company logo
 
-![Favicon](static/media/favicon.png)
+![Favicon](docs/features/favicon.png)
 
 
 ### Features Left to Implement
