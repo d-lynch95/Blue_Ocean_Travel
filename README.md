@@ -428,7 +428,19 @@ __About Us Page__
 
  - The about us section includes information such as Who are we, what do we do and also includes an FAQ section. This is a page for users to learn more about the company.
 
-- The hero image includes a large photo of our team and also gives the user a link back to the homescreen
+ - The hero image includes a large photo of our team and also gives the user a link back to the homescreen
+ ![Heroimage](docs/readme_images/AboutHero.png)
+
+ - Who Are we?
+  ![Whoarewe](docs/readme_images/WhoAreWe.png)
+
+- What do we do?
+  ![WhatDoWeDo](docs/readme_images/Whatdowedo.png)
+
+- This page also has a responsive Frequently Asked Questions accordion section.
+  ![FrequentlyAskedQuestions](docs/readme_images/FAQs.png)
+
+
 
 
 
