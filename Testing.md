@@ -213,7 +213,7 @@ Users do not need to fill in the duration or image in order to add the product t
 
 ### Product Page 
 
-- Users can also filter their view of the products based on different filters. They can view the products by changing the sort order from price either low to high or by rating. 
+- Users can also filter their view of the products based on different filters. They can view the products by changing the sort order from price either low to high or by name. 
 
 - Users can view individual tour information through this page ranging from price, region, departure date and product rating
 ![ProductPage](docs/features/Products.png)
@@ -274,6 +274,8 @@ Logged in users will have a different viewpoint as they will be able to leave re
 Users can add items to their wishlist from the product detail page
 
 ![wishlist](docs/features/wishlist.png)
+
+Users can also remove items from their wishlist by clicking the remove button on the wishlist page
 
 
 
