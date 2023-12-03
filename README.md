@@ -567,6 +567,13 @@ __SecureCheckout__
 
 ![SecureCheckout](docs/features/securecheckout.png)
 
+
+__Order Confirmation__
+
+  - When the user has completed the transaction they will be brought to the checkout success webpage and shown their order details. The user will also be emailed with the details of their purchase.
+
+  ![OrderComplete](docs/features/transaction.png)
+
 __StaffSection__
 
   - This section will allow staff members to view any contact forms that have been submitted by users.

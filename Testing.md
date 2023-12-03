@@ -413,6 +413,12 @@ Users can then input their card details into stripe. Stripe has built in card va
 ![NoPostcode](docs/testing/stripe/stripepostcode.png)
 
 
+When the order has been complete the user will be brought to a checkout success page where they can view their purchase
+From this page users will be given a button to return to the homepage
+
+![OrderComplete](docs/features/transaction.png)
+
+
 
 ### Toasts
 
