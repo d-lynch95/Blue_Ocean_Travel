@@ -74,7 +74,7 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
 
 At the top of the footer is the social media icon links. Both of these links will take you to the company's social media presence.
 
-|Destinations Link||Pass/Fail|
+|Destinations Link|Pass/Fail|
 |--|--|
 |Instagram|Pass|
 |Facebook|Pass|
