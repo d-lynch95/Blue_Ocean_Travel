@@ -49,7 +49,6 @@ def view_products(request):
     
     context = {
         'products': products,
-        'reviews': 
         'search_term': query,
         'current_region': location,
         'current_sorting': current_sorting,
