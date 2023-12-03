@@ -235,6 +235,39 @@ Users can sort by Name either from A-Z or reverse alphabetical from Z-A
 ![Alphabeticala-z](docs/testing/sortproduct/Namea-z.png)
 ![Alphabeticala-z](docs/testing/sortproduct/Namez-a.png)
 
+### Product Detail page
+The product detail page will allow the user to view the tour in more detail. 
+
+This page has a detailed description of the tour. It will also includes price, region, duration and ratings.
+
+All users can view the products and ratings of the tours.
+
+Authenticated users will be able to leave their own ratings and reviews aswell as adding products to their wishlist
+
+![ProductDetail1](docs/features/productdetail.png)
+![ProductDetail1](docs/features/productdetail2.png)
+
+If the user is not authenticated they will see the following view
+
+![AnonymousUserView](docs/testing/AnonDetail.png)
+
+Unregistered users can still add items to their bags and complete transactions
+![AnonymousAddtoBag](docs/testing/Anonaddbag.png)
+
+Logged in users will have a different viewpoint as they will be able to leave reviews, add products to wishlist and add items to their bag
+
+![LoggedInProductDetail](docs/features/Loginproduct.png)
+
+|Link Clicked|Result|Pass/Fail|
+|--|--|--|
+|Add to wishist|add to wishlist and redirect to wishlist.html|Pass|
+|Quantity +|quantity increases |Pass
+|Quantity -|quantity decreases|Pass|
+|Keep shopping|return to products page|Pass|
+|Add to bag|Product added to bag|Pass|
+|Submit review|IF Blank review should not submit|Pass|
+|Submit review| if review has been filled|Pass|
+
 ### Delete Product page
 
 If staff or superusers select to delete a product they will be taken to the delete_tour.html page.

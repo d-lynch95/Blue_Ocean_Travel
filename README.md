@@ -479,11 +479,14 @@ __Product Page__
 __Product Detail Page__ 
   - The product detail page will allow the user to view the tour in more detail. 
 
-	- This page will have a detailed description of the tour. It will also outline price, duration and ratings.
+	- This page has a detailed description of the tour. It will also includes price, region, duration and ratings.
 
-	- Users will be able to use a date picker to select when the tour would be next available
+  - All users can view the products and ratings of the tours.
 
-  ![ProductDetail]()
+  - Authenticated users will be able to leave their own ratings and reviews aswell as adding products to their wishlist
+
+  ![ProductDetail1](docs/features/productdetail.png)
+  ![ProductDetail1](docs/features/productdetail2.png)
 
 
 __Product Delete__
