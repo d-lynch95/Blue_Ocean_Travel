@@ -175,6 +175,20 @@ If users input an invalid email address they will be met with the following erro
     ![SurveyValidationerror](docs/testing/contact/smemailvalidation.png)
     ![SurveyMonkeyValidation](docs/testing/contact/surveyvalidation.png)
 
+
+
+### Contact form submissions
+
+Submitted contact forms will go to a page that is only accessible to super users and staff users.
+
+Staff members can view the submitted forms and queries and then click the button to respond to the guest via email
+
+![ContactForms](docs/features/submittedforms.png)
+
+Staff members can open up an email client to respond directly to the guest
+
+![Emailcustomer](docs/testing/emailcustomer.png)
+
 ### Add Product Page
 
 Super users and staff users can add products to the werbsite via the Product Management page. This allows staff to add products without having to access the backend.
