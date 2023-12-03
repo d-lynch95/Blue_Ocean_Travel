@@ -147,7 +147,7 @@ If the users submission is succesfull they are redirected to a success page
 The contact us form comes with several validators that will not submit if fields are blank or with the wrong data type.
 The Name, Email and Phone fields must all be filled out however the text box can be submitted empty
 
-|Field|ValidatoinWarning|Yes/No|
+|Field|ValidationWarning|Yes/No|
 |--|--|--|
 |Name|Please fill in this field|Yes|
 |Email|Please fill in this field|Yes|
@@ -269,6 +269,10 @@ Logged in users will have a different viewpoint as they will be able to leave re
 |Submit review|IF Blank review should not submit|Pass|
 |Submit review| if review has been filled|Pass|
 
+### Add to Wishlist
+
+
+
 ### Delete Product page
 
 If staff or superusers select to delete a product they will be taken to the delete_tour.html page.
@@ -336,6 +340,12 @@ The form validation is the same as the add product page
 
 - When users delete a product they will see this toast
     ![DeleteProduct](docs/testing/toasts/ProductDeletedToast.png)
+
+- When users update a product they will see the following toast
+    ![UpdateProductToast](docs/testing/toasts/Updateproducttoast.png)
+
+- When a user submits a review they will see the followin toast
+    ![ReviewToast](docs/testing/toasts/reviewToast.png)
 
 ### Email confirmation
 

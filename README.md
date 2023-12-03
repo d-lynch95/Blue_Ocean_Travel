@@ -510,6 +510,14 @@ Users can change the details and resubmit the product to the database
 ![editproduct2](docs/testing/Editproduct2.png)
 
 
+__Wishlist__
+
+  - Users will have the ability to add items to their wishlist from the product detail page.
+
+  - This will take the users to a seperate page where they can view the list of items they've added to their wishlist. Users can then delete these items from their wishlist.
+
+  ![wishlist](docs/features/wishlist.png)
+
 __Profile page__
 
   - The profile page will allow users to view their profile information.
