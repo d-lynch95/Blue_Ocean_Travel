@@ -491,7 +491,7 @@ __Product Detail Page__
 
 __Product Delete__
 
-Staff users can click the icon which will take them to a delete product page
+Staff users can click the delete which will take them to a delete product page
 
 Users will have the option to return to the products page or delete the product. If the user opts to delete the product
 they will be taken to the products page and the product is removed from the database.
@@ -499,9 +499,12 @@ they will be taken to the products page and the product is removed from the data
 ![DeleteProduct](docs/features/DeleteConfirm.png)
 
 __Edit Product Page__
+
 Staff or superusers can select to edit the product and they will be taken to a form identical to the add product page.
 
-This form will be autofilled witht the product information from the database.
+This form will be autofilled with the product information from the database.
+
+Users can change the details and resubmit the product to the database
 
 ![editproduct](docs/testing/Editproduct1.png)
 ![editproduct2](docs/testing/Editproduct2.png)

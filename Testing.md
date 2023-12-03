@@ -30,6 +30,7 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
     ![LogIn](docs/testing/login.png)
 
 - When a user clicks the destinations images on the homepage they will be taken to a different location
+
 |Destinations Link|Location|Pass/Fail|
 |--|--|--|
 |Destinations/All Tours|products.html|Pass|
