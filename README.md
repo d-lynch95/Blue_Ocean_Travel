@@ -431,6 +431,9 @@ __Contact Us Page__
 
   ![ContactSuccess](docs/readme_images/ContactSuccess.png)
 
+  - This page also has an option for users to sign up to the company's mailing list via a survey monkey link
+  ![SurveyMonkey](docs/testing/contact/surveymonkey.png)
+
 __About Us Page__
 
  - The about us section includes information such as Who are we, what do we do and also includes an FAQ section. This is a page for users to learn more about the company.

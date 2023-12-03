@@ -108,7 +108,7 @@ This page includes a large hero image with one link to return to the homepage
 
 The about us page also includes and FAQ accordion. Each of these accordion drop downs was tested individually
 
-![FAQS](docs/readme_images/FAQs.png)
+![FAQS](docs/readme_images/faq.png)
 
 |Title|Text Displayed|
 |--|--|
@@ -155,13 +155,18 @@ The Name, Email and Phone fields must all be filled out however the text box can
 If name field is not filled in the following error shows
     ![namevalidator](docs/testing/contact/namevalidation.png)
 
-
 If email field is not filled in the following error shows
     ![emailvalidatorr](docs/testing/contact/emailvalidation.png)
 
 If phone field is not filled in the following error shows
     ![phonevalidator](docs/testing/contact/phonevalidation.png)
 
+Users also have an option to sign up for the company's mailing list
+    ![SurveyMonkey](docs/testing/contact/surveymonkey.png)
+
+If users input an invalid email address they will be met with the following error messages
+    ![SurveyValidationerror](docs/testing/contact/smemailvalidation.png)
+    ![SurveyMonkeyValidation](docs/testing/contact/surveyvalidation.png)
 
 ### Toasts
 
