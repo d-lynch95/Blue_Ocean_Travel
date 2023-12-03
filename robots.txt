@@ -1,3 +1,5 @@
 User-agent: *
 Disallow: env.py
+Disallow: /accounts/
+Disallow: /bag/
 Site-map: https://blue-ocean-travel-feb523e57a47.herokuapp.com/sitemap.xml

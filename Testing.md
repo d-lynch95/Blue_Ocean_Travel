@@ -385,7 +385,32 @@ Users can also select the Secure checkout button if they are happy with their sh
 
 ![securecheckout](docs/features/securecheckout.png)
 
+### Secure Checkout
 
+Users can input their personal information in this section to complete their transaction. 
+
+If the user has already submitted their information the form will autofill
+
+![LoggedInCheckout](docs/testing/logincheckout.png)
+
+Users can then input their card details into stripe. Stripe has built in card validation errors incase there is anything wrong with user input. These were all tested individually
+
+|Stripe Error|Message|Error message shown|
+|--|--|--|
+|Card number incomplete|Your Card number is incomplete|Yes|
+|Wrong card number|Your Card number is invalid|Yes|
+|Card expiry in the past |Your card's expiry year is in the past|Yes|
+|No expiry date|Your card's expiry date is incomplete|Yes|
+|CVC incomplete|Your card's security code is incomplete|Yes|
+|Postcode invalid|Your Postal Code is invalid|Yes|
+
+
+![CardNumberIncomplete](docs/testing/stripe/stripeincomplete.png)
+![WrongCardNo](docs/testing/stripe/stripeinvalid.png)
+![CardExpiryPast](docs/testing/stripe/stripedateold.png)
+![CardDateIncomplete](docs/testing/stripe/stripedateincomplete.png)
+![Nocvc](docs/testing/stripe/stripecvc.png)
+![NoPostcode](docs/testing/stripe/stripepostcode.png)
 
 
 

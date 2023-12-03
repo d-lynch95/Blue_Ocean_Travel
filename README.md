@@ -561,11 +561,11 @@ __SecureCheckout__
 
 	- This page will allow users to view their shopping bag one last time and process payment
 
-	- Users will be able to input their personal information in this section
+	- Users are able to input their personal information in this section if it hasn't already been saved on the site
 
-	- Users will also be able to use a built-in stripe payment element to input their card information and process payment.
+	- Users can use a built-in stripe payment element to input their card information and process payment.
 
-![SecureCheckout]()
+![SecureCheckout](docs/features/securecheckout.png)
 
 __StaffSection__
 
