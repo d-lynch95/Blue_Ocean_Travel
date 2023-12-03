@@ -342,6 +342,29 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
 |  Register|all auth registration page|Pass|
 |Log in | all auth log in page| Pass
 
+  - When user is logged in the "My Account drop down link will have several links: Product Management, Submitted Contact Forms, My Profile, My Wishlist, Logout.
+
+|Link|Location  |Pass/Fail|
+|--|--|--|
+| Product Management|add_tour.html|Pass|
+|Submitted Contact Forms | staff.html| Pass|
+|My Profile|Profile.html|Pass|
+|My Wishlist|wishlist.html|Pass|
+|Logout|All auth logout page|Pass|
+
+- If a user is a superuser or a staff member all of the above dropdown options will appear. I a user is not a staff or super user they will only see My Profile, My Wishlist, Logout.
+
+
+__Footer__
+
+__Sign up Page__
+
+
+
+__Log In Page__
+
+
+
 __Contact Us Page__
 
   - The contact us section allows the users to contact the company directly if they have any issues. 
