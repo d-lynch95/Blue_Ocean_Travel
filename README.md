@@ -495,6 +495,15 @@ they will be taken to the products page and the product is removed from the data
 
 ![DeleteProduct](docs/features/DeleteConfirm.png)
 
+__Edit Product Page__
+Staff or superusers can select to edit the product and they will be taken to a form identical to the add product page.
+
+This form will be autofilled witht the product information from the database.
+
+![editproduct](docs/testing/Editproduct1.png)
+![editproduct2](docs/testing/Editproduct2.png)
+
+
 __Profile page__
 
   - The profile page will allow users to view their profile information.
