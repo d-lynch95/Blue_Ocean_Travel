@@ -29,13 +29,21 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
 - The log in link will take them to the following page
     ![LogIn](docs/testing/login.png)
 
-- When a user creates an account
+- When a user creates an account they will be brought to an email confirmation page. Users will then be sent an email to the email address provided. This takes the user back to the site where they can confirm their email.
+    ![LoginEmail](docs/testing/NewAccEmail%20.png)
+- 
 
 - When a user succesfully signs in they will be presented with the below toast message
     ![SigninToast](docs/testing/signinToast.png)
 
 
-
+- When a user clicks the destinations images on the homepage they will be taken to a different location
+    |Destinations Link|Location  |Pass/Fail|
+|--|--|--|
+|Destinations/All Tours|products.html|Pass|
+|Destinations/K'gari(Fraser Island)|products.html with filter for K'gari products|Pass|
+|Destinations/Whitsundays|products.html with filter for whitsundays products|Pass|
+|Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef products|Pass|
 
 
 
@@ -48,3 +56,8 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
    ![SigninToast](docs/testing/signinToast.png)
 
 - When a user creates a new account they should be greeted with this Toast
+
+### Email confirmation
+
+- When a user creates an account they will be brought to an email confirmation page. Users will then be sent an email to the email address provided.
+    ![LoginEmail](docs/testing/NewAccEmail%20.png)

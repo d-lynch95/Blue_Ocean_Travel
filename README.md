@@ -337,26 +337,50 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
 
   - When a user is not logged in they can still click the "My account" drop down menu. This will provide two seperate links: Register and Log in.
 
+  ![notAuthNav](docs/testing/notAuthNav.png)
   |Link|Location  |Pass/Fail|
 |--|--|--|
-|  Register|all auth registration page|Pass|
+|Register|all auth registration page|Pass|
 |Log in | all auth log in page| Pass
 
   - When user is logged in the "My Account drop down link will have several links: Product Management, Submitted Contact Forms, My Profile, My Wishlist, Logout.
 
+  ![NavAuthorised](docs/features/navigation.png)
+
 |Link|Location  |Pass/Fail|
 |--|--|--|
-| Product Management|add_tour.html|Pass|
+|Product Management|add_tour.html|Pass|
 |Submitted Contact Forms | staff.html| Pass|
 |My Profile|Profile.html|Pass|
 |My Wishlist|wishlist.html|Pass|
 |Logout|All auth logout page|Pass|
 
-- If a user is a superuser or a staff member all of the above dropdown options will appear. I a user is not a staff or super user they will only see My Profile, My Wishlist, Logout.
+
+- If a user is a superuser or a staff member all of the above dropdown options will appear. If a user is not a staff or super user they will only see My Profile, My Wishlist, Logout.
 
 
 __Footer__
+![Footer](docs/features/footer.png)
 
+ - The footer is comprised of three sections. The first section is a brief synopsis of the company. The second section is a list of links to different "Destinations" and the different products associated with those regions.
+
+
+|Destinations Link|Location  |Pass/Fail|
+|--|--|--|
+|Destinations/All Tours|products.html|Pass|
+|Destinations/K'gari(Fraser Island)|products.html with filter for K'gari products|Pass|
+|Destinations/Whitsundays|products.html with filter for whitsundays products|Pass|
+|Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef products|Pass|
+
+
+- There is another section of links that will take you to "Your Account", "Contact Us", "About Us" and "Privacy Policy".
+
+|Destinations Link|Location  |Pass/Fail|
+|--|--|--|
+|Contact Us|contact.html|Pass|
+|About Us|about.html|Pass|
+|My Profile|Profile.html|Pass|
+|Privacy Policy|privacy.html|Pass|
 __Sign up Page__
 
 
