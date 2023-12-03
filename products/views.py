@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from .models import Product, Region, Review
+from .models import Product, Region,
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -13,7 +13,6 @@ def view_products(request):
     location = None
     sort = None
     direction = None
-    review = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -43,9 +42,7 @@ def view_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
-
     current_sorting = f'{sort}_{direction}'
-    reviews = Review.filter
     
     context = {
         'products': products,
