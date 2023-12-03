@@ -488,6 +488,12 @@ __Product Detail Page__
   ![ProductDetail1](docs/features/productdetail.png)
   ![ProductDetail1](docs/features/productdetail2.png)
 
+__Reviews__
+
+  - Signed in users will be able to create and edit reviews for individual products
+  ![Reviews](docs/features/reviews.png)
+
+
 
 __Product Delete__
 

@@ -267,7 +267,7 @@ Logged in users will have a different viewpoint as they will be able to leave re
 |Keep shopping|return to products page|Pass|
 |Add to bag|Product added to bag|Pass|
 |Submit review|IF Blank review should not submit|Pass|
-|Submit review| if review has been filled|Pass|
+|Submit review| submit if review has been filled|Pass|
 
 ### Add to Wishlist
 
@@ -283,7 +283,19 @@ Users can remove items from the wishlist. They will then be sent a toast to conf
 
 ![wishlistremove](docs/features/wishlistremove.png)
 
+### Reviews
 
+Users will be able to leave reviews for individual products on the product_description page
+
+If the review section is left blank users will not be able to submit.
+
+If a user is logged in and has left a review they will be able to submit it
+
+![reviewsubmit](docs/testing/writtenreview.png)
+
+When a review has been submitted the user will receive a toast notification and see the review on the product detail page
+
+![submittedreview](docs/testing/submittedreview.png)
 
 ### Delete Product page
 
@@ -361,6 +373,8 @@ The form validation is the same as the add product page
 
 - When a user removes a product from their wishlist they will get the following toast
     ![wishlistremovaltoast](docs/features/wishlistremove.png)
+
+
 
 ### Email confirmation
 
