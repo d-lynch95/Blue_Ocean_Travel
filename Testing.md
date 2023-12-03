@@ -357,6 +357,38 @@ The my orders page can be accessed through the My Profile page.
 
 The user can view their orders and order details on this page and when finished users can click the back to profile page and return to their profile page if that's the page they came from.
 
+### Shopping Bag
+
+- Users can add items to the shopping bag and are then taken to this page when they want to view the bag
+
+![Shopping Bag](docs/features/bag.png)
+
+|Link Clicked|Result|Pass/Fail|
+|--|--|--|
+|Quantity +|quantity increases |Pass
+|Quantity -|quantity decreases|Pass|
+|Update|This updates the product quantity in the bag|Pass|
+|Remove|This removes the product from shopping bag and refreshes the bag|Pass|
+|Keep shopping|return to products page|Pass|
+|Secure Checkout|take user to the checkout page|Pass|
+
+Users can adjust their bags and update the quantity of the products in their basket. This will then refresh the page and show the new price and quantity aswell as showing a toast message to the guest.
+
+![IncreaseQuantity](docs/testing/qtyincr.png)
+
+Users can also remove products from their bag from this page. Users can do this by selecting the remove button. Once this is done the page will refresh to show the new bag contents. A toast message will also be displayed to users.
+
+![RemoveItem](docs/testing/productremove.png)
+
+
+Users can also select the Secure checkout button if they are happy with their shopping bag contents. This will take the user to a page where they can add their personal details if they haven't already been saved and add card details to complete a transaction.
+
+![securecheckout](docs/features/securecheckout.png)
+
+
+
+
+
 ### Toasts
 
 - Toasts have been introduced to keep users informed of different progress and activities on the site. Toasts have been included with a timer that they should only last for 5 seconds
@@ -375,6 +407,8 @@ The user can view their orders and order details on this page and when finished 
 |Removed from wishlist|user removes an item from their wishlist|Yes|
 |Profile Updated|When a user updates profile information|Yes|
 |Previous order|Inform user they are looking at a previous order|Yes|
+|Update quantity|User updates product quantity in their bag|Yes|
+|Remove item|User removes product from their bag|Yes|
 
 
 - When a user signs in they will be sent the following Toast.
@@ -408,6 +442,12 @@ The user can view their orders and order details on this page and when finished 
 
 - When a user views a previous order they will see the following toast
     ![Previousorder](docs/testing/toasts/prvordertoast.png)
+
+- When a user adjusts item quantity in their bag they will see the following toast
+    ![IncreaseQuantity](docs/testing/qtyincr.png)
+
+- When a user removes an item from the bag they will see the following toast
+    ![RemoveItem](docs/testing/productremove.png)
 
 
 

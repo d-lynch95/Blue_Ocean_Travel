@@ -554,7 +554,7 @@ __Shopping Bag__
 
 	- If users are happy to proceed with their selected tour they can click the “Secure Check-out” button and this will take them to they payment page.
 
-![Shopping Bag]()
+![Shopping Bag](docs/features/bag.png)
 
 
 __SecureCheckout__
