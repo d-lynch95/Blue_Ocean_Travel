@@ -124,6 +124,43 @@ The about us page also includes and FAQ accordion. Each of these accordion drop 
 |How do I know which trip is best for me|Yes|
 
 
+### Contact Us Page
+
+__Contact Us Page__
+
+The contact us section allows the users to contact the company directly if they have any issues. 
+
+The user can contact the company by filling out and submitting a form. This adds to the user experience as the user may have some questions that they need answered before they are prepared to make a booking.
+
+This also allows the user to contact the company if they wish to have a personalised itinerary created for them.
+
+Users will also have the ability to contact the company directly via the footer as both the email and telephone icon are clickable links. If the user clicks either of these options it will allow them to email or call the company directly.
+
+Users can also sign up for the company's mailing list throgh the Contact Us Page
+
+  ![ContactUS](docs/features/contact.png)
+  ![ContactUsSurvey](docs/features/contactSurvey.png)
+
+If the users submission is succesfull they are redirected to a success page
+  ![ContactSuccess](docs/readme_images/ContactSuccess.png)
+
+The contact us form comes with several validators that will not submit if fields are blank or with the wrong data type.
+The Name, Email and Phone fields must all be filled out however the text box can be submitted empty
+
+|Field|ValidatoinWarning|Yes/No|
+|Name|Please fill in this field|Yes|
+|Email|Please fill in this field|Yes|
+|Phone|Please fill in this field|Yes|
+
+If name field is not filled in the following error shows
+    ![namevalidator](docs/testing/contact/namevalidation.png)
+
+
+If email field is not filled in the following error shows
+    ![emailvalidatorr](docs/testing/contact/emailvalidation.png)
+
+If phone field is not filled in the following error shows
+    ![phonevalidator](docs/testing/contact/phonevalidation.png)
 
 
 ### Toasts
@@ -136,6 +173,7 @@ The about us page also includes and FAQ accordion. Each of these accordion drop 
 |Sign In|Sign In success|Yes|
 |Sign Out|Sign Out success|Pass|
 |New Account|New Account Created Success|Pass|
+|Contact Form|Form Submitted|Pass|
 
 
 - When a user signs in they will be sent the following Toast.
@@ -145,6 +183,9 @@ The about us page also includes and FAQ accordion. Each of these accordion drop 
 
 - When a user sign out they will see the following toast
     ![SignoutToast](docs/testing/toasts/signouttoast.png)
+
+- When a user submits a form will see the following toast
+    ![SignoutToast](docs/testing/toasts/contacttoast.png)
 
 
 

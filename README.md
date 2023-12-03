@@ -427,6 +427,10 @@ __Contact Us Page__
   ![ContactUS](docs/features/contact.png)
   ![ContactUsSurvey](docs/features/contactSurvey.png)
 
+  - If the users submission is succesfull they are redirected to a success page
+
+  ![ContactSuccess](docs/readme_images/ContactSuccess.png)
+
 __About Us Page__
 
  - The about us section includes information such as Who are we, what do we do and also includes an FAQ section. This is a page for users to learn more about the company.
@@ -528,8 +532,7 @@ __Favicon__
 
 ## Testing 
 
-<!-- Insert file here -->
-I created an extra [Testing](Testing.md) page as the file was too large to fit in this README.
+I created an extra [Testing](https://github.com/d-lynch95/Blue_Ocean_Travel/blob/main/Testing.md) page as the file was too large to fit in this README.
 
 ### BUGS
  - I encountered several bugs while creating this project.
