@@ -29,14 +29,6 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
 - The log in link will take them to the following page
     ![LogIn](docs/testing/login.png)
 
-- When a user creates an account they will be brought to an email confirmation page. Users will then be sent an email to the email address provided. This takes the user back to the site where they can confirm their email.
-    ![LoginEmail](docs/testing/NewAccEmail%20.png)
-- 
-
-- When a user succesfully signs in they will be presented with the below toast message
-    ![SigninToast](docs/testing/signinToast.png)
-
-
 - When a user clicks the destinations images on the homepage they will be taken to a different location
 |Destinations Link|Location  |Pass/Fail|
 |--|--|--|
@@ -76,7 +68,8 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
 |Send Email|Open Email Client|Pass|
 |Phone company|Open facetime on desktop|Pass|
 
-
+![facetime](docs/testing/facetime.png)
+![email](docs/testing/email.png)
 
 
 
@@ -92,5 +85,9 @@ Destinations/Great Barrier Reef|products.html with filter for Great Barrier Reef
 
 ### Email confirmation
 
-- When a user creates an account they will be brought to an email confirmation page. Users will then be sent an email to the email address provided.
+
+
+- When a user creates an account they will be brought to an email confirmation page.
+    ![EmailVerification](docs/testing/email/verifyemail.png)
+- Users will then be sent an email to the email address provided.
     ![LoginEmail](docs/testing/emails/NewAccEmail.png)

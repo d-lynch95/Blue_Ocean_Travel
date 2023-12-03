@@ -389,16 +389,19 @@ __Footer__
 |Send Email|Open Email Client|Pass|
 |Phone company|Open facetime on desktop|Pass|
 
+__Register Page__
 
+- If users do not have an account they will be brought to a sign up page where they can create an account. 
+![Register](docs/testing/register.png)
 
-
-
-__Sign up Page__
-
-
+- Users can fill out their information here and are then brought to an email verification page.
+![EmailVerification](docs/testing/email/verifyemail.png)
 
 __Log In Page__
+- If users have an account they will be brought to a login page where they can sign into their account. 
+![Login](docs/testing/login.png)
 
+- If users log in succesfully they will be redirected to the homepage.
 
 
 __Contact Us Page__
