@@ -534,7 +534,15 @@ __Profile page__
 
 ![Profile Page](docs/features/myprofile.png)
 
+__My Orders__
 
+  - Users can access the my orders page through their profile page.  Users do this by clicking on the order number on the profile page. 
+
+  - Users are then redirected to the My order page. 
+
+  - Users can access a range of information through this page such as order number and order date, tour name and departure date, personal information and contact number aswell as total order cost.
+
+  ![MyOrders](docs/features/Myorder.png)
 
 __Shopping Bag__
 

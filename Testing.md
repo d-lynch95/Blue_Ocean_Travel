@@ -349,6 +349,13 @@ While on this page users will be able to update their personal information. Ther
 
 Users can also click on their previous order numbers to see previous orders
 
+### My orders
+
+The my orders page can be accessed through the My Profile page.
+
+![MyOrders](docs/features/Myorder.png)
+
+The user can view their orders and order details on this page and when finished users can click the back to profile page and return to their profile page if that's the page they came from.
 
 ### Toasts
 
@@ -367,6 +374,7 @@ Users can also click on their previous order numbers to see previous orders
 |Review Submitted|User submites a review|Yes|
 |Removed from wishlist|user removes an item from their wishlist|Yes|
 |Profile Updated|When a user updates profile information|Yes|
+|Previous order|Inform user they are looking at a previous order|Yes|
 
 
 - When a user signs in they will be sent the following Toast.
@@ -397,6 +405,9 @@ Users can also click on their previous order numbers to see previous orders
 
 - When a user updates their profile information they will see the following toast
     ![removeinfo](docs/testing/removeinfo.png)
+
+- When a user views a previous order they will see the following toast
+    ![Previousorder](docs/testing/toasts/prvordertoast.png)
 
 
 
