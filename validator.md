@@ -59,3 +59,14 @@ There is an issue in this file that the lines for auth_password_validators are t
 ![contacturl](docs/validation/python/contact/contact_app.png)
 ### admin
 ![contacturl](docs/validation/python/contact/contact_admin.png)
+
+## home
+
+### apps
+![homeapp](docs/validation/python/home/home_apps.png)
+### views
+![homeapp](docs/validation/python/home/home_views.png)
+### urls
+![homeapp](docs/validation/python/home/home_urls.png)
+
+## products
