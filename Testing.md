@@ -448,6 +448,11 @@ From this page users will be given a button to return to the homepage
 
 ![OrderComplete](docs/features/transaction.png)
 
+Stripe webhooks were also tested and there was no issues with any of these.
+
+
+![Webhook](docs/testing/stripe/Stripewebhook.png)
+
 
 
 ### Toasts
