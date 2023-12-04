@@ -4,4 +4,4 @@ Disallow: /bag/
 Disallow: /profiles/
 Disallow: /checkout/
 Disallow: /admin/
-Site-map: https://blue-ocean-travel-feb523e57a47.herokuapp.com/sitemap.xml
+Sitemap: https://blue-ocean-travel-feb523e57a47.herokuapp.com/sitemap.xml
