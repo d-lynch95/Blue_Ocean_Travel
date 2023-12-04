@@ -791,12 +791,7 @@ I did not test this site on a tablet but did utilise the google chrome Dev tools
 
 I created a seperate file for validator testing as there were too many files to document in this READE
 
-![Validators]()
-
-- Python
-  - No errors were found when passing through the [CI code linter](https://pep8ci.herokuapp.com/#)
-
-  
+![Validators](https://github.com/d-lynch95/Blue_Ocean_Travel/blob/main/validator.md)
 
 
 
@@ -914,7 +909,6 @@ The live link can be found here - [Blue Ocean Travel](https://blue-ocean-travel-
 
 - I used countless stack overflow entries to help me to solve minor django related bugs.
 
-- I used the following projects as inspiration for my project. [SizzleAndSteak](https://github.com/Gareth-McGirr/Portfolio-Project-4-SizzleAndSteak), [TennisBuddies](https://github.com/lucia2007/tennis_buddies), [BurgerBar](https://github.com/LADCode2021/pp4-burger-bar), [Itallianisimo](https://github.com/useriasminna/italianissimo-booking-website), [KiwiPiano](https://github.com/VeronicaLourens/kiwipiano)
+- I used the following projects as inspiration for my project. [SizzleAndSteak](https://github.com/Gareth-McGirr/Portfolio-Project-4-SizzleAndSteak), [TennisBuddies](https://github.com/lucia2007/tennis_buddies), [RetroReboot](https://github.com/adamgilroy22/retro-reboot/blob/main/README.md), [kbeauty](https://github.com/JoyZadan/shop-kbeauty) , [PcHaven](https://pc-haven.herokuapp.com/)
 
-
- - I also received help from the following slack users for minor bugs or style changes inc21, Tatiana Ruffo, Dave T, Laura, Jo_ci and I received a lot of help and advice from my mentor Gareth McGirr and from Paul Thomas our cohort leader.
+ - I also received help from the following slack users for minor bugs or style changes inc21,  Dave T, Lorna, and I received a lot of help and advice from my mentor Gareth McGirr and from Paul Thomas our cohort leader.
