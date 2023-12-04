@@ -822,7 +822,7 @@ I created a seperate [Testing.md](https://github.com/d-lynch95/Blue_Ocean_Travel
 
 I created a seperate file to outline the deployment process as it was too long to detail all of the steps here
 
-![Deployment](https://github.com/d-lynch95/Blue_Ocean_Travel/blob/main/deployment.md)
+[Deployment](https://github.com/d-lynch95/Blue_Ocean_Travel/blob/main/deployment.md)
 
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
