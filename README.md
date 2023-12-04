@@ -130,6 +130,31 @@ The logo contains the company name and is designed to inspire users to travel an
 This diagram shows how the users and staff users interact with the database. This was created using LucidChart and outlines the relationship between the database.
 ![Entity relationship Diagram](docs/readme_images/erd.png)
 
+The database schema was set up as follows:
+
+#### Order Line Item
+|Key|FieldType|Validation|
+|--|--|--|
+|order |ForeignKey|null=False, blank=False,|
+|product |ForeignKey| null=False, blank=False|
+|quantity|IntegerField|null=False, blank=False|
+|lineitem_total |DecimalField|max_digits=6, decimal_places=2, null=False, blank=False, editable=False|
+
+
+#### Order
+
+|Key|FieldType|Validation|
+|--|--|--|
+|order_number |CharField|max_length=32, null=False, editable=False|
+|user_profile |ForeignKey|null=True, blank=True|
+|full_name |CharField|max_length=50, null=False, blank=False|
+|email |EmailField|max_length=254, null=False, blank=False|
+|phone_number |CharField|max_length=20, null=False, blank=False||
+|order_total |DecimalField|max_digits=10, decimal_places=2, null=False, default=0|
+|original_bag |TextField|null=False, blank=False|
+|stripe_pid |CharField|max_length=254, null=False, blank=False|
+
+
 ## Development
 
 ### Agile Methodology
