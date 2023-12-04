@@ -1,4 +1,4 @@
-User-agent: *r
+User-agent: *
 Disallow: /accounts/
 Disallow: /bag/
 Disallow: /profiles/
