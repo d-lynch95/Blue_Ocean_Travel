@@ -147,3 +147,7 @@ The issue with this code is due to the imported code segment from Survey monkey.
 ![QuanitityJS](docs/validation/js/quantity_input_script.png)
 ## Stripe
 ![StripeJS](docs/validation/js/stripeJS.png)
+
+# HTML Validation
+
+I ran all of the html pages through w3 validators. I used this information to fix the code where possible. There are still a lot of errors in the html as a result of using django and jinja. There are lots of issues that reference non-existant trailing slashes or saying that the type attribute is unnecesarry for css or js files. This is not something that I was able to fix. 
