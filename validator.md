@@ -130,3 +130,20 @@ There is an issue in this file that the lines for auth_password_validators are t
 
 ## checkout.css
 ![checkoutcss](docs/validation/css/css_checkout.png)
+
+
+# JS Validation
+
+## Products
+![ProductJS](docs/validation/js/js_products.png)
+## Add tour
+![addtourJS](docs/validation/js/add_tour_js.png)
+## Base.html Survey Monkey 
+![baseJS](docs/validation/js/base.html%20survery.png)
+The issue with this code is due to the imported code segment from Survey monkey. I opted not to change this
+## Bag 
+![ProductJS](docs/validation/js/js_bag.png)
+## Quantity Input
+![QuanitityJS](docs/validation/js/quantity_input_script.png)
+## Stripe
+![StripeJS](docs/validation/js/stripeJS.png)
