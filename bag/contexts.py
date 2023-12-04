@@ -4,7 +4,7 @@ from products.models import Product
 
 
 def bag_contents(request):
-
+    """ users can increase quantity of items in their bag """
     bag_items = []
     total = 0
     product_count = 0

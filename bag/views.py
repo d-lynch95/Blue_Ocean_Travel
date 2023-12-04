@@ -2,8 +2,7 @@ from products.models import Product
 from django.contrib import messages
 
 from django.conf import settings
-from django.shortcuts import render, redirect, reverse,
-get_object_or_404, HttpResponse
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 
 
 def view_bag(request):
