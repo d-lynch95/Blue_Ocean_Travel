@@ -804,7 +804,7 @@ I did not test this site on a tablet but did utilise the google chrome Dev tools
 
 I created a seperate file for validator testing as there were too many files to document in this READE
 
-![Validators](https://github.com/d-lynch95/Blue_Ocean_Travel/blob/main/validator.md)
+[Validators](https://github.com/d-lynch95/Blue_Ocean_Travel/blob/main/validator.md)
 
 
 
