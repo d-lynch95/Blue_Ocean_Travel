@@ -120,3 +120,13 @@ There is an issue in this file that the lines for auth_password_validators are t
 ![wishurl](docs/validation/python/wishlist/wish_app.png)
 ### admin
 ![wishurl](docs/validation/python/wishlist/wish_admin.png)
+
+
+
+# CSS Validation
+
+## base.css
+![basecss](docs/validation/css/css_base.png)
+
+## checkout.css
+![checkoutcss](docs/validation/css/css_checkout.png)
