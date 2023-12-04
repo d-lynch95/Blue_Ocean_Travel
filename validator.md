@@ -106,3 +106,17 @@ There is an issue in this file that the lines for auth_password_validators are t
 ![staffform](docs/validation/python/staff/staff_forms.png)
 ### widgets
 ![staffwidget](docs/validation/python/staff/staff_widgets.png)
+
+
+## Wishlist
+
+### urls
+![wishurl](docs/validation/python/wishlist/wish_url.png)
+### views
+![wishurl](docs/validation/python/wishlist/wish_views.png)
+### model
+![wishurl](docs/validation/python/wishlist/wish_model.png)
+### app
+![wishurl](docs/validation/python/wishlist/wish_app.png)
+### admin
+![wishurl](docs/validation/python/wishlist/wish_admin.png)

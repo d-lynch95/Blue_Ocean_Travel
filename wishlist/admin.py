@@ -10,4 +10,5 @@ class WishlistItemAdmin(admin.ModelAdmin):
         "product",
     )
 
+
 admin.site.register(WishlistItem, WishlistItemAdmin)
