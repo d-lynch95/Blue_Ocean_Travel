@@ -1,5 +1,4 @@
 from django.views import generic
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.views.generic import ListView, UpdateView, CreateView, DeleteView
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect, get_object_or_404
@@ -11,11 +10,17 @@ from contact.models import contactForm
 from contact.forms import contForm
 from .forms import ProductForm
 
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+
+
 def staff_view(request):
     """ A view for staff to access a page only they can see """
     contact_forms = contactForm.objects.all()
-    return render(request, 'staff/staff.html', {'contact_forms': contact_forms})
-    
+    return render(request,
+                  'staff/staff.html',
+                  {'contact_forms': contact_forms})
+
+
 # Allow staff members to add new tours to the store
 @login_required
 def add_product(request):
@@ -32,7 +37,9 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to add product. \
+                           Please ensure the form is valid.')
     else:
         form = ProductForm()
     template = 'staff/add_tour.html'
@@ -41,6 +48,7 @@ def add_product(request):
     }
 
     return render(request, template, context)
+
 
 # Allow staff members to edit existing tours
 @login_required
@@ -59,7 +67,8 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update product.\
+                            Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -71,6 +80,7 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
 
 # Allows staff to delete tours from the site
 def delete_product(request, product_id):

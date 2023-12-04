@@ -95,3 +95,14 @@ There is an issue in this file that the lines for auth_password_validators are t
 ![profileapp](docs/validation/python/profile/pro_views.png)
 ### model
 ![profileapp](docs/validation/python/profile/pro_model.png)
+
+## Staff
+
+### app
+![staffapp](docs/validation/python/staff/staff_app.png)
+### urls
+![staffurls](docs/validation/python/staff/staff_urls.png)
+### forms
+![staffform](docs/validation/python/staff/staff_forms.png)
+### widgets
+![staffwidget](docs/validation/python/staff/staff_widgets.png)
