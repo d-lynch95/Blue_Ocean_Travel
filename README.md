@@ -607,7 +607,7 @@ __Favicon__
 
 ### Keywords
 
-I used [WordTracker]() to look up short tail keywords
+I used [WordTracker](docs/readme_images/wordtracker.png) to look up short tail keywords
 
 The FAQs section on the AboutUs is filled with long tail keywords in order to boost SEO such as "When is the best time to travel in Australia?", "Should I stay in hostels", "What is the best trip in Australia"
 
