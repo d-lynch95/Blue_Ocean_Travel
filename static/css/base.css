@@ -317,10 +317,6 @@ a:hover {
         height: calc(100vh - 116px);
     }
 
-    .display-4.logo-font.text-black {
-        font-size: 2rem;
-    }
-
     .nav-link {
         padding: 0.15rem;
     }
