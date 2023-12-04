@@ -127,9 +127,8 @@ The logo contains the company name and is designed to inspire users to travel an
 
 ### Entity relationship diagram
 
-This diagram shows how the users and staff users interact with the database.
-
-![Entity relationship Diagram]()
+This diagram shows how the users and staff users interact with the database. This was created using LucidChart and outlines the relationship between the database.
+![Entity relationship Diagram](docs/readme_images/erd.png)
 
 ## Development
 
@@ -287,6 +286,8 @@ My sprints were planned out as follows:
   - used to host the database
 - Looka
   - used to create the logo
+- LucidChart
+  - This was used to create the entity relationship diagram
 
 ## Features 
 
@@ -664,34 +665,21 @@ I did not test this site on a tablet but did utilise the google chrome Dev tools
 
 ### Validator Testing 
 
+I created a seperate file for validator testing as there were too many files to document in this READE
+
+![Validators]()
+
 - Python
   - No errors were found when passing through the [CI code linter](https://pep8ci.herokuapp.com/#)
 
-  <summary>See Linter results</sumary>
-
   
-  <details>
-  
-  ![Admin.py](static/media/testing/admin.png)
 
-  ![App.py](static/media/testing/apps.png)
-
-  ![Forms.py](static/media/testing/forms.png)
-
-  ![Models.py](static/media/testing/models.png)
-
-  ![Urls.py](static/media/testing/urls.png)
-
-  ![Views.py](static/media/testing/views.png)
-
-
-  </details>
 
 
 ### Manual Testing
 
 #### Functional Testing 
-I created a seperate [Testing.md](https://github.com/d-lynch95/Portfolio-Project4/blob/main/Testing.md) file that outlines all of the tests completed
+I created a seperate [Testing.md](https://github.com/d-lynch95/Blue_Ocean_Travel/blob/main/Testing.md) file that outlines all of the tests completed
 
 
 ### Unfixed Bugs
@@ -699,6 +687,11 @@ I created a seperate [Testing.md](https://github.com/d-lynch95/Portfolio-Project
 
 
 ## Deployment
+
+I created a seperate file to outline the deployment process as it was too long to detail all of the steps here
+
+![Deployment](https://github.com/d-lynch95/Blue_Ocean_Travel/blob/main/deployment.md)
+
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
   - In the GitHub repository, navigate to the Settings tab 
