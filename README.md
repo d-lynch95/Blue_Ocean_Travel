@@ -695,6 +695,19 @@ __Favicon__
 
   ![Favicon](docs/features/favicon.png)
 
+### Accesibility
+
+I received the following scores on my lighthouse testing
+
+![Lighthouse](docs/testing/lighthouse/lighthouse.png)
+
+I tried to reduce the issues but they were being caused by AWS and Heroku so there was not much I could do to change them.
+
+
+![Lighthouse2](docs/testing/lighthouse/lighthouse2.png)
+![Lighthouse2](docs/testing/lighthouse/lighthouse3.png)
+
+
 
 ### Features Left to Implement
 

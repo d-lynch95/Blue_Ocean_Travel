@@ -23,7 +23,7 @@
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
         <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
         <style type="text/css">
-                #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: px;}
+                #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif;}
         </style>
     {% endblock %}
 
@@ -252,7 +252,7 @@
                     </p>
                     <p>
                         <i class="fas fa-phone mr-3"></i>
-                        <a href="tel:+61 422 686616" class="contact-link text-white">+61 422 686616</a> 
+                        <a href="tel:+61422686616" class="contact-link text-white">+61 422 686616</a> 
                     </p>
                     </div>
             
@@ -266,7 +266,7 @@
                 style="background-color: rgba(0, 0, 0, 0.2)"
                 >
                 © 2023 Copyright:
-                <a class="text-white" href="{ url 'home'}"
+                <a class="text-white" href="{% url 'home' %}"
                 >Blueoceantravel.com</a
                 >
         </div>

@@ -1,8 +1,8 @@
 
 
-# Testing home page
+# Testing page
 
-## Link tracking 
+## All features
 
 ### Home Page
 |Link|Location  |Pass/Fail|
@@ -455,7 +455,7 @@ Stripe webhooks were also tested and there was no issues with any of these.
 
 
 
-### Toasts
+## Toasts
 
 - Toasts have been introduced to keep users informed of different progress and activities on the site. Toasts have been included with a timer that they should only last for 5 seconds
 
@@ -520,7 +520,7 @@ Stripe webhooks were also tested and there was no issues with any of these.
     ![OrderComplete](docs/features/transaction.png)
 
 
-### Email confirmation
+## Email confirmation
 
 
 - When a user creates an account they will be brought to an email confirmation page.
