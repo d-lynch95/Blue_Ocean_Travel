@@ -87,6 +87,17 @@ Blue Ocean travel is an online e-commerce store that specialises in booking trip
   - As a new user I want to contact the company to create a personalised itinerary
   - As a new user I want to enjoy the experience and return to make another booking
 
+
+### E-Commerce Business Model
+
+ - Blue Ocean Travel is an online ecommerce website. The websit is targeted towards backpackers travelling in Australia. The website makes use of short tail and long tail keywords to try and improve its search engine rankings. Users can purchase a single tour on the website or they can contact the company directly to have a custom itinerary created for them. Users can add items to their bag to purchase now or they can add items to their wishlist if they wanted to purchase them later. The payment function is built using stripe and allows users to process payment with ease and then recieve email confirmation that their tour has been booked.
+
+ - The model is built off ease of use. Backpackers are now educated consumers and know exactly what they want. This website is designed to give users useful concise information and comes with a very short booking journey in an attempt to increase conversions.
+
+  - The website was designed mobile first as the majority of backpackers are travellig with only their smart phones.
+
+  - The business model is dedicated to delivering unique and wonderful experiences to backpackers. This business organises niche activities on specified dates to help backpackers connect with likeminded people while getting away from the monotony of ordinary day trips.
+
 ## Design
 
 ### Font
