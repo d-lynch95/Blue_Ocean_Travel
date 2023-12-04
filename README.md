@@ -501,23 +501,23 @@ __Reviews__
 
 __Product Delete__
 
-Staff users can click the delete which will take them to a delete product page
+  - Staff users can click the delete which will take them to a delete product page
 
-Users will have the option to return to the products page or delete the product. If the user opts to delete the product
+  - Users will have the option to return to the products page or delete the product. If the user opts to delete the product
 they will be taken to the products page and the product is removed from the database.
 
-![DeleteProduct](docs/features/DeleteConfirm.png)
+  ![DeleteProduct](docs/features/DeleteConfirm.png)
 
 __Edit Product Page__
 
-Staff or superusers can select to edit the product and they will be taken to a form identical to the add product page.
+  - Staff or superusers can select to edit the product and they will be taken to a form identical to the add product page.
 
-This form will be autofilled with the product information from the database.
+  - This form will be autofilled with the product information from the database.
 
-Users can change the details and resubmit the product to the database
+  - Users can change the details and resubmit the product to the database
 
-![editproduct](docs/testing/Editproduct1.png)
-![editproduct2](docs/testing/Editproduct2.png)
+  ![editproduct](docs/testing/Editproduct1.png)
+  ![editproduct2](docs/testing/Editproduct2.png)
 
 
 __Wishlist__
@@ -536,7 +536,7 @@ __Profile page__
 	
 	- Users will also be able to see the tours they already have organised and purchased through the orders section of the page
 
-![Profile Page](docs/features/myprofile.png)
+  ![Profile Page](docs/features/myprofile.png)
 
 __My Orders__
 
@@ -558,7 +558,7 @@ __Shopping Bag__
 
 	- If users are happy to proceed with their selected tour they can click the “Secure Check-out” button and this will take them to they payment page.
 
-![Shopping Bag](docs/features/bag.png)
+  ![Shopping Bag](docs/features/bag.png)
 
 
 __SecureCheckout__
@@ -569,7 +569,7 @@ __SecureCheckout__
 
 	- Users can use a built-in stripe payment element to input their card information and process payment.
 
-![SecureCheckout](docs/features/securecheckout.png)
+  ![SecureCheckout](docs/features/securecheckout.png)
 
 
 __Order Confirmation__
@@ -579,7 +579,7 @@ __Order Confirmation__
   ![OrderComplete](docs/features/transaction.png)
 
 
-  Users will then be sent an email outlining their order and information
+  - Users will then be sent an email outlining their order and information
   ![OrderEmail](docs/testing/email/orderemail.png)
 
 __StaffSection__
@@ -594,15 +594,40 @@ __Favicon__
 
   - The favicon was created using the company logo. This favicon sits in the web browser tab and instantly allows the user to recognise the webpage. This adds to the customer experience. The favicon is the globe and plane image that features prominently in the company logo
 
-![Favicon](docs/features/favicon.png)
+  ![Favicon](docs/features/favicon.png)
 
 
 ### Features Left to Implement
 
-  -  I would like to add further email authentication
-    - I would like to have users confirm their email addresses upon registration.
+- I would like to add authentication via google or facebook when users are creating an account so they have one click sign in available to them
 
-  - I would also like to implement user profiles. This would allow users to upload profile photos, include some information about themselves and also provide information about which services they are looking for.
+- Due to legal requirements in Australia users must contact the tour operator directly to cancel their tours. I would like to build in a function so that users can cancel their tours directly through the site if it is not within the cancelation period and an email notification will be sent to the tour operator
+
+## Search Engine Optimisation
+
+### Keywords
+
+I used [WordTracker]() to look up short tail keywords
+
+The FAQs section on the AboutUs is filled with long tail keywords in order to boost SEO such as "When is the best time to travel in Australia?", "Should I stay in hostels", "What is the best trip in Australia"
+
+### Page titles 
+
+Each page shows an extra title after the store name to assist help with SEO.
+
+### Robots.txt
+
+I created a robots.txt file to assist with SEO
+
+![robots](docs/readme_images/robots.png)
+
+
+### Sitemap.xml
+I've used [MySiteMapGenerator](https://www.mysitemapgenerator.com/) to generate a sitemap.xml file. This was generated using my deployed site URL: https://blue-ocean-travel-feb523e57a47.herokuapp.com/about/
+
+After it finished crawling the entire site, it created a [sitemap.xml](https://github.com/d-lynch95/Blue_Ocean_Travel/blob/main/sitemap.xml) which I downloaded and included in the repository.
+
+
 
 ## Testing 
 
