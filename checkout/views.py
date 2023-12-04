@@ -11,8 +11,7 @@ from bag.contexts import bag_contents
 import stripe
 import json
 
-from django.shortcuts import render, redirect,
-reverse, get_object_or_404, HttpResponse
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 
 
 @require_POST
