@@ -70,3 +70,28 @@ There is an issue in this file that the lines for auth_password_validators are t
 ![homeapp](docs/validation/python/home/home_urls.png)
 
 ## products
+
+### views
+![products_views](docs/validation/python/products/product_views.png)
+### urls
+![productsurls](docs/validation/python/products/product_urls.png)
+### models
+![productsmodels](docs/validation/python/products/product_models.png)
+### apps
+![productsapps](docs/validation/python/products/product_apps.png)
+### admin
+![products_views](docs/validation/python/products/product_views.png)
+
+
+## Profiles
+
+### app
+![profileapp](docs/validation/python/profile/pro_app.png)
+### urls
+![profileapp](docs/validation/python/profile/pro_url.png)
+### form
+![profileapp](docs/validation/python/profile/pro_form.png)
+### views
+![profileapp](docs/validation/python/profile/pro_views.png)
+### model
+![profileapp](docs/validation/python/profile/pro_model.png)
