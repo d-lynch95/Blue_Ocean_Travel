@@ -5,6 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
+
 def view_products(request):
     """ A view to show individual product details """
 
@@ -36,14 +37,15 @@ def view_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request,
+                               "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
-            
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
-    
+
     context = {
         'products': products,
         'search_term': query,
@@ -61,13 +63,13 @@ def product_detail(request, product_id):
 
     if request.method == 'POST':
         rating = request.POST.get('rating', 5)
-        content = request.POST.get('content','')
+        content = request.POST.get('content', '')
 
         if content:
             reviews = Review.objects.filter(created_by=request.user, product=product)
-            
+
             if reviews.count() > 0:
-                review=reviews.first()
+                review = reviews.first()
                 review.rating = rating
                 review.content = content
                 review.save()
@@ -85,4 +87,3 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
-

@@ -3,6 +3,7 @@ from .models import Product, Region, Review
 
 # Register your models here.
 
+
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'name',
@@ -14,11 +15,13 @@ class ProductAdmin(admin.ModelAdmin):
 
     ordering = ('region',)
 
+
 class RegionAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',
         'name',
     )
+
 
 class ReviewAdmin(admin.ModelAdmin):
     list_display = (
@@ -30,6 +33,7 @@ class ReviewAdmin(admin.ModelAdmin):
     )
 
     ordering = ('product',)
+
 
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Region, RegionAdmin)
