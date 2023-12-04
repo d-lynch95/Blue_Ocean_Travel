@@ -132,7 +132,61 @@ This diagram shows how the users and staff users interact with the database. Thi
 
 The database schema was set up as follows:
 
+#### Product
+
+
+#### Product
+
+|Key|FieldType|Validation|
+|--|--|--|
+|region|ForeignKey| null=True,blank=True|
+|name|CharField|max_length=254|
+|description|TextField()||
+|price |DecimalField|max_digits=6, decimal_places=2|
+|date |DateTimeField||
+|duration |DurationFiel|null=True, blank=True|
+|image_url|URLField|max_length=1024, null=True, blank=True|
+|image |ImageField|null=True, blank=True|
+
+#### Region
+
+|Key|FieldType|Validation|
+|--|--|--|
+|name |CharField|max_length=254|
+|friendly_name |CharField|max_length=254, null=True, blank=True|
+
+#### Review
+
+|Key|FieldType|Validation|
+|--|--|--|
+|product |ForeignKey||
+|rating |IntegerField||
+|content|TextField||
+|created_by |ForeignKey||
+|created_at|DateTimeField||
+
+#### User Profile
+
+|Key|FieldType|Validation|
+|--|--|--|
+|user |OneToOneField||
+|default_full_name |CharField|max_length=50, null=True, blank=True|
+|default_phone_number |CharField|max_length=20,null=True, blank=True|
+|default_email |EmailField|max_length=254, null=True, blank=True|
+
+#### Contact form
+
+|Key|FieldType|Validation|
+|--|--|--|
+|full_name |CharField|max_length=50, null=False, blank=False|
+|email |EmailField|max_length=254, null=False, blank=False|
+|phone_number |CharField|max_length=20, null=False, blank=False|
+|input_text |TextField|max_length=1000, null=True, blank=True|
+|selection |models.IntegerField||
+
+
 #### Order Line Item
+
 |Key|FieldType|Validation|
 |--|--|--|
 |order |ForeignKey|null=False, blank=False,|
@@ -153,6 +207,13 @@ The database schema was set up as follows:
 |order_total |DecimalField|max_digits=10, decimal_places=2, null=False, default=0|
 |original_bag |TextField|null=False, blank=False|
 |stripe_pid |CharField|max_length=254, null=False, blank=False|
+
+#### Wishlist
+
+|Key|FieldType|Validation|
+|--|--|--|
+|user |ForeignKey||
+|product |ForeignKey||
 
 
 ## Development
